@@ -24,4 +24,4 @@ Since Flopz has been written from scratch in pure python, it may not support as 
 However, it is our goal to cover exactly those architectures that matter to embedded security people which may not be covered by other tools.
 Also, extending Flopz is made less challenging through a maintained set of unit tests and code documentation.
 
-Flopz is meant to work together with other tools. In particular, there is a Ghidra Extension which helps you instrument firmware directly in Ghidra.
+Flopz is meant to work together with other tools. In particular, there is a [Ghidra Extension](https://github.com/Flopz-Project/flopz-ghidra) which helps you instrument firmware directly in Ghidra.
