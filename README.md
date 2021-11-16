@@ -1,5 +1,5 @@
 # Flopz - Firmware Liberation on Python
-[![Python application](https://github.com/fnoelscher/flopz/actions/workflows/python-app.yml/badge.svg?branch=main)](https://github.com/fnoelscher/flopz/actions/workflows/python-app.yml)
+[![Python application](https://github.com/Flopz-Project/flopz/actions/workflows/python-app.yml/badge.svg)](https://github.com/Flopz-Project/flopz/actions/workflows/python-app.yml)
 
 Flopz is an assembler toolkit written in pure python. Use it to:
 - Create shellcode for embedded systems
