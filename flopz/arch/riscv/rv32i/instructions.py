@@ -5,8 +5,13 @@ from flopz.arch.operands import BitsOperand, CombinedOperand
 
 
 class RiscvInstructionForm:
+    """
+    Base class for the different forms a riscv instruction can have.
+    Forms add the operands to the instruction object with their parse function.
+    """
     def parse(self, instruction: Instruction):
-        pass
+        instruction.opcode_mask = BitArray(length=32, uint=0xFE000000)
+        instruction.opcode = BitsOperand(instruction, 25, 32)
 
 
 class RiscvRForm(RiscvInstructionForm):
@@ -74,11 +79,14 @@ INSTRUCTIONS
 
 
 class RiscvInstruction(Instruction):
+    """
+    Base class for all RiscV instructions.
+
+    Will parse the given InstructionForm instance to add the operands to the instruction and
+    then use the keyword arguments to set the different operands.
+    """
     def __init__(self, form: RiscvInstructionForm, addr: int = 0, bit_length: int = 32, **kwargs):
         super().__init__('', addr, bit_length)
-
-        self.opcode_mask = BitArray(length=32, uint=0xFE000000)
-        self.opcode = BitsOperand(self, 25, 32)
 
         self.instruction_form = form
         self.instruction_form.parse(self)
@@ -100,50 +108,51 @@ INTEGER REGISTER-IMMEDIATE INSTRUCTIONS
 
 
 # Add Immediate
-class ADDI(RiscvInstruction):
+class R32iADDI(RiscvInstruction):
     def __init__(self, rd, rs, imm):
         super().__init__(RiscvIForm(), opcode=0b10011, funct3=0b000, rd=rd, rs1=rs, imm=imm)
 
 
 # Set Less Then Immediate
-class SLTI(RiscvInstruction):
+class R32iSLTI(RiscvInstruction):
     def __init__(self, rd, rs, imm):
         super().__init__(RiscvIForm(), opcode=0b10011, funct3=0b010, rd=rd, rs1=rs, imm=imm)
 
 
 # Set Less Then Immediate (Unsigned)
-class SLTIU(RiscvInstruction):
+class R32iSLTIU(RiscvInstruction):
     def __init__(self, rd, rs, imm):
         super().__init__(RiscvIForm(), opcode=0b10011, funct3=0b011, rd=rd, rs1=rs, imm=imm)
 
 
 # XOR Immediate
-class XORI(RiscvInstruction):
+class R32iXORI(RiscvInstruction):
     def __init__(self, rd, rs, imm):
         super().__init__(RiscvIForm(), opcode=0b10011, funct3=0b100, rd=rd, rs1=rs, imm=imm)
 
 
 # OR Immediate
-class ORI(RiscvInstruction):
+class R32iORI(RiscvInstruction):
     def __init__(self, rd, rs, imm):
         super().__init__(RiscvIForm(), opcode=0b10011, funct3=0b110, rd=rd, rs1=rs, imm=imm)
 
 
 # AND Immediate
-class ANDI(RiscvInstruction):
+class R32iANDI(RiscvInstruction):
     def __init__(self, rd, rs, imm):
         super().__init__(RiscvIForm(), opcode=0b10011, funct3=0b111, rd=rd, rs1=rs, imm=imm)
 
 
 # Shift left logical by Immediate
-class SLLI(RiscvInstruction):
+class R32iSLLI(RiscvInstruction):
     def __init__(self, rd, rs, imm):
         if imm not in range(32):
             raise InvalidArgumentRangeException("Shift not in valid range")
         super().__init__(RiscvIForm(), opcode=0b10011, funct3=0b001, rd=rd, rs1=rs, imm=imm)
 
+
 # Shift right logical by Immediate
-class SRLI(RiscvInstruction):
+class R32iSRLI(RiscvInstruction):
     def __init__(self, rd, rs, imm):
         if imm not in range(32):
             raise InvalidArgumentRangeException("Shift not in valid range")
@@ -151,7 +160,7 @@ class SRLI(RiscvInstruction):
 
 
 # Shift right arithmetic by Immediate
-class SRAI(RiscvInstruction):
+class R32iSRAI(RiscvInstruction):
     def __init__(self, rd, rs, imm):
         if imm not in range(32):
             raise InvalidArgumentRangeException("Shift not in valid range")
@@ -159,13 +168,13 @@ class SRAI(RiscvInstruction):
 
 
 # Load upper Immediate
-class LUI(RiscvInstruction):
+class R32iLUI(RiscvInstruction):
     def __init__(self, rd, imm):
         super().__init__(RiscvUForm(), opcode=0b0110111, rd=rd, imm=imm)
 
 
-# Load upper Immediate
-class AUIPC(RiscvInstruction):
+# Add upper Immediate to PC
+class R32iAUIPC(RiscvInstruction):
     def __init__(self, rd, imm):
         super().__init__(RiscvUForm(), opcode=0b0010111, rd=rd, imm=imm)
 
@@ -176,19 +185,19 @@ INTEGER REGISTER-REGISTER INSTRUCTIONS
 
 
 # Add
-class ADD(RiscvInstruction):
+class R32iDD(RiscvInstruction):
     def __init__(self, rd, rs1, rs2):
         super().__init__(RiscvRForm(), opcode=0b0110011, funct3=0b000, funct7=0, rd=rd, rs1=rs1, rs2=rs2)
 
 
 # Sub
-class SUB(RiscvInstruction):
+class R32iSUB(RiscvInstruction):
     def __init__(self, rd, rs1, rs2):
         super().__init__(RiscvRForm(), opcode=0b0110011, funct3=0b000, funct7=32, rd=rd, rs1=rs1, rs2=rs2)
 
 
 # Shift Logical Left
-class SLL(RiscvInstruction):
+class R32iSLL(RiscvInstruction):
     def __init__(self, rd, rs1, rs2):
         super().__init__(RiscvRForm(), opcode=0b0110011, funct3=0b001, funct7=0, rd=rd, rs1=rs1, rs2=rs2)
 
@@ -200,34 +209,34 @@ class SLT(RiscvInstruction):
 
 
 # Set Less Then (Unsigned)
-class SLTU(RiscvInstruction):
+class R32iSLTU(RiscvInstruction):
     def __init__(self, rd, rs1, rs2):
         super().__init__(RiscvRForm(), opcode=0b0110011, funct3=0b011, funct7=0, rd=rd, rs1=rs1, rs2=rs2)
 
 
-class XOR(RiscvInstruction):
+class R32iXOR(RiscvInstruction):
     def __init__(self, rd, rs1, rs2):
         super().__init__(RiscvRForm(), opcode=0b0110011, funct3=0b100, funct7=0, rd=rd, rs1=rs1, rs2=rs2)
 
 
 # Shift Right Logical
-class SRL(RiscvInstruction):
+class R32iSRL(RiscvInstruction):
     def __init__(self, rd, rs1, rs2):
         super().__init__(RiscvRForm(), opcode=0b0110011, funct3=0b101, funct7=0, rd=rd, rs1=rs1, rs2=rs2)
 
 
 # Shift Right Arithmetic
-class SRA(RiscvInstruction):
+class R32iSRA(RiscvInstruction):
     def __init__(self, rd, rs1, rs2):
         super().__init__(RiscvRForm(), opcode=0b0110011, funct3=0b101, funct7=32, rd=rd, rs1=rs1, rs2=rs2)
 
 
-class OR(RiscvInstruction):
+class R32iOR(RiscvInstruction):
     def __init__(self, rd, rs1, rs2):
         super().__init__(RiscvRForm(), opcode=0b0110011, funct3=0b110, funct7=0, rd=rd, rs1=rs1, rs2=rs2)
 
 
-class AND(RiscvInstruction):
+class R32iAND(RiscvInstruction):
     def __init__(self, rd, rs1, rs2):
         super().__init__(RiscvRForm(), opcode=0b0110011, funct3=0b111, funct7=0, rd=rd, rs1=rs1, rs2=rs2)
 
@@ -238,13 +247,13 @@ UNCONDITIONAL JUMPS
 
 
 # Jump And Link
-class JAL(RiscvInstruction):
+class R32iJAL(RiscvInstruction):
     def __init__(self, rd, imm):
         super().__init__(RiscvJForm(), opcode=0b1101111, rd=rd, imm=imm)
 
 
 # Jump And Link Register
-class JALR(RiscvInstruction):
+class R32iJALR(RiscvInstruction):
     def __init__(self, rd, rs, imm):
         super().__init__(RiscvIForm(), opcode=0b1100111, funct3=0b000, rs1=rs, rd=rd, imm=imm)
 
@@ -255,37 +264,37 @@ CONDITIONAL BRANCHES
 
 
 # Branch Equal
-class BEQ(RiscvInstruction):
+class R32iBEQ(RiscvInstruction):
     def __init__(self, rs1, rs2, imm):
         super().__init__(RiscvBForm(), opcode=0b1100011, funct3=0b000, rs1=rs1, rs2=rs2, imm=imm)
 
 
 # Branch NOT Equal
-class BNE(RiscvInstruction):
+class R32iBNE(RiscvInstruction):
     def __init__(self, rs1, rs2, imm):
         super().__init__(RiscvBForm(), opcode=0b1100011, funct3=0b001, rs1=rs1, rs2=rs2, imm=imm)
 
 
 # Branch Less Then
-class BLT(RiscvInstruction):
+class R32iBLT(RiscvInstruction):
     def __init__(self, rs1, rs2, imm):
         super().__init__(RiscvBForm(), opcode=0b1100011, funct3=0b100, rs1=rs1, rs2=rs2, imm=imm)
 
 
 # Branch Greater Equal
-class BGE(RiscvInstruction):
+class R32iBGE(RiscvInstruction):
     def __init__(self, rs1, rs2, imm):
         super().__init__(RiscvBForm(), opcode=0b1100011, funct3=0b101, rs1=rs1, rs2=rs2, imm=imm)
 
 
 # Branch Less Then Unsigned
-class BLTU(RiscvInstruction):
+class R32iBLTU(RiscvInstruction):
     def __init__(self, rs1, rs2, imm):
         super().__init__(RiscvBForm(), opcode=0b1100011, funct3=0b110, rs1=rs1, rs2=rs2, imm=imm)
 
 
 # Branch Greater Equal Unsigned
-class BGEU(RiscvInstruction):
+class R32iBGEU(RiscvInstruction):
     def __init__(self, rs1, rs2, imm):
         super().__init__(RiscvBForm(), opcode=0b1100011, funct3=0b111, rs1=rs1, rs2=rs2, imm=imm)
 
@@ -296,49 +305,49 @@ LOAD AND STORE
 
 
 # Load Byte
-class LB(RiscvInstruction):
+class R32iLB(RiscvInstruction):
     def __init__(self, rd, rs, imm):
         super().__init__(RiscvIForm(), opcode=0b0000011, funct3=0b000, rd=rd, rs1=rs, imm=imm)
 
 
 # Load Halfword
-class LH(RiscvInstruction):
+class R32iLH(RiscvInstruction):
     def __init__(self, rd, rs, imm):
         super().__init__(RiscvIForm(), opcode=0b0000011, funct3=0b001, rd=rd, rs1=rs, imm=imm)
 
 
 # Load Word
-class LW(RiscvInstruction):
+class R32iLW(RiscvInstruction):
     def __init__(self, rd, rs, imm):
         super().__init__(RiscvIForm(), opcode=0b0000011, funct3=0b010, rd=rd, rs1=rs, imm=imm)
 
 
 # Load Byte Zero Extend
-class LBU(RiscvInstruction):
+class R32iLBU(RiscvInstruction):
     def __init__(self, rd, rs, imm):
         super().__init__(RiscvIForm(), opcode=0b0000011, funct3=0b100, rd=rd, rs1=rs, imm=imm)
 
 
 # Load Halfword Zero Extend
-class LHU(RiscvInstruction):
+class R32iLHU(RiscvInstruction):
     def __init__(self, rd, rs, imm):
         super().__init__(RiscvIForm(), opcode=0b0000011, funct3=0b101, rd=rd, rs1=rs, imm=imm)
 
 
 # Store Byte
-class SB(RiscvInstruction):
+class R32iSB(RiscvInstruction):
     def __init__(self, rs, imm, ra):
         super().__init__(RiscvSForm(), opcode=0b0100011, funct3=0b000, rs1=ra, rs2=rs, imm=imm)
 
 
 # Store Halfword
-class SH(RiscvInstruction):
+class R32iSH(RiscvInstruction):
     def __init__(self, rs, imm, ra):
         super().__init__(RiscvSForm(), opcode=0b0100011, funct3=0b001, rs1=ra, rs2=rs, imm=imm)
 
 
 # Store Word
-class SW(RiscvInstruction):
+class R32iSW(RiscvInstruction):
     def __init__(self, rs, imm, ra):
         super().__init__(RiscvSForm(), opcode=0b0100011, funct3=0b010, rs1=ra, rs2=rs, imm=imm)
 
@@ -348,13 +357,13 @@ FENCE
 """
 
 
-class FENCE(RiscvInstruction):
+class R32iFENCE(RiscvInstruction):
     def __init__(self, pi, po, pr, pw, si, so, sr, sw):
         imm = pi << 7 + po << 6 + pr << 5 + pw << 4 + si << 3 + so << 2 + sr << 1 + sw
         super().__init__(RiscvIForm(), opcode=0b0001111, funct3=0b000, rd=0, rs1=0, imm=imm)
 
 
-class FENCEI(RiscvInstruction):
+class R32iFENCEI(RiscvInstruction):
     def __init__(self):
         super().__init__(RiscvIForm(), opcode=0b0001111, funct3=0b001, rd=0, rs1=0, imm=0)
 
@@ -364,32 +373,32 @@ SYSTEM
 """
 
 
-class CSRRW(RiscvInstruction):
+class R32iCSRRW(RiscvInstruction):
     def __init__(self, rd, csr, rs):
         super().__init__(RiscvIForm(), opcode=0b1110011, funct3=0b001, rd=rd, rs1=rs, imm=csr)
 
 
-class CSRRS(RiscvInstruction):
+class R32iCSRRS(RiscvInstruction):
     def __init__(self, rd, csr, rs):
         super().__init__(RiscvIForm(), opcode=0b1110011, funct3=0b010, rd=rd, rs1=rs, imm=csr)
 
 
-class CSRRC(RiscvInstruction):
+class R32iCSRRC(RiscvInstruction):
     def __init__(self, rd, csr, rs):
         super().__init__(RiscvIForm(), opcode=0b1110011, funct3=0b011, rd=rd, rs1=rs, imm=csr)
 
 
-class CSRRWI(RiscvInstruction):
+class R32iCSRRWI(RiscvInstruction):
     def __init__(self, rd, csr, imm):
         super().__init__(RiscvIForm(), opcode=0b1110011, funct3=0b101, rd=rd, rs1=imm, imm=csr)
 
 
-class CSRRSI(RiscvInstruction):
+class R32iCSRRSI(RiscvInstruction):
     def __init__(self, rd, csr, imm):
         super().__init__(RiscvIForm(), opcode=0b1110011, funct3=0b110, rd=rd, rs1=imm, imm=csr)
 
 
-class CSRRCI(RiscvInstruction):
+class R32iCSRRCI(RiscvInstruction):
     def __init__(self, rd, csr, imm):
         super().__init__(RiscvIForm(), opcode=0b1110011, funct3=0b111, rd=rd, rs1=imm, imm=csr)
 
@@ -399,11 +408,11 @@ ENVIRONMENT
 """
 
 
-class ECALL(RiscvInstruction):
+class R32iECALL(RiscvInstruction):
     def __init__(self):
         super().__init__(RiscvIForm(), opcode=0b1110011, funct3=0b000, rd=0, rs1=0, imm=0)
 
 
-class EBREAK(RiscvInstruction):
+class R32iEBREAK(RiscvInstruction):
     def __init__(self):
         super().__init__(RiscvIForm(), opcode=0b1110011, funct3=0b000, rd=0, rs1=0, imm=1)

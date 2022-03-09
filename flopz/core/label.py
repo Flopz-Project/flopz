@@ -25,7 +25,6 @@ class Label(AddressableObject):
         self.final = True
 
 
-
 class LabelRef(AddressableObject):
     """
     Wrap any instruction (or function), providing the address of a label once the label is resolved

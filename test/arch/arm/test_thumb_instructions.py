@@ -3,12 +3,17 @@ from flopz.arch.arm.arm_generic_arch import ARMGenericArchitecture
 
 def test_arithmetic():
     arch = ARMGenericArchitecture()
-    addsI = AddsI(arch.r6, arch.r3, 1)
+    addsI = AddI_T1(arch.r6, arch.r3, 1)
     assert(addsI.opcode() == BitArray(bin='0001110'))
     assert(addsI.imm3().uint == 1)
     assert(addsI.Rn().uint == 3)
     assert(addsI.Rd().uint == 6)
     assert(addsI.bytes() == b'\x5e\x1c')
+
+    addw = AddI_T3(arch.r4, arch.r4, 0x400000, setflags=1)
+    assert(addw.bytes() == b'\x14\xf5\x80\x04')
+    addw = AddI_T3(arch.r4, arch.r4, 0x32)
+    assert(addw.bytes() == b'\x04\xf1\x32\x04')
 
     addsR = AddsR(3, 4, 1)
     assert(addsR.opcode() == BitArray(bin='0001100'))
@@ -24,12 +29,15 @@ def test_arithmetic():
     assert(subsR.Rd().uint == 4)
     assert(subsR.bytes() == b'\x54\x1a')
 
-    subsI = SubsI(2, 3, 1)
+    subsI = SubI_T1(2, 3, 1)
     assert(subsI.opcode() == BitArray(bin='0001111'))
     assert(subsI.imm3().uint == 1)
     assert(subsI.Rn().uint == 3)
     assert(subsI.Rd().uint == 2)
     assert(subsI.bytes() == b'\x5a\x1e')
+
+    subw = SubI_T3(arch.r4, arch.r1, 0x1000)
+    assert(subw.bytes() == b'\xa1\xf5\x80\x54')
 
 
 def test_move_and_shifts():
@@ -55,47 +63,52 @@ def test_move_and_shifts():
 
 
 def test_branches():
-    cb = CB(Cond.CC, -28)
+    cb = B_T1(Cond.CC, -28)
     assert(cb.opcode() == BitArray(bin='1101'))
     assert(cb.cond().uint == 3)
     assert(cb.imm8().int == -16)
     assert(cb.offset() == -28)
     assert(cb.bytes() == b'\xf0\xd3')
 
-    cb2 = CB(Cond.HI, -8)
+    cb2 = B_T1(Cond.HI, -8)
     assert(cb2.opcode() == BitArray(bin='1101'))
     assert(cb2.cond().uint == Cond.HI)
     assert(cb2.offset() == -8)
     assert(cb2.bytes() == b'\xfa\xd8')
 
-    ub = UB(0)
+    ub = B_T2(0)
     assert(ub.opcode() == BitArray(bin='11100'))
     assert(ub.offset() == 0)
     assert(ub.bytes() == b'\xfe\xe7')
 
-    ub2 = UB(-10)
+    ub2 = B_T2(-10)
     assert(ub2.opcode() == BitArray(bin='11100'))
     assert(ub2.offset() == -10)
     assert(ub2.bytes() == b'\xf9\xe7')
 
-    bccw = CBW(Cond.CC, -0x176)
+    bccw = B_T3(Cond.CC, -0x176)
     assert(bccw.opcode() == BitArray(bin='11110100'))
     assert(bccw.cond().uint == Cond.CC)
     assert(bccw.offset() == -0x176)
     assert(bccw.encoding() == BitArray(bin='11111111111101000011'))
     assert(bccw.bytes() == b'\xff\xf4\x43\xaf')
 
-    bw = UBW(-0x40)
+    bw = B_T4(-0x40)
     assert(bw.opcode() == BitArray(bin='11110101'))
     assert(bw.offset() == -0x40)
     assert(bw.encoding() == BitArray(bin='111111111111111111011110'))
     assert(bw.bytes() == b'\xff\xf7\xde\xbf')
 
-    bw2 = UBW(0x18e0-0xf10)
+    bw2 = B_T4(0x18e0 - 0xf10)
     assert(bw2.opcode() == BitArray(bin='11110101'))
     assert(bw2.offset() == 2512)
     assert(bw2.encoding() == BitArray(bin='000000000000010011100110'))
     assert(bw2.bytes() == b'\00\xf0\xe6\xbc')
+
+    bl = BL_T1(0x13f6)
+    assert(bl.opcode() == BitArray(bin="11110111"))
+    assert(bl.offset() == 0x13f6)
+    assert(bl.bytes() == b'\x01\xf0\xf9\xf9')
 
 
 def test_it():
@@ -121,21 +134,21 @@ def test_it():
 def test_store_loads():
 
     # immediates
-    stri = StrI(5, 0, 0x28)
+    stri = Str(5, 0, 0x28)
     assert(stri.opcode() == BitArray(bin='01100'))
     assert(stri.Rt().uint == 5)
     assert(stri.Rn().uint == 0)
     assert(stri.imm5().uint == 10)
     assert(stri.bytes() == b'\x85\x62')
 
-    ldri = LdrI(2, 0, 0x1c)
+    ldri = Ldr(3, 7, 0x4)
     assert(ldri.opcode() == BitArray(bin='01101'))
-    assert(ldri.Rt().uint == 2)
-    assert(ldri.Rn(). uint == 0)
-    assert(ldri.imm5().uint == 7)
-    assert(ldri.bytes() == b'\xc2\x69')
+    assert(ldri.Rt().uint == 3)
+    assert(ldri.Rn(). uint == 7)
+    assert(ldri.imm5().uint == 1)
+    assert(ldri.bytes() == b'\x7b\x68')
 
-    strw = StrWI(7, 2, 0x4, index=True, wback=True)
+    strw = StrW(7, 2, 0x4, index=True, wback=True)
     assert(strw.opcode() == BitArray(bin='1111100001001'))
     assert(strw.Rt().uint == 7)
     assert(strw.Rn().uint == 2)
@@ -196,4 +209,38 @@ def test_store_load_multiple():
     assert(ldmiaw.opcode() == BitArray(bin='111010001001'))
     assert(ldmiaw.Rn().uint == 0)
     assert(ldmiaw.bytes() == b'\x90\xe8\xff\x0f')
+
+
+def test_logicals():
+    ands = Ands(3, 2)
+    assert(ands.bytes() == b'\x13\x40')
+
+    orrs = Orrs(2, 3)
+    assert(orrs.bytes() == b'\x1a\x43')
+
+    eors = Eors(2, 1)
+    assert(eors.bytes() == b'\x4a\x40')
+
+    andw = AndI(3, 3, 0x10000000)
+    assert(andw.bytes() == b'\x03\xf0\x80\x53')
+
+    orrw = OrrI(3, 3, 0x5f80000)
+    assert(orrw.bytes() == b'\x43\xf0\xbf\x63')
+
+    eorw = EorI(3, 3, 0x100000)
+    assert(eorw.bytes() == b'\x83\xf4\x80\x13')
+
+
+def test_misc():
+    ux = UXTB(3, 3)
+    assert(ux.bytes() == b'\xdb\xb2')
+
+    arch = ARMGenericArchitecture()
+
+    pop = POP([arch.r7, arch.pc])
+    assert(pop.bytes() == b'\x80\xbd')
+
+    push = PUSH([arch.r7, arch.lr])
+    assert(push.bytes() == b'\x80\xb5')
+
 

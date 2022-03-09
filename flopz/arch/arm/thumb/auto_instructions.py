@@ -5,6 +5,11 @@ from flopz.arch.arm.thumb.instructions import *
 from enum import Enum
 
 
+class AutoInstructionFailure(Exception):
+    def __init__(self, msg):
+        super().__init__(msg)
+
+
 class AutoStore(AutoInstruction):
     def __init__(self, *args, **kwargs):
         super().__init__()
@@ -53,20 +58,22 @@ class AutoStore(AutoInstruction):
             # we have to use 32Bit T4 encoding for negative offsets or writeback
             if indexing != "offset" or offset < 0:
                 if indexing == "offset":
-                    return [StrWI(registers[0].get_val, registers[1].get_val, offset=offset, byte=byte, hword=hword)]
+                    return [StrW(registers[0].get_val, registers[1].get_val, offset=offset, byte=byte, hword=hword)]
                 elif indexing == "pre-index":
-                    return [StrWI(registers[0].get_val, registers[1].get_val, offset=offset, index=True, wback=False, byte=byte, hword=hword)]
+                    return [StrW(registers[0].get_val, registers[1].get_val, offset=offset, index=True, wback=False, byte=byte, hword=hword)]
                 elif indexing == "post-index":
-                    return [StrWI(registers[0].get_val, registers[1].get_val, offset=offset, index=False, wback=True, byte=byte, hword=hword)]
+                    return [StrW(registers[0].get_val, registers[1].get_val, offset=offset, index=False, wback=True, byte=byte, hword=hword)]
 
             # check offset and register range to decide between 16 or 32Bit encoding
             try:
                 # try to use 16Bit encoding
-                if not hword:
-                    return [StrI(*(r.get_val for r in registers), offset=offset, byte=byte)]
+                if byte:
+                    return [Strb(*(r.get_val for r in registers), offset=offset)]
+                elif hword:
+                    return [Strh(*(r.get_val for r in registers), offset=offset)]
                 else:
-                    return[StrIHw(*(r.get_val for r in registers), offset=offset)]
-            except InvalidArgumentRangeException:
+                    return [Str(*(r.get_val for r in registers), offset=offset)]
+            except ValueError:
                 # use 32Bit encoding
                 return [StrWI12(*(r.get_val for r in registers), offset=offset, byte=byte, hword=hword)]
         else:
@@ -122,22 +129,25 @@ class AutoLoad(AutoInstruction):
             # we have to use 32Bit T4 encoding for negative offsets or writeback
             if indexing != "offset" or offset < 0:
                 if indexing == "offset":
-                    return [LdrWI(registers[0].get_val, registers[1].get_val, offset=offset, byte=byte, hword=hword)]
+                    return [LdrW(registers[0].get_val, registers[1].get_val, offset=offset, byte=byte, hword=hword)]
                 elif indexing == "pre-index":
-                    return [LdrWI(registers[0].get_val, registers[1].get_val, offset=offset, index=True, wback=False,
-                                  byte=byte, hword=hword)]
+                    return [LdrW(registers[0].get_val, registers[1].get_val, offset=offset, index=True, wback=False,
+                                 byte=byte, hword=hword)]
                 elif indexing == "post-index":
-                    return [LdrWI(registers[0].get_val, registers[1].get_val, offset=offset, index=False, wback=True,
-                                  byte=byte, hword=hword)]
+                    return [LdrW(registers[0].get_val, registers[1].get_val, offset=offset, index=False, wback=True,
+                                 byte=byte, hword=hword)]
 
             # check offset and register range to decide between 16 or 32Bit encoding
             try:
                 # try to use 16Bit encoding
-                if not hword:
-                    return [LdrI(*(r.get_val for r in registers), offset=offset, byte=byte)]
+                if byte:
+                    return [Ldrb(*(r.get_val for r in registers), offset=offset)]
+                elif hword:
+                    return [Ldrh(*(r.get_val for r in registers), offset=offset)]
                 else:
-                    return[LdrIHw(*(r.get_val for r in registers), offset=offset)]
-            except InvalidArgumentRangeException:
+                    return [Ldr(*(r.get_val for r in registers), offset=offset)]
+
+            except ValueError:
                 # use 32Bit encoding
                 return [LdrWI12(*(r.get_val for r in registers), offset=offset, byte=byte, hword=hword)]
         elif self.argtypes == [Register, int]:
@@ -177,14 +187,14 @@ class AutoBranch(AutoInstruction):
         if self.cond is None:
             # unconditional branch
             try:
-                return [UB(self.offset)]
-            except InvalidArgumentRangeException:
-                return [UBW(self.offset)]
+                return [B_T2(self.offset)]
+            except ValueError:
+                return [B_T4(self.offset)]
         else:
             # conditional branch
             try:
-                return [CB(self.cond, self.offset)]
-            except InvalidArgumentRangeException:
-                return [CBW(self.cond, self.offset)]
+                return [B_T1(self.cond, self.offset)]
+            except ValueError:
+                return [B_T3(self.cond, self.offset)]
 
 # TODO encode jumps bigger than allowed for cond as IT and uncond
