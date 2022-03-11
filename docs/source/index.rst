@@ -6,7 +6,18 @@
 Welcome to flopz's documentation!
 =================================
 
-This is a test paragraph.
+This site will document the different modules included with flopz.
+
+Flopz is an assembler toolkit written in pure python. Use it to:
+
+- Create shellcode for embedded systems
+- Dynamically patch large collections of binaries
+- Instrument firmware images, for debugging and fuzzing
+
+The flopz repository can be found here_.
+
+.. _here: https://github.com/Flopz-Project/flopz
+
 
 .. toctree::
    :caption: Contents:
