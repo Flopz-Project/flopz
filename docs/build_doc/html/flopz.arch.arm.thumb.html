@@ -1,20 +1,18 @@
 <!DOCTYPE html>
 <html class="writer-html5" lang="en" >
 <head>
-  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
-
+  <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>flopz.arch.arm.thumb package &mdash; flopz 1.0.1 documentation</title>
-      <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
-      <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <title>flopz.arch.arm.thumb package &mdash; flopz 1.0.1 documentation</title><link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
   <!--[if lt IE 9]>
     <script src="_static/js/html5shiv.min.js"></script>
   <![endif]-->
-  
-        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+  <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
         <script src="_static/jquery.js"></script>
         <script src="_static/underscore.js"></script>
         <script src="_static/doctools.js"></script>
+        <script src="_static/language_data.js"></script>
     <script src="_static/js/theme.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
@@ -37,7 +35,7 @@
   </form>
 </div>
         </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
-              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+              <p class="caption"><span class="caption-text">Contents:</span></p>
 <ul class="current">
 <li class="toctree-l1 current"><a class="reference internal" href="modules.html">flopz</a><ul class="current">
 <li class="toctree-l2 current"><a class="reference internal" href="flopz.html">flopz package</a><ul class="current">
@@ -48,24 +46,24 @@
 <li class="toctree-l7 current"><a class="reference internal" href="flopz.arch.arm.html#subpackages">Subpackages</a><ul class="current">
 <li class="toctree-l8 current"><a class="current reference internal" href="#">flopz.arch.arm.thumb package</a><ul>
 <li class="toctree-l9"><a class="reference internal" href="#submodules">Submodules</a></li>
-<li class="toctree-l9"><a class="reference internal" href="#module-flopz.arch.arm.thumb.auto_instructions">flopz.arch.arm.thumb.auto_instructions module</a></li>
-<li class="toctree-l9"><a class="reference internal" href="#module-flopz.arch.arm.thumb.instructions">flopz.arch.arm.thumb.instructions module</a></li>
-<li class="toctree-l9"><a class="reference internal" href="#module-flopz.arch.arm.thumb.stm32F407">flopz.arch.arm.thumb.stm32F407 module</a></li>
+<li class="toctree-l9"><a class="reference internal" href="#flopz-arch-arm-thumb-auto-instructions-module">flopz.arch.arm.thumb.auto_instructions module</a></li>
+<li class="toctree-l9"><a class="reference internal" href="#flopz-arch-arm-thumb-instructions-module">flopz.arch.arm.thumb.instructions module</a></li>
+<li class="toctree-l9"><a class="reference internal" href="#flopz-arch-arm-thumb-stm32f407-module">flopz.arch.arm.thumb.stm32F407 module</a></li>
 <li class="toctree-l9"><a class="reference internal" href="#module-flopz.arch.arm.thumb">Module contents</a></li>
 </ul>
 </li>
 </ul>
 </li>
 <li class="toctree-l7"><a class="reference internal" href="flopz.arch.arm.html#submodules">Submodules</a></li>
-<li class="toctree-l7"><a class="reference internal" href="flopz.arch.arm.html#module-flopz.arch.arm.arm_generic_arch">flopz.arch.arm.arm_generic_arch module</a></li>
+<li class="toctree-l7"><a class="reference internal" href="flopz.arch.arm.html#flopz-arch-arm-arm-generic-arch-module">flopz.arch.arm.arm_generic_arch module</a></li>
 <li class="toctree-l7"><a class="reference internal" href="flopz.arch.arm.html#module-flopz.arch.arm">Module contents</a></li>
 </ul>
 </li>
 <li class="toctree-l6"><a class="reference internal" href="flopz.arch.ia32.html">flopz.arch.ia32 package</a><ul>
 <li class="toctree-l7"><a class="reference internal" href="flopz.arch.ia32.html#submodules">Submodules</a></li>
-<li class="toctree-l7"><a class="reference internal" href="flopz.arch.ia32.html#module-flopz.arch.ia32.ia32_generic_arch">flopz.arch.ia32.ia32_generic_arch module</a></li>
-<li class="toctree-l7"><a class="reference internal" href="flopz.arch.ia32.html#module-flopz.arch.ia32.instructions">flopz.arch.ia32.instructions module</a></li>
-<li class="toctree-l7"><a class="reference internal" href="flopz.arch.ia32.html#module-flopz.arch.ia32.registers">flopz.arch.ia32.registers module</a></li>
+<li class="toctree-l7"><a class="reference internal" href="flopz.arch.ia32.html#flopz-arch-ia32-ia32-generic-arch-module">flopz.arch.ia32.ia32_generic_arch module</a></li>
+<li class="toctree-l7"><a class="reference internal" href="flopz.arch.ia32.html#flopz-arch-ia32-instructions-module">flopz.arch.ia32.instructions module</a></li>
+<li class="toctree-l7"><a class="reference internal" href="flopz.arch.ia32.html#flopz-arch-ia32-registers-module">flopz.arch.ia32.registers module</a></li>
 <li class="toctree-l7"><a class="reference internal" href="flopz.arch.ia32.html#module-flopz.arch.ia32">Module contents</a></li>
 </ul>
 </li>
@@ -73,18 +71,18 @@
 <li class="toctree-l7"><a class="reference internal" href="flopz.arch.ppc.html#subpackages">Subpackages</a><ul>
 <li class="toctree-l8"><a class="reference internal" href="flopz.arch.ppc.vle.html">flopz.arch.ppc.vle package</a><ul>
 <li class="toctree-l9"><a class="reference internal" href="flopz.arch.ppc.vle.html#submodules">Submodules</a></li>
-<li class="toctree-l9"><a class="reference internal" href="flopz.arch.ppc.vle.html#module-flopz.arch.ppc.vle.auto_instructions">flopz.arch.ppc.vle.auto_instructions module</a></li>
-<li class="toctree-l9"><a class="reference internal" href="flopz.arch.ppc.vle.html#module-flopz.arch.ppc.vle.e200z0">flopz.arch.ppc.vle.e200z0 module</a></li>
-<li class="toctree-l9"><a class="reference internal" href="flopz.arch.ppc.vle.html#module-flopz.arch.ppc.vle.instructions">flopz.arch.ppc.vle.instructions module</a></li>
+<li class="toctree-l9"><a class="reference internal" href="flopz.arch.ppc.vle.html#flopz-arch-ppc-vle-auto-instructions-module">flopz.arch.ppc.vle.auto_instructions module</a></li>
+<li class="toctree-l9"><a class="reference internal" href="flopz.arch.ppc.vle.html#flopz-arch-ppc-vle-e200z0-module">flopz.arch.ppc.vle.e200z0 module</a></li>
+<li class="toctree-l9"><a class="reference internal" href="flopz.arch.ppc.vle.html#flopz-arch-ppc-vle-instructions-module">flopz.arch.ppc.vle.instructions module</a></li>
 <li class="toctree-l9"><a class="reference internal" href="flopz.arch.ppc.vle.html#module-flopz.arch.ppc.vle.registers">flopz.arch.ppc.vle.registers module</a></li>
-<li class="toctree-l9"><a class="reference internal" href="flopz.arch.ppc.vle.html#module-flopz.arch.ppc.vle.vle">flopz.arch.ppc.vle.vle module</a></li>
+<li class="toctree-l9"><a class="reference internal" href="flopz.arch.ppc.vle.html#flopz-arch-ppc-vle-vle-module">flopz.arch.ppc.vle.vle module</a></li>
 <li class="toctree-l9"><a class="reference internal" href="flopz.arch.ppc.vle.html#module-flopz.arch.ppc.vle">Module contents</a></li>
 </ul>
 </li>
 </ul>
 </li>
 <li class="toctree-l7"><a class="reference internal" href="flopz.arch.ppc.html#submodules">Submodules</a></li>
-<li class="toctree-l7"><a class="reference internal" href="flopz.arch.ppc.html#module-flopz.arch.ppc.ppc_generic_arch">flopz.arch.ppc.ppc_generic_arch module</a></li>
+<li class="toctree-l7"><a class="reference internal" href="flopz.arch.ppc.html#flopz-arch-ppc-ppc-generic-arch-module">flopz.arch.ppc.ppc_generic_arch module</a></li>
 <li class="toctree-l7"><a class="reference internal" href="flopz.arch.ppc.html#module-flopz.arch.ppc">Module contents</a></li>
 </ul>
 </li>
@@ -92,46 +90,46 @@
 <li class="toctree-l7"><a class="reference internal" href="flopz.arch.riscv.html#subpackages">Subpackages</a><ul>
 <li class="toctree-l8"><a class="reference internal" href="flopz.arch.riscv.rv32c.html">flopz.arch.riscv.rv32c package</a><ul>
 <li class="toctree-l9"><a class="reference internal" href="flopz.arch.riscv.rv32c.html#submodules">Submodules</a></li>
-<li class="toctree-l9"><a class="reference internal" href="flopz.arch.riscv.rv32c.html#module-flopz.arch.riscv.rv32c.instructions">flopz.arch.riscv.rv32c.instructions module</a></li>
+<li class="toctree-l9"><a class="reference internal" href="flopz.arch.riscv.rv32c.html#flopz-arch-riscv-rv32c-instructions-module">flopz.arch.riscv.rv32c.instructions module</a></li>
 <li class="toctree-l9"><a class="reference internal" href="flopz.arch.riscv.rv32c.html#module-flopz.arch.riscv.rv32c">Module contents</a></li>
 </ul>
 </li>
 <li class="toctree-l8"><a class="reference internal" href="flopz.arch.riscv.rv32i.html">flopz.arch.riscv.rv32i package</a><ul>
 <li class="toctree-l9"><a class="reference internal" href="flopz.arch.riscv.rv32i.html#submodules">Submodules</a></li>
-<li class="toctree-l9"><a class="reference internal" href="flopz.arch.riscv.rv32i.html#module-flopz.arch.riscv.rv32i.instructions">flopz.arch.riscv.rv32i.instructions module</a></li>
-<li class="toctree-l9"><a class="reference internal" href="flopz.arch.riscv.rv32i.html#module-flopz.arch.riscv.rv32i.rv32i_arch">flopz.arch.riscv.rv32i.rv32i_arch module</a></li>
+<li class="toctree-l9"><a class="reference internal" href="flopz.arch.riscv.rv32i.html#flopz-arch-riscv-rv32i-instructions-module">flopz.arch.riscv.rv32i.instructions module</a></li>
+<li class="toctree-l9"><a class="reference internal" href="flopz.arch.riscv.rv32i.html#flopz-arch-riscv-rv32i-rv32i-arch-module">flopz.arch.riscv.rv32i.rv32i_arch module</a></li>
 <li class="toctree-l9"><a class="reference internal" href="flopz.arch.riscv.rv32i.html#module-flopz.arch.riscv.rv32i">Module contents</a></li>
 </ul>
 </li>
 </ul>
 </li>
 <li class="toctree-l7"><a class="reference internal" href="flopz.arch.riscv.html#submodules">Submodules</a></li>
-<li class="toctree-l7"><a class="reference internal" href="flopz.arch.riscv.html#module-flopz.arch.riscv.registers">flopz.arch.riscv.registers module</a></li>
-<li class="toctree-l7"><a class="reference internal" href="flopz.arch.riscv.html#module-flopz.arch.riscv.riscv_generic_arch">flopz.arch.riscv.riscv_generic_arch module</a></li>
+<li class="toctree-l7"><a class="reference internal" href="flopz.arch.riscv.html#flopz-arch-riscv-registers-module">flopz.arch.riscv.registers module</a></li>
+<li class="toctree-l7"><a class="reference internal" href="flopz.arch.riscv.html#flopz-arch-riscv-riscv-generic-arch-module">flopz.arch.riscv.riscv_generic_arch module</a></li>
 <li class="toctree-l7"><a class="reference internal" href="flopz.arch.riscv.html#module-flopz.arch.riscv">Module contents</a></li>
 </ul>
 </li>
 </ul>
 </li>
 <li class="toctree-l5"><a class="reference internal" href="flopz.arch.html#submodules">Submodules</a></li>
-<li class="toctree-l5"><a class="reference internal" href="flopz.arch.html#module-flopz.arch.architecture">flopz.arch.architecture module</a></li>
-<li class="toctree-l5"><a class="reference internal" href="flopz.arch.html#module-flopz.arch.auto_instruction">flopz.arch.auto_instruction module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="flopz.arch.html#flopz-arch-architecture-module">flopz.arch.architecture module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="flopz.arch.html#flopz-arch-auto-instruction-module">flopz.arch.auto_instruction module</a></li>
 <li class="toctree-l5"><a class="reference internal" href="flopz.arch.html#module-flopz.arch.exceptions">flopz.arch.exceptions module</a></li>
-<li class="toctree-l5"><a class="reference internal" href="flopz.arch.html#module-flopz.arch.instruction">flopz.arch.instruction module</a></li>
-<li class="toctree-l5"><a class="reference internal" href="flopz.arch.html#module-flopz.arch.operands">flopz.arch.operands module</a></li>
-<li class="toctree-l5"><a class="reference internal" href="flopz.arch.html#module-flopz.arch.register">flopz.arch.register module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="flopz.arch.html#flopz-arch-instruction-module">flopz.arch.instruction module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="flopz.arch.html#flopz-arch-operands-module">flopz.arch.operands module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="flopz.arch.html#flopz-arch-register-module">flopz.arch.register module</a></li>
 <li class="toctree-l5"><a class="reference internal" href="flopz.arch.html#module-flopz.arch">Module contents</a></li>
 </ul>
 </li>
 <li class="toctree-l4"><a class="reference internal" href="flopz.core.html">flopz.core package</a><ul>
 <li class="toctree-l5"><a class="reference internal" href="flopz.core.html#submodules">Submodules</a></li>
 <li class="toctree-l5"><a class="reference internal" href="flopz.core.html#module-flopz.core.addressable_object">flopz.core.addressable_object module</a></li>
-<li class="toctree-l5"><a class="reference internal" href="flopz.core.html#module-flopz.core.assembler">flopz.core.assembler module</a></li>
-<li class="toctree-l5"><a class="reference internal" href="flopz.core.html#module-flopz.core.function">flopz.core.function module</a></li>
-<li class="toctree-l5"><a class="reference internal" href="flopz.core.html#module-flopz.core.label">flopz.core.label module</a></li>
-<li class="toctree-l5"><a class="reference internal" href="flopz.core.html#module-flopz.core.module">flopz.core.module module</a></li>
-<li class="toctree-l5"><a class="reference internal" href="flopz.core.html#module-flopz.core.shellcode">flopz.core.shellcode module</a></li>
-<li class="toctree-l5"><a class="reference internal" href="flopz.core.html#module-flopz.core.target">flopz.core.target module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="flopz.core.html#flopz-core-assembler-module">flopz.core.assembler module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="flopz.core.html#flopz-core-function-module">flopz.core.function module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="flopz.core.html#flopz-core-label-module">flopz.core.label module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="flopz.core.html#flopz-core-module-module">flopz.core.module module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="flopz.core.html#flopz-core-shellcode-module">flopz.core.shellcode module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="flopz.core.html#flopz-core-target-module">flopz.core.target module</a></li>
 <li class="toctree-l5"><a class="reference internal" href="flopz.core.html#module-flopz.core">Module contents</a></li>
 </ul>
 </li>
@@ -174,20 +172,20 @@
 <li class="toctree-l6"><a class="reference internal" href="flopz.target.bolero.html">flopz.target.bolero package</a><ul>
 <li class="toctree-l7"><a class="reference internal" href="flopz.target.bolero.html#submodules">Submodules</a></li>
 <li class="toctree-l7"><a class="reference internal" href="flopz.target.bolero.html#module-flopz.target.bolero.bolero_protocol">flopz.target.bolero.bolero_protocol module</a></li>
-<li class="toctree-l7"><a class="reference internal" href="flopz.target.bolero.html#module-flopz.target.bolero.bolero_target">flopz.target.bolero.bolero_target module</a></li>
+<li class="toctree-l7"><a class="reference internal" href="flopz.target.bolero.html#flopz-target-bolero-bolero-target-module">flopz.target.bolero.bolero_target module</a></li>
 <li class="toctree-l7"><a class="reference internal" href="flopz.target.bolero.html#module-flopz.target.bolero">Module contents</a></li>
 </ul>
 </li>
 </ul>
 </li>
 <li class="toctree-l5"><a class="reference internal" href="flopz.target.html#submodules">Submodules</a></li>
-<li class="toctree-l5"><a class="reference internal" href="flopz.target.html#module-flopz.target.all_targets">flopz.target.all_targets module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="flopz.target.html#flopz-target-all-targets-module">flopz.target.all_targets module</a></li>
 <li class="toctree-l5"><a class="reference internal" href="flopz.target.html#module-flopz.target">Module contents</a></li>
 </ul>
 </li>
 <li class="toctree-l4"><a class="reference internal" href="flopz.util.html">flopz.util package</a><ul>
 <li class="toctree-l5"><a class="reference internal" href="flopz.util.html#submodules">Submodules</a></li>
-<li class="toctree-l5"><a class="reference internal" href="flopz.util.html#module-flopz.util.integer_representation">flopz.util.integer_representation module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="flopz.util.html#flopz-util-integer-representation-module">flopz.util.integer_representation module</a></li>
 <li class="toctree-l5"><a class="reference internal" href="flopz.util.html#module-flopz.util.parsing">flopz.util.parsing module</a></li>
 <li class="toctree-l5"><a class="reference internal" href="flopz.util.html#module-flopz.util">Module contents</a></li>
 </ul>
@@ -229,1246 +227,24 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <section id="flopz-arch-arm-thumb-package">
-<h1>flopz.arch.arm.thumb package<a class="headerlink" href="#flopz-arch-arm-thumb-package" title="Permalink to this headline"></a></h1>
-<section id="submodules">
-<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this headline"></a></h2>
-</section>
-<section id="module-flopz.arch.arm.thumb.auto_instructions">
-<span id="flopz-arch-arm-thumb-auto-instructions-module"></span><h2>flopz.arch.arm.thumb.auto_instructions module<a class="headerlink" href="#module-flopz.arch.arm.thumb.auto_instructions" title="Permalink to this headline"></a></h2>
-<dl class="py class">
-<dt class="sig sig-object py" id="flopz.arch.arm.thumb.auto_instructions.AutoBranch">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">AutoBranch</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#flopz.arch.arm.thumb.auto_instructions.AutoBranch" title="Permalink to this definition"></a></dt>
-<dd><p>Bases: <a class="reference internal" href="flopz.arch.html#flopz.arch.auto_instruction.AutoInstruction" title="flopz.arch.auto_instruction.AutoInstruction"><code class="xref py py-class docutils literal notranslate"><span class="pre">flopz.arch.auto_instruction.AutoInstruction</span></code></a></p>
-<dl class="py method">
-<dt class="sig sig-object py" id="flopz.arch.arm.thumb.auto_instructions.AutoBranch.expand">
-<span class="sig-name descname"><span class="pre">expand</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#flopz.arch.arm.thumb.auto_instructions.AutoBranch.expand" title="Permalink to this definition"></a></dt>
-<dd><dl class="field-list simple">
-<dt class="field-odd">Return type</dt>
-<dd class="field-odd"><p><code class="xref py py-class docutils literal notranslate"><span class="pre">List</span></code>[<a class="reference internal" href="#flopz.arch.arm.thumb.instructions.ThumbInstruction" title="flopz.arch.arm.thumb.instructions.ThumbInstruction"><code class="xref py py-class docutils literal notranslate"><span class="pre">ThumbInstruction</span></code></a>]</p>
-</dd>
-<dt class="field-even">Returns</dt>
-<dd class="field-even"><p>Regular instructions.</p>
-</dd>
-</dl>
-</dd></dl>
-
-</dd></dl>
-
-<dl class="py exception">
-<dt class="sig sig-object py" id="flopz.arch.arm.thumb.auto_instructions.AutoInstructionFailure">
-<em class="property"><span class="pre">exception</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">AutoInstructionFailure</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">msg</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#flopz.arch.arm.thumb.auto_instructions.AutoInstructionFailure" title="Permalink to this definition"></a></dt>
-<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Exception</span></code></p>
-</dd></dl>
-
-<dl class="py class">
-<dt class="sig sig-object py" id="flopz.arch.arm.thumb.auto_instructions.AutoLoad">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">AutoLoad</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#flopz.arch.arm.thumb.auto_instructions.AutoLoad" title="Permalink to this definition"></a></dt>
-<dd><p>Bases: <a class="reference internal" href="flopz.arch.html#flopz.arch.auto_instruction.AutoInstruction" title="flopz.arch.auto_instruction.AutoInstruction"><code class="xref py py-class docutils literal notranslate"><span class="pre">flopz.arch.auto_instruction.AutoInstruction</span></code></a></p>
-<dl class="py method">
-<dt class="sig sig-object py" id="flopz.arch.arm.thumb.auto_instructions.AutoLoad.expand">
-<span class="sig-name descname"><span class="pre">expand</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#flopz.arch.arm.thumb.auto_instructions.AutoLoad.expand" title="Permalink to this definition"></a></dt>
-<dd><dl class="field-list simple">
-<dt class="field-odd">Return type</dt>
-<dd class="field-odd"><p><code class="xref py py-class docutils literal notranslate"><span class="pre">List</span></code>[<a class="reference internal" href="#flopz.arch.arm.thumb.instructions.ThumbInstruction" title="flopz.arch.arm.thumb.instructions.ThumbInstruction"><code class="xref py py-class docutils literal notranslate"><span class="pre">ThumbInstruction</span></code></a>]</p>
-</dd>
-<dt class="field-even">Returns</dt>
-<dd class="field-even"><p>Regular instructions.</p>
-</dd>
-</dl>
-</dd></dl>
-
-</dd></dl>
-
-<dl class="py class">
-<dt class="sig sig-object py" id="flopz.arch.arm.thumb.auto_instructions.AutoStore">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">AutoStore</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#flopz.arch.arm.thumb.auto_instructions.AutoStore" title="Permalink to this definition"></a></dt>
-<dd><p>Bases: <a class="reference internal" href="flopz.arch.html#flopz.arch.auto_instruction.AutoInstruction" title="flopz.arch.auto_instruction.AutoInstruction"><code class="xref py py-class docutils literal notranslate"><span class="pre">flopz.arch.auto_instruction.AutoInstruction</span></code></a></p>
-<dl class="py method">
-<dt class="sig sig-object py" id="flopz.arch.arm.thumb.auto_instructions.AutoStore.expand">
-<span class="sig-name descname"><span class="pre">expand</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#flopz.arch.arm.thumb.auto_instructions.AutoStore.expand" title="Permalink to this definition"></a></dt>
-<dd><dl class="field-list simple">
-<dt class="field-odd">Return type</dt>
-<dd class="field-odd"><p><code class="xref py py-class docutils literal notranslate"><span class="pre">List</span></code>[<a class="reference internal" href="#flopz.arch.arm.thumb.instructions.ThumbInstruction" title="flopz.arch.arm.thumb.instructions.ThumbInstruction"><code class="xref py py-class docutils literal notranslate"><span class="pre">ThumbInstruction</span></code></a>]</p>
-</dd>
-<dt class="field-even">Returns</dt>
-<dd class="field-even"><p>Regular instructions.</p>
-</dd>
-</dl>
-</dd></dl>
-
-</dd></dl>
-
-</section>
-<section id="module-flopz.arch.arm.thumb.instructions">
-<span id="flopz-arch-arm-thumb-instructions-module"></span><h2>flopz.arch.arm.thumb.instructions module<a class="headerlink" href="#module-flopz.arch.arm.thumb.instructions" title="Permalink to this headline"></a></h2>
-<dl class="py class">
-<dt class="sig sig-object py" id="flopz.arch.arm.thumb.instructions.AddI_T1">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">AddI_T1</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">rd</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">rn</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">imm</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#flopz.arch.arm.thumb.instructions.AddI_T1" title="Permalink to this definition"></a></dt>
-<dd><p>Bases: <a class="reference internal" href="#flopz.arch.arm.thumb.instructions.ThumbInstruction" title="flopz.arch.arm.thumb.instructions.ThumbInstruction"><code class="xref py py-class docutils literal notranslate"><span class="pre">flopz.arch.arm.thumb.instructions.ThumbInstruction</span></code></a></p>
-<dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
-<dd class="field-odd"><ul class="simple">
-<li><p><strong>rd</strong> (<code class="xref py py-data docutils literal notranslate"><span class="pre">Union</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code>, <a class="reference internal" href="flopz.arch.arm.html#flopz.arch.arm.arm_generic_arch.ArmRegister" title="flopz.arch.arm.arm_generic_arch.ArmRegister"><code class="xref py py-class docutils literal notranslate"><span class="pre">ArmRegister</span></code></a>]) – </p></li>
-<li><p><strong>rn</strong> (<code class="xref py py-data docutils literal notranslate"><span class="pre">Union</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code>, <a class="reference internal" href="flopz.arch.arm.html#flopz.arch.arm.arm_generic_arch.ArmRegister" title="flopz.arch.arm.arm_generic_arch.ArmRegister"><code class="xref py py-class docutils literal notranslate"><span class="pre">ArmRegister</span></code></a>]) – </p></li>
-<li><p><strong>imm</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code>) – </p></li>
-</ul>
-</dd>
-</dl>
-</dd></dl>
-
-<dl class="py class">
-<dt class="sig sig-object py" id="flopz.arch.arm.thumb.instructions.AddI_T2">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">AddI_T2</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">rdn</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">imm</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#flopz.arch.arm.thumb.instructions.AddI_T2" title="Permalink to this definition"></a></dt>
-<dd><p>Bases: <a class="reference internal" href="#flopz.arch.arm.thumb.instructions.ThumbInstruction" title="flopz.arch.arm.thumb.instructions.ThumbInstruction"><code class="xref py py-class docutils literal notranslate"><span class="pre">flopz.arch.arm.thumb.instructions.ThumbInstruction</span></code></a></p>
-<dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
-<dd class="field-odd"><ul class="simple">
-<li><p><strong>rdn</strong> (<code class="xref py py-data docutils literal notranslate"><span class="pre">Union</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code>, <a class="reference internal" href="flopz.arch.arm.html#flopz.arch.arm.arm_generic_arch.ArmRegister" title="flopz.arch.arm.arm_generic_arch.ArmRegister"><code class="xref py py-class docutils literal notranslate"><span class="pre">ArmRegister</span></code></a>]) – </p></li>
-<li><p><strong>imm</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code>) – </p></li>
-</ul>
-</dd>
-</dl>
-</dd></dl>
-
-<dl class="py class">
-<dt class="sig sig-object py" id="flopz.arch.arm.thumb.instructions.AddI_T3">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">AddI_T3</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">rd</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">rn</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">imm</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">setflags</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#flopz.arch.arm.thumb.instructions.AddI_T3" title="Permalink to this definition"></a></dt>
-<dd><p>Bases: <a class="reference internal" href="#flopz.arch.arm.thumb.instructions.ThumbInstruction" title="flopz.arch.arm.thumb.instructions.ThumbInstruction"><code class="xref py py-class docutils literal notranslate"><span class="pre">flopz.arch.arm.thumb.instructions.ThumbInstruction</span></code></a></p>
-<dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
-<dd class="field-odd"><ul class="simple">
-<li><p><strong>rd</strong> (<code class="xref py py-data docutils literal notranslate"><span class="pre">Union</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code>, <a class="reference internal" href="flopz.arch.arm.html#flopz.arch.arm.arm_generic_arch.ArmRegister" title="flopz.arch.arm.arm_generic_arch.ArmRegister"><code class="xref py py-class docutils literal notranslate"><span class="pre">ArmRegister</span></code></a>]) – </p></li>
-<li><p><strong>rn</strong> (<code class="xref py py-data docutils literal notranslate"><span class="pre">Union</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code>, <a class="reference internal" href="flopz.arch.arm.html#flopz.arch.arm.arm_generic_arch.ArmRegister" title="flopz.arch.arm.arm_generic_arch.ArmRegister"><code class="xref py py-class docutils literal notranslate"><span class="pre">ArmRegister</span></code></a>]) – </p></li>
-<li><p><strong>imm</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code>) – </p></li>
-</ul>
-</dd>
-</dl>
-</dd></dl>
-
-<dl class="py class">
-<dt class="sig sig-object py" id="flopz.arch.arm.thumb.instructions.AddI_T4">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">AddI_T4</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">rd</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">rn</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">imm</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#flopz.arch.arm.thumb.instructions.AddI_T4" title="Permalink to this definition"></a></dt>
-<dd><p>Bases: <a class="reference internal" href="#flopz.arch.arm.thumb.instructions.ThumbInstruction" title="flopz.arch.arm.thumb.instructions.ThumbInstruction"><code class="xref py py-class docutils literal notranslate"><span class="pre">flopz.arch.arm.thumb.instructions.ThumbInstruction</span></code></a></p>
-<dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
-<dd class="field-odd"><ul class="simple">
-<li><p><strong>rd</strong> (<code class="xref py py-data docutils literal notranslate"><span class="pre">Union</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code>, <a class="reference internal" href="flopz.arch.arm.html#flopz.arch.arm.arm_generic_arch.ArmRegister" title="flopz.arch.arm.arm_generic_arch.ArmRegister"><code class="xref py py-class docutils literal notranslate"><span class="pre">ArmRegister</span></code></a>]) – </p></li>
-<li><p><strong>rn</strong> (<code class="xref py py-data docutils literal notranslate"><span class="pre">Union</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code>, <a class="reference internal" href="flopz.arch.arm.html#flopz.arch.arm.arm_generic_arch.ArmRegister" title="flopz.arch.arm.arm_generic_arch.ArmRegister"><code class="xref py py-class docutils literal notranslate"><span class="pre">ArmRegister</span></code></a>]) – </p></li>
-<li><p><strong>imm</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code>) – </p></li>
-</ul>
-</dd>
-</dl>
-</dd></dl>
-
-<dl class="py class">
-<dt class="sig sig-object py" id="flopz.arch.arm.thumb.instructions.AddsR">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">AddsR</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">rd</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">rn</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">rm</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#flopz.arch.arm.thumb.instructions.AddsR" title="Permalink to this definition"></a></dt>
-<dd><p>Bases: <a class="reference internal" href="#flopz.arch.arm.thumb.instructions.ThumbInstruction" title="flopz.arch.arm.thumb.instructions.ThumbInstruction"><code class="xref py py-class docutils literal notranslate"><span class="pre">flopz.arch.arm.thumb.instructions.ThumbInstruction</span></code></a></p>
-<dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
-<dd class="field-odd"><ul class="simple">
-<li><p><strong>rd</strong> (<code class="xref py py-data docutils literal notranslate"><span class="pre">Union</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code>, <a class="reference internal" href="flopz.arch.arm.html#flopz.arch.arm.arm_generic_arch.ArmRegister" title="flopz.arch.arm.arm_generic_arch.ArmRegister"><code class="xref py py-class docutils literal notranslate"><span class="pre">ArmRegister</span></code></a>]) – </p></li>
-<li><p><strong>rn</strong> (<code class="xref py py-data docutils literal notranslate"><span class="pre">Union</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code>, <a class="reference internal" href="flopz.arch.arm.html#flopz.arch.arm.arm_generic_arch.ArmRegister" title="flopz.arch.arm.arm_generic_arch.ArmRegister"><code class="xref py py-class docutils literal notranslate"><span class="pre">ArmRegister</span></code></a>]) – </p></li>
-<li><p><strong>rm</strong> (<code class="xref py py-data docutils literal notranslate"><span class="pre">Union</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code>, <a class="reference internal" href="flopz.arch.arm.html#flopz.arch.arm.arm_generic_arch.ArmRegister" title="flopz.arch.arm.arm_generic_arch.ArmRegister"><code class="xref py py-class docutils literal notranslate"><span class="pre">ArmRegister</span></code></a>]) – </p></li>
-</ul>
-</dd>
-</dl>
-</dd></dl>
-
-<dl class="py class">
-<dt class="sig sig-object py" id="flopz.arch.arm.thumb.instructions.AndI">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">AndI</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#flopz.arch.arm.thumb.instructions.AndI" title="Permalink to this definition"></a></dt>
-<dd><p>Bases: <a class="reference internal" href="#flopz.arch.arm.thumb.instructions.ThumbInstruction" title="flopz.arch.arm.thumb.instructions.ThumbInstruction"><code class="xref py py-class docutils literal notranslate"><span class="pre">flopz.arch.arm.thumb.instructions.ThumbInstruction</span></code></a></p>
-</dd></dl>
-
-<dl class="py class">
-<dt class="sig sig-object py" id="flopz.arch.arm.thumb.instructions.Ands">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">Ands</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#flopz.arch.arm.thumb.instructions.Ands" title="Permalink to this definition"></a></dt>
-<dd><p>Bases: <a class="reference internal" href="#flopz.arch.arm.thumb.instructions.ThumbInstruction" title="flopz.arch.arm.thumb.instructions.ThumbInstruction"><code class="xref py py-class docutils literal notranslate"><span class="pre">flopz.arch.arm.thumb.instructions.ThumbInstruction</span></code></a></p>
-</dd></dl>
-
-<dl class="py class">
-<dt class="sig sig-object py" id="flopz.arch.arm.thumb.instructions.AsrI">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">AsrI</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">rd</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">rm</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">im5</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#flopz.arch.arm.thumb.instructions.AsrI" title="Permalink to this definition"></a></dt>
-<dd><p>Bases: <a class="reference internal" href="#flopz.arch.arm.thumb.instructions.ThumbInstruction" title="flopz.arch.arm.thumb.instructions.ThumbInstruction"><code class="xref py py-class docutils literal notranslate"><span class="pre">flopz.arch.arm.thumb.instructions.ThumbInstruction</span></code></a></p>
-<dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
-<dd class="field-odd"><ul class="simple">
-<li><p><strong>rd</strong> (<code class="xref py py-data docutils literal notranslate"><span class="pre">Union</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code>, <a class="reference internal" href="flopz.arch.arm.html#flopz.arch.arm.arm_generic_arch.ArmRegister" title="flopz.arch.arm.arm_generic_arch.ArmRegister"><code class="xref py py-class docutils literal notranslate"><span class="pre">ArmRegister</span></code></a>]) – </p></li>
-<li><p><strong>rm</strong> (<code class="xref py py-data docutils literal notranslate"><span class="pre">Union</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code>, <a class="reference internal" href="flopz.arch.arm.html#flopz.arch.arm.arm_generic_arch.ArmRegister" title="flopz.arch.arm.arm_generic_arch.ArmRegister"><code class="xref py py-class docutils literal notranslate"><span class="pre">ArmRegister</span></code></a>]) – </p></li>
-<li><p><strong>im5</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code>) – </p></li>
-</ul>
-</dd>
-</dl>
-</dd></dl>
-
-<dl class="py class">
-<dt class="sig sig-object py" id="flopz.arch.arm.thumb.instructions.BL_T1">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">BL_T1</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">offset</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#flopz.arch.arm.thumb.instructions.BL_T1" title="Permalink to this definition"></a></dt>
-<dd><p>Bases: <a class="reference internal" href="#flopz.arch.arm.thumb.instructions.ThumbInstruction" title="flopz.arch.arm.thumb.instructions.ThumbInstruction"><code class="xref py py-class docutils literal notranslate"><span class="pre">flopz.arch.arm.thumb.instructions.ThumbInstruction</span></code></a></p>
-<dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
-<dd class="field-odd"><p><strong>offset</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code>) – </p>
-</dd>
-</dl>
-</dd></dl>
-
-<dl class="py class">
-<dt class="sig sig-object py" id="flopz.arch.arm.thumb.instructions.B_T1">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">B_T1</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">cond</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">offset</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#flopz.arch.arm.thumb.instructions.B_T1" title="Permalink to this definition"></a></dt>
-<dd><p>Bases: <a class="reference internal" href="#flopz.arch.arm.thumb.instructions.ThumbInstruction" title="flopz.arch.arm.thumb.instructions.ThumbInstruction"><code class="xref py py-class docutils literal notranslate"><span class="pre">flopz.arch.arm.thumb.instructions.ThumbInstruction</span></code></a></p>
-<dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
-<dd class="field-odd"><ul class="simple">
-<li><p><strong>cond</strong> (<a class="reference internal" href="#flopz.arch.arm.thumb.instructions.Cond" title="flopz.arch.arm.thumb.instructions.Cond"><code class="xref py py-class docutils literal notranslate"><span class="pre">Cond</span></code></a>) – </p></li>
-<li><p><strong>offset</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code>) – </p></li>
-</ul>
-</dd>
-</dl>
-</dd></dl>
-
-<dl class="py class">
-<dt class="sig sig-object py" id="flopz.arch.arm.thumb.instructions.B_T2">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">B_T2</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">offset</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#flopz.arch.arm.thumb.instructions.B_T2" title="Permalink to this definition"></a></dt>
-<dd><p>Bases: <a class="reference internal" href="#flopz.arch.arm.thumb.instructions.ThumbInstruction" title="flopz.arch.arm.thumb.instructions.ThumbInstruction"><code class="xref py py-class docutils literal notranslate"><span class="pre">flopz.arch.arm.thumb.instructions.ThumbInstruction</span></code></a></p>
-<dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
-<dd class="field-odd"><p><strong>offset</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code>) – </p>
-</dd>
-</dl>
-</dd></dl>
-
-<dl class="py class">
-<dt class="sig sig-object py" id="flopz.arch.arm.thumb.instructions.B_T3">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">B_T3</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">cond</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">offset</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#flopz.arch.arm.thumb.instructions.B_T3" title="Permalink to this definition"></a></dt>
-<dd><p>Bases: <a class="reference internal" href="#flopz.arch.arm.thumb.instructions.ThumbInstruction" title="flopz.arch.arm.thumb.instructions.ThumbInstruction"><code class="xref py py-class docutils literal notranslate"><span class="pre">flopz.arch.arm.thumb.instructions.ThumbInstruction</span></code></a></p>
-<dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
-<dd class="field-odd"><ul class="simple">
-<li><p><strong>cond</strong> (<a class="reference internal" href="#flopz.arch.arm.thumb.instructions.Cond" title="flopz.arch.arm.thumb.instructions.Cond"><code class="xref py py-class docutils literal notranslate"><span class="pre">Cond</span></code></a>) – </p></li>
-<li><p><strong>offset</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code>) – </p></li>
-</ul>
-</dd>
-</dl>
-</dd></dl>
-
-<dl class="py class">
-<dt class="sig sig-object py" id="flopz.arch.arm.thumb.instructions.B_T4">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">B_T4</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">offset</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#flopz.arch.arm.thumb.instructions.B_T4" title="Permalink to this definition"></a></dt>
-<dd><p>Bases: <a class="reference internal" href="#flopz.arch.arm.thumb.instructions.ThumbInstruction" title="flopz.arch.arm.thumb.instructions.ThumbInstruction"><code class="xref py py-class docutils literal notranslate"><span class="pre">flopz.arch.arm.thumb.instructions.ThumbInstruction</span></code></a></p>
-<dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
-<dd class="field-odd"><p><strong>offset</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code>) – </p>
-</dd>
-</dl>
-</dd></dl>
-
-<dl class="py class">
-<dt class="sig sig-object py" id="flopz.arch.arm.thumb.instructions.Cond">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">Cond</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">value</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#flopz.arch.arm.thumb.instructions.Cond" title="Permalink to this definition"></a></dt>
-<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">enum.IntEnum</span></code></p>
-<p>represents mnemonics for conditionals that can return the respective 4bit code</p>
-<dl class="py attribute">
-<dt class="sig sig-object py" id="flopz.arch.arm.thumb.instructions.Cond.AL">
-<span class="sig-name descname"><span class="pre">AL</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">14</span></em><a class="headerlink" href="#flopz.arch.arm.thumb.instructions.Cond.AL" title="Permalink to this definition"></a></dt>
-<dd></dd></dl>
-
-<dl class="py attribute">
-<dt class="sig sig-object py" id="flopz.arch.arm.thumb.instructions.Cond.CC">
-<span class="sig-name descname"><span class="pre">CC</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">3</span></em><a class="headerlink" href="#flopz.arch.arm.thumb.instructions.Cond.CC" title="Permalink to this definition"></a></dt>
-<dd></dd></dl>
-
-<dl class="py attribute">
-<dt class="sig sig-object py" id="flopz.arch.arm.thumb.instructions.Cond.CS">
-<span class="sig-name descname"><span class="pre">CS</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">2</span></em><a class="headerlink" href="#flopz.arch.arm.thumb.instructions.Cond.CS" title="Permalink to this definition"></a></dt>
-<dd></dd></dl>
-
-<dl class="py attribute">
-<dt class="sig sig-object py" id="flopz.arch.arm.thumb.instructions.Cond.EQ">
-<span class="sig-name descname"><span class="pre">EQ</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">0</span></em><a class="headerlink" href="#flopz.arch.arm.thumb.instructions.Cond.EQ" title="Permalink to this definition"></a></dt>
-<dd></dd></dl>
-
-<dl class="py attribute">
-<dt class="sig sig-object py" id="flopz.arch.arm.thumb.instructions.Cond.GE">
-<span class="sig-name descname"><span class="pre">GE</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">10</span></em><a class="headerlink" href="#flopz.arch.arm.thumb.instructions.Cond.GE" title="Permalink to this definition"></a></dt>
-<dd></dd></dl>
-
-<dl class="py attribute">
-<dt class="sig sig-object py" id="flopz.arch.arm.thumb.instructions.Cond.GT">
-<span class="sig-name descname"><span class="pre">GT</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">12</span></em><a class="headerlink" href="#flopz.arch.arm.thumb.instructions.Cond.GT" title="Permalink to this definition"></a></dt>
-<dd></dd></dl>
-
-<dl class="py attribute">
-<dt class="sig sig-object py" id="flopz.arch.arm.thumb.instructions.Cond.HI">
-<span class="sig-name descname"><span class="pre">HI</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">8</span></em><a class="headerlink" href="#flopz.arch.arm.thumb.instructions.Cond.HI" title="Permalink to this definition"></a></dt>
-<dd></dd></dl>
-
-<dl class="py attribute">
-<dt class="sig sig-object py" id="flopz.arch.arm.thumb.instructions.Cond.LE">
-<span class="sig-name descname"><span class="pre">LE</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">13</span></em><a class="headerlink" href="#flopz.arch.arm.thumb.instructions.Cond.LE" title="Permalink to this definition"></a></dt>
-<dd></dd></dl>
-
-<dl class="py attribute">
-<dt class="sig sig-object py" id="flopz.arch.arm.thumb.instructions.Cond.LS">
-<span class="sig-name descname"><span class="pre">LS</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">9</span></em><a class="headerlink" href="#flopz.arch.arm.thumb.instructions.Cond.LS" title="Permalink to this definition"></a></dt>
-<dd></dd></dl>
-
-<dl class="py attribute">
-<dt class="sig sig-object py" id="flopz.arch.arm.thumb.instructions.Cond.LT">
-<span class="sig-name descname"><span class="pre">LT</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">11</span></em><a class="headerlink" href="#flopz.arch.arm.thumb.instructions.Cond.LT" title="Permalink to this definition"></a></dt>
-<dd></dd></dl>
-
-<dl class="py attribute">
-<dt class="sig sig-object py" id="flopz.arch.arm.thumb.instructions.Cond.MI">
-<span class="sig-name descname"><span class="pre">MI</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">4</span></em><a class="headerlink" href="#flopz.arch.arm.thumb.instructions.Cond.MI" title="Permalink to this definition"></a></dt>
-<dd></dd></dl>
-
-<dl class="py attribute">
-<dt class="sig sig-object py" id="flopz.arch.arm.thumb.instructions.Cond.NE">
-<span class="sig-name descname"><span class="pre">NE</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">1</span></em><a class="headerlink" href="#flopz.arch.arm.thumb.instructions.Cond.NE" title="Permalink to this definition"></a></dt>
-<dd></dd></dl>
-
-<dl class="py attribute">
-<dt class="sig sig-object py" id="flopz.arch.arm.thumb.instructions.Cond.PL">
-<span class="sig-name descname"><span class="pre">PL</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">5</span></em><a class="headerlink" href="#flopz.arch.arm.thumb.instructions.Cond.PL" title="Permalink to this definition"></a></dt>
-<dd></dd></dl>
-
-<dl class="py attribute">
-<dt class="sig sig-object py" id="flopz.arch.arm.thumb.instructions.Cond.VC">
-<span class="sig-name descname"><span class="pre">VC</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">7</span></em><a class="headerlink" href="#flopz.arch.arm.thumb.instructions.Cond.VC" title="Permalink to this definition"></a></dt>
-<dd></dd></dl>
-
-<dl class="py attribute">
-<dt class="sig sig-object py" id="flopz.arch.arm.thumb.instructions.Cond.VS">
-<span class="sig-name descname"><span class="pre">VS</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">6</span></em><a class="headerlink" href="#flopz.arch.arm.thumb.instructions.Cond.VS" title="Permalink to this definition"></a></dt>
-<dd></dd></dl>
-
-<dl class="py method">
-<dt class="sig sig-object py" id="flopz.arch.arm.thumb.instructions.Cond.get_bitcode">
-<span class="sig-name descname"><span class="pre">get_bitcode</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#flopz.arch.arm.thumb.instructions.Cond.get_bitcode" title="Permalink to this definition"></a></dt>
-<dd></dd></dl>
-
-</dd></dl>
-
-<dl class="py class">
-<dt class="sig sig-object py" id="flopz.arch.arm.thumb.instructions.EorI">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">EorI</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#flopz.arch.arm.thumb.instructions.EorI" title="Permalink to this definition"></a></dt>
-<dd><p>Bases: <a class="reference internal" href="#flopz.arch.arm.thumb.instructions.ThumbInstruction" title="flopz.arch.arm.thumb.instructions.ThumbInstruction"><code class="xref py py-class docutils literal notranslate"><span class="pre">flopz.arch.arm.thumb.instructions.ThumbInstruction</span></code></a></p>
-</dd></dl>
-
-<dl class="py class">
-<dt class="sig sig-object py" id="flopz.arch.arm.thumb.instructions.Eors">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">Eors</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#flopz.arch.arm.thumb.instructions.Eors" title="Permalink to this definition"></a></dt>
-<dd><p>Bases: <a class="reference internal" href="#flopz.arch.arm.thumb.instructions.ThumbInstruction" title="flopz.arch.arm.thumb.instructions.ThumbInstruction"><code class="xref py py-class docutils literal notranslate"><span class="pre">flopz.arch.arm.thumb.instructions.ThumbInstruction</span></code></a></p>
-</dd></dl>
-
-<dl class="py class">
-<dt class="sig sig-object py" id="flopz.arch.arm.thumb.instructions.IT">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">IT</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">cond</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">mask</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#flopz.arch.arm.thumb.instructions.IT" title="Permalink to this definition"></a></dt>
-<dd><p>Bases: <a class="reference internal" href="#flopz.arch.arm.thumb.instructions.ThumbInstruction" title="flopz.arch.arm.thumb.instructions.ThumbInstruction"><code class="xref py py-class docutils literal notranslate"><span class="pre">flopz.arch.arm.thumb.instructions.ThumbInstruction</span></code></a></p>
-<dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
-<dd class="field-odd"><ul class="simple">
-<li><p><strong>cond</strong> (<a class="reference internal" href="#flopz.arch.arm.thumb.instructions.Cond" title="flopz.arch.arm.thumb.instructions.Cond"><code class="xref py py-class docutils literal notranslate"><span class="pre">Cond</span></code></a>) – </p></li>
-<li><p><strong>mask</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code>) – </p></li>
-</ul>
-</dd>
-</dl>
-</dd></dl>
-
-<dl class="py class">
-<dt class="sig sig-object py" id="flopz.arch.arm.thumb.instructions.Ldmia">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">Ldmia</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#flopz.arch.arm.thumb.instructions.Ldmia" title="Permalink to this definition"></a></dt>
-<dd><p>Bases: <a class="reference internal" href="#flopz.arch.arm.thumb.instructions.ThumbInstruction" title="flopz.arch.arm.thumb.instructions.ThumbInstruction"><code class="xref py py-class docutils literal notranslate"><span class="pre">flopz.arch.arm.thumb.instructions.ThumbInstruction</span></code></a></p>
-</dd></dl>
-
-<dl class="py class">
-<dt class="sig sig-object py" id="flopz.arch.arm.thumb.instructions.LdmiaW">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">LdmiaW</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#flopz.arch.arm.thumb.instructions.LdmiaW" title="Permalink to this definition"></a></dt>
-<dd><p>Bases: <a class="reference internal" href="#flopz.arch.arm.thumb.instructions.ThumbInstruction" title="flopz.arch.arm.thumb.instructions.ThumbInstruction"><code class="xref py py-class docutils literal notranslate"><span class="pre">flopz.arch.arm.thumb.instructions.ThumbInstruction</span></code></a></p>
-</dd></dl>
-
-<dl class="py class">
-<dt class="sig sig-object py" id="flopz.arch.arm.thumb.instructions.Ldr">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">Ldr</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#flopz.arch.arm.thumb.instructions.Ldr" title="Permalink to this definition"></a></dt>
-<dd><p>Bases: <a class="reference internal" href="#flopz.arch.arm.thumb.instructions.ThumbInstruction" title="flopz.arch.arm.thumb.instructions.ThumbInstruction"><code class="xref py py-class docutils literal notranslate"><span class="pre">flopz.arch.arm.thumb.instructions.ThumbInstruction</span></code></a></p>
-</dd></dl>
-
-<dl class="py class">
-<dt class="sig sig-object py" id="flopz.arch.arm.thumb.instructions.LdrW">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">LdrW</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#flopz.arch.arm.thumb.instructions.LdrW" title="Permalink to this definition"></a></dt>
-<dd><p>Bases: <a class="reference internal" href="#flopz.arch.arm.thumb.instructions.ThumbInstruction" title="flopz.arch.arm.thumb.instructions.ThumbInstruction"><code class="xref py py-class docutils literal notranslate"><span class="pre">flopz.arch.arm.thumb.instructions.ThumbInstruction</span></code></a></p>
-</dd></dl>
-
-<dl class="py class">
-<dt class="sig sig-object py" id="flopz.arch.arm.thumb.instructions.LdrWI12">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">LdrWI12</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#flopz.arch.arm.thumb.instructions.LdrWI12" title="Permalink to this definition"></a></dt>
-<dd><p>Bases: <a class="reference internal" href="#flopz.arch.arm.thumb.instructions.ThumbInstruction" title="flopz.arch.arm.thumb.instructions.ThumbInstruction"><code class="xref py py-class docutils literal notranslate"><span class="pre">flopz.arch.arm.thumb.instructions.ThumbInstruction</span></code></a></p>
-</dd></dl>
-
-<dl class="py class">
-<dt class="sig sig-object py" id="flopz.arch.arm.thumb.instructions.LdrWLit">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">LdrWLit</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#flopz.arch.arm.thumb.instructions.LdrWLit" title="Permalink to this definition"></a></dt>
-<dd><p>Bases: <a class="reference internal" href="#flopz.arch.arm.thumb.instructions.ThumbInstruction" title="flopz.arch.arm.thumb.instructions.ThumbInstruction"><code class="xref py py-class docutils literal notranslate"><span class="pre">flopz.arch.arm.thumb.instructions.ThumbInstruction</span></code></a></p>
-</dd></dl>
-
-<dl class="py class">
-<dt class="sig sig-object py" id="flopz.arch.arm.thumb.instructions.LdrWR">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">LdrWR</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#flopz.arch.arm.thumb.instructions.LdrWR" title="Permalink to this definition"></a></dt>
-<dd><p>Bases: <a class="reference internal" href="#flopz.arch.arm.thumb.instructions.ThumbInstruction" title="flopz.arch.arm.thumb.instructions.ThumbInstruction"><code class="xref py py-class docutils literal notranslate"><span class="pre">flopz.arch.arm.thumb.instructions.ThumbInstruction</span></code></a></p>
-</dd></dl>
-
-<dl class="py class">
-<dt class="sig sig-object py" id="flopz.arch.arm.thumb.instructions.Ldrb">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">Ldrb</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#flopz.arch.arm.thumb.instructions.Ldrb" title="Permalink to this definition"></a></dt>
-<dd><p>Bases: <a class="reference internal" href="#flopz.arch.arm.thumb.instructions.ThumbInstruction" title="flopz.arch.arm.thumb.instructions.ThumbInstruction"><code class="xref py py-class docutils literal notranslate"><span class="pre">flopz.arch.arm.thumb.instructions.ThumbInstruction</span></code></a></p>
-</dd></dl>
-
-<dl class="py class">
-<dt class="sig sig-object py" id="flopz.arch.arm.thumb.instructions.Ldrh">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">Ldrh</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#flopz.arch.arm.thumb.instructions.Ldrh" title="Permalink to this definition"></a></dt>
-<dd><p>Bases: <a class="reference internal" href="#flopz.arch.arm.thumb.instructions.ThumbInstruction" title="flopz.arch.arm.thumb.instructions.ThumbInstruction"><code class="xref py py-class docutils literal notranslate"><span class="pre">flopz.arch.arm.thumb.instructions.ThumbInstruction</span></code></a></p>
-</dd></dl>
-
-<dl class="py class">
-<dt class="sig sig-object py" id="flopz.arch.arm.thumb.instructions.LslsI">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">LslsI</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">rd</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">rm</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">im5</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#flopz.arch.arm.thumb.instructions.LslsI" title="Permalink to this definition"></a></dt>
-<dd><p>Bases: <a class="reference internal" href="#flopz.arch.arm.thumb.instructions.ThumbInstruction" title="flopz.arch.arm.thumb.instructions.ThumbInstruction"><code class="xref py py-class docutils literal notranslate"><span class="pre">flopz.arch.arm.thumb.instructions.ThumbInstruction</span></code></a></p>
-<dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
-<dd class="field-odd"><ul class="simple">
-<li><p><strong>rd</strong> (<code class="xref py py-data docutils literal notranslate"><span class="pre">Union</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code>, <a class="reference internal" href="flopz.arch.arm.html#flopz.arch.arm.arm_generic_arch.ArmRegister" title="flopz.arch.arm.arm_generic_arch.ArmRegister"><code class="xref py py-class docutils literal notranslate"><span class="pre">ArmRegister</span></code></a>]) – </p></li>
-<li><p><strong>rm</strong> (<code class="xref py py-data docutils literal notranslate"><span class="pre">Union</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code>, <a class="reference internal" href="flopz.arch.arm.html#flopz.arch.arm.arm_generic_arch.ArmRegister" title="flopz.arch.arm.arm_generic_arch.ArmRegister"><code class="xref py py-class docutils literal notranslate"><span class="pre">ArmRegister</span></code></a>]) – </p></li>
-<li><p><strong>im5</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code>) – </p></li>
-</ul>
-</dd>
-</dl>
-</dd></dl>
-
-<dl class="py class">
-<dt class="sig sig-object py" id="flopz.arch.arm.thumb.instructions.LsrsI">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">LsrsI</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">rd</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">rm</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">im5</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#flopz.arch.arm.thumb.instructions.LsrsI" title="Permalink to this definition"></a></dt>
-<dd><p>Bases: <a class="reference internal" href="#flopz.arch.arm.thumb.instructions.ThumbInstruction" title="flopz.arch.arm.thumb.instructions.ThumbInstruction"><code class="xref py py-class docutils literal notranslate"><span class="pre">flopz.arch.arm.thumb.instructions.ThumbInstruction</span></code></a></p>
-<dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
-<dd class="field-odd"><ul class="simple">
-<li><p><strong>rd</strong> (<code class="xref py py-data docutils literal notranslate"><span class="pre">Union</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code>, <a class="reference internal" href="flopz.arch.arm.html#flopz.arch.arm.arm_generic_arch.ArmRegister" title="flopz.arch.arm.arm_generic_arch.ArmRegister"><code class="xref py py-class docutils literal notranslate"><span class="pre">ArmRegister</span></code></a>]) – </p></li>
-<li><p><strong>rm</strong> (<code class="xref py py-data docutils literal notranslate"><span class="pre">Union</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code>, <a class="reference internal" href="flopz.arch.arm.html#flopz.arch.arm.arm_generic_arch.ArmRegister" title="flopz.arch.arm.arm_generic_arch.ArmRegister"><code class="xref py py-class docutils literal notranslate"><span class="pre">ArmRegister</span></code></a>]) – </p></li>
-<li><p><strong>im5</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code>) – </p></li>
-</ul>
-</dd>
-</dl>
-</dd></dl>
-
-<dl class="py class">
-<dt class="sig sig-object py" id="flopz.arch.arm.thumb.instructions.MovT1">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">MovT1</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">rd</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">rm</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#flopz.arch.arm.thumb.instructions.MovT1" title="Permalink to this definition"></a></dt>
-<dd><p>Bases: <a class="reference internal" href="#flopz.arch.arm.thumb.instructions.ThumbInstruction" title="flopz.arch.arm.thumb.instructions.ThumbInstruction"><code class="xref py py-class docutils literal notranslate"><span class="pre">flopz.arch.arm.thumb.instructions.ThumbInstruction</span></code></a></p>
-<dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
-<dd class="field-odd"><ul class="simple">
-<li><p><strong>rd</strong> (<code class="xref py py-data docutils literal notranslate"><span class="pre">Union</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code>, <a class="reference internal" href="flopz.arch.arm.html#flopz.arch.arm.arm_generic_arch.ArmRegister" title="flopz.arch.arm.arm_generic_arch.ArmRegister"><code class="xref py py-class docutils literal notranslate"><span class="pre">ArmRegister</span></code></a>]) – </p></li>
-<li><p><strong>rm</strong> (<code class="xref py py-data docutils literal notranslate"><span class="pre">Union</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code>, <a class="reference internal" href="flopz.arch.arm.html#flopz.arch.arm.arm_generic_arch.ArmRegister" title="flopz.arch.arm.arm_generic_arch.ArmRegister"><code class="xref py py-class docutils literal notranslate"><span class="pre">ArmRegister</span></code></a>]) – </p></li>
-</ul>
-</dd>
-</dl>
-</dd></dl>
-
-<dl class="py class">
-<dt class="sig sig-object py" id="flopz.arch.arm.thumb.instructions.MovT2">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">MovT2</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">rd</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">rm</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#flopz.arch.arm.thumb.instructions.MovT2" title="Permalink to this definition"></a></dt>
-<dd><p>Bases: <a class="reference internal" href="#flopz.arch.arm.thumb.instructions.ThumbInstruction" title="flopz.arch.arm.thumb.instructions.ThumbInstruction"><code class="xref py py-class docutils literal notranslate"><span class="pre">flopz.arch.arm.thumb.instructions.ThumbInstruction</span></code></a></p>
-<dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
-<dd class="field-odd"><ul class="simple">
-<li><p><strong>rd</strong> (<code class="xref py py-data docutils literal notranslate"><span class="pre">Union</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code>, <a class="reference internal" href="flopz.arch.arm.html#flopz.arch.arm.arm_generic_arch.ArmRegister" title="flopz.arch.arm.arm_generic_arch.ArmRegister"><code class="xref py py-class docutils literal notranslate"><span class="pre">ArmRegister</span></code></a>]) – </p></li>
-<li><p><strong>rm</strong> (<code class="xref py py-data docutils literal notranslate"><span class="pre">Union</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code>, <a class="reference internal" href="flopz.arch.arm.html#flopz.arch.arm.arm_generic_arch.ArmRegister" title="flopz.arch.arm.arm_generic_arch.ArmRegister"><code class="xref py py-class docutils literal notranslate"><span class="pre">ArmRegister</span></code></a>]) – </p></li>
-</ul>
-</dd>
-</dl>
-</dd></dl>
-
-<dl class="py class">
-<dt class="sig sig-object py" id="flopz.arch.arm.thumb.instructions.OrrI">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">OrrI</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#flopz.arch.arm.thumb.instructions.OrrI" title="Permalink to this definition"></a></dt>
-<dd><p>Bases: <a class="reference internal" href="#flopz.arch.arm.thumb.instructions.ThumbInstruction" title="flopz.arch.arm.thumb.instructions.ThumbInstruction"><code class="xref py py-class docutils literal notranslate"><span class="pre">flopz.arch.arm.thumb.instructions.ThumbInstruction</span></code></a></p>
-</dd></dl>
-
-<dl class="py class">
-<dt class="sig sig-object py" id="flopz.arch.arm.thumb.instructions.Orrs">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">Orrs</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#flopz.arch.arm.thumb.instructions.Orrs" title="Permalink to this definition"></a></dt>
-<dd><p>Bases: <a class="reference internal" href="#flopz.arch.arm.thumb.instructions.ThumbInstruction" title="flopz.arch.arm.thumb.instructions.ThumbInstruction"><code class="xref py py-class docutils literal notranslate"><span class="pre">flopz.arch.arm.thumb.instructions.ThumbInstruction</span></code></a></p>
-</dd></dl>
-
-<dl class="py class">
-<dt class="sig sig-object py" id="flopz.arch.arm.thumb.instructions.POP">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">POP</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">register_list</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#flopz.arch.arm.thumb.instructions.POP" title="Permalink to this definition"></a></dt>
-<dd><p>Bases: <a class="reference internal" href="#flopz.arch.arm.thumb.instructions.ThumbInstruction" title="flopz.arch.arm.thumb.instructions.ThumbInstruction"><code class="xref py py-class docutils literal notranslate"><span class="pre">flopz.arch.arm.thumb.instructions.ThumbInstruction</span></code></a></p>
-<dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
-<dd class="field-odd"><p><strong>register_list</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">List</span></code>[<code class="xref py py-data docutils literal notranslate"><span class="pre">Union</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code>, <a class="reference internal" href="flopz.arch.arm.html#flopz.arch.arm.arm_generic_arch.ArmRegister" title="flopz.arch.arm.arm_generic_arch.ArmRegister"><code class="xref py py-class docutils literal notranslate"><span class="pre">ArmRegister</span></code></a>]]) – </p>
-</dd>
-</dl>
-</dd></dl>
-
-<dl class="py class">
-<dt class="sig sig-object py" id="flopz.arch.arm.thumb.instructions.PUSH">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">PUSH</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">register_list</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#flopz.arch.arm.thumb.instructions.PUSH" title="Permalink to this definition"></a></dt>
-<dd><p>Bases: <a class="reference internal" href="#flopz.arch.arm.thumb.instructions.ThumbInstruction" title="flopz.arch.arm.thumb.instructions.ThumbInstruction"><code class="xref py py-class docutils literal notranslate"><span class="pre">flopz.arch.arm.thumb.instructions.ThumbInstruction</span></code></a></p>
-<dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
-<dd class="field-odd"><p><strong>register_list</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">List</span></code>[<code class="xref py py-data docutils literal notranslate"><span class="pre">Union</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code>, <a class="reference internal" href="flopz.arch.arm.html#flopz.arch.arm.arm_generic_arch.ArmRegister" title="flopz.arch.arm.arm_generic_arch.ArmRegister"><code class="xref py py-class docutils literal notranslate"><span class="pre">ArmRegister</span></code></a>]]) – </p>
-</dd>
-</dl>
-</dd></dl>
-
-<dl class="py class">
-<dt class="sig sig-object py" id="flopz.arch.arm.thumb.instructions.Stmia">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">Stmia</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#flopz.arch.arm.thumb.instructions.Stmia" title="Permalink to this definition"></a></dt>
-<dd><p>Bases: <a class="reference internal" href="#flopz.arch.arm.thumb.instructions.ThumbInstruction" title="flopz.arch.arm.thumb.instructions.ThumbInstruction"><code class="xref py py-class docutils literal notranslate"><span class="pre">flopz.arch.arm.thumb.instructions.ThumbInstruction</span></code></a></p>
-</dd></dl>
-
-<dl class="py class">
-<dt class="sig sig-object py" id="flopz.arch.arm.thumb.instructions.StmiaW">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">StmiaW</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#flopz.arch.arm.thumb.instructions.StmiaW" title="Permalink to this definition"></a></dt>
-<dd><p>Bases: <a class="reference internal" href="#flopz.arch.arm.thumb.instructions.ThumbInstruction" title="flopz.arch.arm.thumb.instructions.ThumbInstruction"><code class="xref py py-class docutils literal notranslate"><span class="pre">flopz.arch.arm.thumb.instructions.ThumbInstruction</span></code></a></p>
-</dd></dl>
-
-<dl class="py class">
-<dt class="sig sig-object py" id="flopz.arch.arm.thumb.instructions.Str">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">Str</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#flopz.arch.arm.thumb.instructions.Str" title="Permalink to this definition"></a></dt>
-<dd><p>Bases: <a class="reference internal" href="#flopz.arch.arm.thumb.instructions.ThumbInstruction" title="flopz.arch.arm.thumb.instructions.ThumbInstruction"><code class="xref py py-class docutils literal notranslate"><span class="pre">flopz.arch.arm.thumb.instructions.ThumbInstruction</span></code></a></p>
-</dd></dl>
-
-<dl class="py class">
-<dt class="sig sig-object py" id="flopz.arch.arm.thumb.instructions.StrW">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">StrW</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#flopz.arch.arm.thumb.instructions.StrW" title="Permalink to this definition"></a></dt>
-<dd><p>Bases: <a class="reference internal" href="#flopz.arch.arm.thumb.instructions.ThumbInstruction" title="flopz.arch.arm.thumb.instructions.ThumbInstruction"><code class="xref py py-class docutils literal notranslate"><span class="pre">flopz.arch.arm.thumb.instructions.ThumbInstruction</span></code></a></p>
-</dd></dl>
-
-<dl class="py class">
-<dt class="sig sig-object py" id="flopz.arch.arm.thumb.instructions.StrWI12">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">StrWI12</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#flopz.arch.arm.thumb.instructions.StrWI12" title="Permalink to this definition"></a></dt>
-<dd><p>Bases: <a class="reference internal" href="#flopz.arch.arm.thumb.instructions.ThumbInstruction" title="flopz.arch.arm.thumb.instructions.ThumbInstruction"><code class="xref py py-class docutils literal notranslate"><span class="pre">flopz.arch.arm.thumb.instructions.ThumbInstruction</span></code></a></p>
-</dd></dl>
-
-<dl class="py class">
-<dt class="sig sig-object py" id="flopz.arch.arm.thumb.instructions.StrWR">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">StrWR</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#flopz.arch.arm.thumb.instructions.StrWR" title="Permalink to this definition"></a></dt>
-<dd><p>Bases: <a class="reference internal" href="#flopz.arch.arm.thumb.instructions.ThumbInstruction" title="flopz.arch.arm.thumb.instructions.ThumbInstruction"><code class="xref py py-class docutils literal notranslate"><span class="pre">flopz.arch.arm.thumb.instructions.ThumbInstruction</span></code></a></p>
-</dd></dl>
-
-<dl class="py class">
-<dt class="sig sig-object py" id="flopz.arch.arm.thumb.instructions.Strb">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">Strb</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#flopz.arch.arm.thumb.instructions.Strb" title="Permalink to this definition"></a></dt>
-<dd><p>Bases: <a class="reference internal" href="#flopz.arch.arm.thumb.instructions.ThumbInstruction" title="flopz.arch.arm.thumb.instructions.ThumbInstruction"><code class="xref py py-class docutils literal notranslate"><span class="pre">flopz.arch.arm.thumb.instructions.ThumbInstruction</span></code></a></p>
-</dd></dl>
-
-<dl class="py class">
-<dt class="sig sig-object py" id="flopz.arch.arm.thumb.instructions.Strh">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">Strh</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#flopz.arch.arm.thumb.instructions.Strh" title="Permalink to this definition"></a></dt>
-<dd><p>Bases: <a class="reference internal" href="#flopz.arch.arm.thumb.instructions.ThumbInstruction" title="flopz.arch.arm.thumb.instructions.ThumbInstruction"><code class="xref py py-class docutils literal notranslate"><span class="pre">flopz.arch.arm.thumb.instructions.ThumbInstruction</span></code></a></p>
-</dd></dl>
-
-<dl class="py class">
-<dt class="sig sig-object py" id="flopz.arch.arm.thumb.instructions.SubI_T1">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">SubI_T1</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">rd</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">rn</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">im3</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#flopz.arch.arm.thumb.instructions.SubI_T1" title="Permalink to this definition"></a></dt>
-<dd><p>Bases: <a class="reference internal" href="#flopz.arch.arm.thumb.instructions.ThumbInstruction" title="flopz.arch.arm.thumb.instructions.ThumbInstruction"><code class="xref py py-class docutils literal notranslate"><span class="pre">flopz.arch.arm.thumb.instructions.ThumbInstruction</span></code></a></p>
-<dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
-<dd class="field-odd"><ul class="simple">
-<li><p><strong>rd</strong> (<code class="xref py py-data docutils literal notranslate"><span class="pre">Union</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code>, <a class="reference internal" href="flopz.arch.arm.html#flopz.arch.arm.arm_generic_arch.ArmRegister" title="flopz.arch.arm.arm_generic_arch.ArmRegister"><code class="xref py py-class docutils literal notranslate"><span class="pre">ArmRegister</span></code></a>]) – </p></li>
-<li><p><strong>rn</strong> (<code class="xref py py-data docutils literal notranslate"><span class="pre">Union</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code>, <a class="reference internal" href="flopz.arch.arm.html#flopz.arch.arm.arm_generic_arch.ArmRegister" title="flopz.arch.arm.arm_generic_arch.ArmRegister"><code class="xref py py-class docutils literal notranslate"><span class="pre">ArmRegister</span></code></a>]) – </p></li>
-<li><p><strong>im3</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code>) – </p></li>
-</ul>
-</dd>
-</dl>
-</dd></dl>
-
-<dl class="py class">
-<dt class="sig sig-object py" id="flopz.arch.arm.thumb.instructions.SubI_T2">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">SubI_T2</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">rdn</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">imm</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#flopz.arch.arm.thumb.instructions.SubI_T2" title="Permalink to this definition"></a></dt>
-<dd><p>Bases: <a class="reference internal" href="#flopz.arch.arm.thumb.instructions.ThumbInstruction" title="flopz.arch.arm.thumb.instructions.ThumbInstruction"><code class="xref py py-class docutils literal notranslate"><span class="pre">flopz.arch.arm.thumb.instructions.ThumbInstruction</span></code></a></p>
-<dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
-<dd class="field-odd"><ul class="simple">
-<li><p><strong>rdn</strong> (<code class="xref py py-data docutils literal notranslate"><span class="pre">Union</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code>, <a class="reference internal" href="flopz.arch.arm.html#flopz.arch.arm.arm_generic_arch.ArmRegister" title="flopz.arch.arm.arm_generic_arch.ArmRegister"><code class="xref py py-class docutils literal notranslate"><span class="pre">ArmRegister</span></code></a>]) – </p></li>
-<li><p><strong>imm</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code>) – </p></li>
-</ul>
-</dd>
-</dl>
-</dd></dl>
-
-<dl class="py class">
-<dt class="sig sig-object py" id="flopz.arch.arm.thumb.instructions.SubI_T3">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">SubI_T3</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">rd</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">rn</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">imm</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">setflags</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#flopz.arch.arm.thumb.instructions.SubI_T3" title="Permalink to this definition"></a></dt>
-<dd><p>Bases: <a class="reference internal" href="#flopz.arch.arm.thumb.instructions.ThumbInstruction" title="flopz.arch.arm.thumb.instructions.ThumbInstruction"><code class="xref py py-class docutils literal notranslate"><span class="pre">flopz.arch.arm.thumb.instructions.ThumbInstruction</span></code></a></p>
-<dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
-<dd class="field-odd"><ul class="simple">
-<li><p><strong>rd</strong> (<code class="xref py py-data docutils literal notranslate"><span class="pre">Union</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code>, <a class="reference internal" href="flopz.arch.arm.html#flopz.arch.arm.arm_generic_arch.ArmRegister" title="flopz.arch.arm.arm_generic_arch.ArmRegister"><code class="xref py py-class docutils literal notranslate"><span class="pre">ArmRegister</span></code></a>]) – </p></li>
-<li><p><strong>rn</strong> (<code class="xref py py-data docutils literal notranslate"><span class="pre">Union</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code>, <a class="reference internal" href="flopz.arch.arm.html#flopz.arch.arm.arm_generic_arch.ArmRegister" title="flopz.arch.arm.arm_generic_arch.ArmRegister"><code class="xref py py-class docutils literal notranslate"><span class="pre">ArmRegister</span></code></a>]) – </p></li>
-<li><p><strong>imm</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code>) – </p></li>
-</ul>
-</dd>
-</dl>
-</dd></dl>
-
-<dl class="py class">
-<dt class="sig sig-object py" id="flopz.arch.arm.thumb.instructions.SubI_T4">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">SubI_T4</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">rd</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">rn</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">imm</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#flopz.arch.arm.thumb.instructions.SubI_T4" title="Permalink to this definition"></a></dt>
-<dd><p>Bases: <a class="reference internal" href="#flopz.arch.arm.thumb.instructions.ThumbInstruction" title="flopz.arch.arm.thumb.instructions.ThumbInstruction"><code class="xref py py-class docutils literal notranslate"><span class="pre">flopz.arch.arm.thumb.instructions.ThumbInstruction</span></code></a></p>
-<dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
-<dd class="field-odd"><ul class="simple">
-<li><p><strong>rd</strong> (<code class="xref py py-data docutils literal notranslate"><span class="pre">Union</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code>, <a class="reference internal" href="flopz.arch.arm.html#flopz.arch.arm.arm_generic_arch.ArmRegister" title="flopz.arch.arm.arm_generic_arch.ArmRegister"><code class="xref py py-class docutils literal notranslate"><span class="pre">ArmRegister</span></code></a>]) – </p></li>
-<li><p><strong>rn</strong> (<code class="xref py py-data docutils literal notranslate"><span class="pre">Union</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code>, <a class="reference internal" href="flopz.arch.arm.html#flopz.arch.arm.arm_generic_arch.ArmRegister" title="flopz.arch.arm.arm_generic_arch.ArmRegister"><code class="xref py py-class docutils literal notranslate"><span class="pre">ArmRegister</span></code></a>]) – </p></li>
-<li><p><strong>imm</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code>) – </p></li>
-</ul>
-</dd>
-</dl>
-</dd></dl>
-
-<dl class="py class">
-<dt class="sig sig-object py" id="flopz.arch.arm.thumb.instructions.SubsR">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">SubsR</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">rd</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">rn</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">rm</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#flopz.arch.arm.thumb.instructions.SubsR" title="Permalink to this definition"></a></dt>
-<dd><p>Bases: <a class="reference internal" href="#flopz.arch.arm.thumb.instructions.ThumbInstruction" title="flopz.arch.arm.thumb.instructions.ThumbInstruction"><code class="xref py py-class docutils literal notranslate"><span class="pre">flopz.arch.arm.thumb.instructions.ThumbInstruction</span></code></a></p>
-<dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
-<dd class="field-odd"><ul class="simple">
-<li><p><strong>rd</strong> (<code class="xref py py-data docutils literal notranslate"><span class="pre">Union</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code>, <a class="reference internal" href="flopz.arch.arm.html#flopz.arch.arm.arm_generic_arch.ArmRegister" title="flopz.arch.arm.arm_generic_arch.ArmRegister"><code class="xref py py-class docutils literal notranslate"><span class="pre">ArmRegister</span></code></a>]) – </p></li>
-<li><p><strong>rn</strong> (<code class="xref py py-data docutils literal notranslate"><span class="pre">Union</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code>, <a class="reference internal" href="flopz.arch.arm.html#flopz.arch.arm.arm_generic_arch.ArmRegister" title="flopz.arch.arm.arm_generic_arch.ArmRegister"><code class="xref py py-class docutils literal notranslate"><span class="pre">ArmRegister</span></code></a>]) – </p></li>
-<li><p><strong>rm</strong> (<code class="xref py py-data docutils literal notranslate"><span class="pre">Union</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code>, <a class="reference internal" href="flopz.arch.arm.html#flopz.arch.arm.arm_generic_arch.ArmRegister" title="flopz.arch.arm.arm_generic_arch.ArmRegister"><code class="xref py py-class docutils literal notranslate"><span class="pre">ArmRegister</span></code></a>]) – </p></li>
-</ul>
-</dd>
-</dl>
-</dd></dl>
-
-<dl class="py class">
-<dt class="sig sig-object py" id="flopz.arch.arm.thumb.instructions.ThumbInstruction">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">ThumbInstruction</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">form</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">spec</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">addr</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">bit_length</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">16</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#flopz.arch.arm.thumb.instructions.ThumbInstruction" title="Permalink to this definition"></a></dt>
-<dd><p>Bases: <a class="reference internal" href="flopz.arch.html#flopz.arch.instruction.Instruction" title="flopz.arch.instruction.Instruction"><code class="xref py py-class docutils literal notranslate"><span class="pre">flopz.arch.instruction.Instruction</span></code></a></p>
-<p>Base ARM Thumb Instruction class</p>
-<p>All instructions inherit from this base class. This way, each instruction implementation
-only has to perform validity checks on the parameters and can then call this base classes init.
-The super().__init__ call has to include an instance of the InstructionForm the instruction confirms to,
-the spec string copied from the instruction set documentation
-and the values provided to the Operands as keyword arguments.
-This base class will then handle the parsing of the InstructionForm, which will in turn check the spec string and
-apply fixed bit values. Then the kwargs keys are assumed operands and the given arguments applied to set the
-variable bits in the instruction.</p>
-<dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
-<dd class="field-odd"><ul class="simple">
-<li><p><strong>form</strong> (<a class="reference internal" href="#flopz.arch.arm.thumb.instructions.ThumbInstructionForm" title="flopz.arch.arm.thumb.instructions.ThumbInstructionForm"><code class="xref py py-class docutils literal notranslate"><span class="pre">ThumbInstructionForm</span></code></a>) – </p></li>
-<li><p><strong>spec</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code>) – </p></li>
-<li><p><strong>addr</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code>) – </p></li>
-</ul>
-</dd>
-</dl>
-<dl class="py method">
-<dt class="sig sig-object py" id="flopz.arch.arm.thumb.instructions.ThumbInstruction.bytes">
-<span class="sig-name descname"><span class="pre">bytes</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#flopz.arch.arm.thumb.instructions.ThumbInstruction.bytes" title="Permalink to this definition"></a></dt>
-<dd><p>Get the bytes representation of the instruction</p>
-<dl class="field-list simple">
-<dt class="field-odd">Return type</dt>
-<dd class="field-odd"><p><a class="reference internal" href="#flopz.arch.arm.thumb.instructions.ThumbInstruction.bytes" title="flopz.arch.arm.thumb.instructions.ThumbInstruction.bytes"><code class="xref py py-class docutils literal notranslate"><span class="pre">bytes</span></code></a></p>
-</dd>
-</dl>
-</dd></dl>
-
-</dd></dl>
-
-<dl class="py class">
-<dt class="sig sig-object py" id="flopz.arch.arm.thumb.instructions.ThumbInstructionForm">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">ThumbInstructionForm</span></span><a class="headerlink" href="#flopz.arch.arm.thumb.instructions.ThumbInstructionForm" title="Permalink to this definition"></a></dt>
-<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
-<p>Instruction Forms apply the fixed bits and the operands to the instruction objects.</p>
-<dl class="py method">
-<dt class="sig sig-object py" id="flopz.arch.arm.thumb.instructions.ThumbInstructionForm.parse">
-<span class="sig-name descname"><span class="pre">parse</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">instruction</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">spec</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#flopz.arch.arm.thumb.instructions.ThumbInstructionForm.parse" title="Permalink to this definition"></a></dt>
-<dd><dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
-<dd class="field-odd"><ul class="simple">
-<li><p><strong>instruction</strong> (<a class="reference internal" href="flopz.arch.html#flopz.arch.instruction.Instruction" title="flopz.arch.instruction.Instruction"><code class="xref py py-class docutils literal notranslate"><span class="pre">Instruction</span></code></a>) – </p></li>
-<li><p><strong>spec</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code>) – </p></li>
-</ul>
-</dd>
-</dl>
-</dd></dl>
-
-</dd></dl>
-
-<dl class="py class">
-<dt class="sig sig-object py" id="flopz.arch.arm.thumb.instructions.ThumbInstructionForm32">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">ThumbInstructionForm32</span></span><a class="headerlink" href="#flopz.arch.arm.thumb.instructions.ThumbInstructionForm32" title="Permalink to this definition"></a></dt>
-<dd><p>Bases: <a class="reference internal" href="#flopz.arch.arm.thumb.instructions.ThumbInstructionForm" title="flopz.arch.arm.thumb.instructions.ThumbInstructionForm"><code class="xref py py-class docutils literal notranslate"><span class="pre">flopz.arch.arm.thumb.instructions.ThumbInstructionForm</span></code></a></p>
-<dl class="py method">
-<dt class="sig sig-object py" id="flopz.arch.arm.thumb.instructions.ThumbInstructionForm32.parse">
-<span class="sig-name descname"><span class="pre">parse</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">instruction</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">spec</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#flopz.arch.arm.thumb.instructions.ThumbInstructionForm32.parse" title="Permalink to this definition"></a></dt>
-<dd><dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
-<dd class="field-odd"><ul class="simple">
-<li><p><strong>instruction</strong> (<a class="reference internal" href="flopz.arch.html#flopz.arch.instruction.Instruction" title="flopz.arch.instruction.Instruction"><code class="xref py py-class docutils literal notranslate"><span class="pre">Instruction</span></code></a>) – </p></li>
-<li><p><strong>spec</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code>) – </p></li>
-</ul>
-</dd>
-</dl>
-</dd></dl>
-
-</dd></dl>
-
-<dl class="py class">
-<dt class="sig sig-object py" id="flopz.arch.arm.thumb.instructions.ThumbInstructionFormASCMI">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">ThumbInstructionFormASCMI</span></span><a class="headerlink" href="#flopz.arch.arm.thumb.instructions.ThumbInstructionFormASCMI" title="Permalink to this definition"></a></dt>
-<dd><p>Bases: <a class="reference internal" href="#flopz.arch.arm.thumb.instructions.ThumbInstructionForm" title="flopz.arch.arm.thumb.instructions.ThumbInstructionForm"><code class="xref py py-class docutils literal notranslate"><span class="pre">flopz.arch.arm.thumb.instructions.ThumbInstructionForm</span></code></a></p>
-<dl class="py method">
-<dt class="sig sig-object py" id="flopz.arch.arm.thumb.instructions.ThumbInstructionFormASCMI.parse">
-<span class="sig-name descname"><span class="pre">parse</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">instruction</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">spec</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#flopz.arch.arm.thumb.instructions.ThumbInstructionFormASCMI.parse" title="Permalink to this definition"></a></dt>
-<dd><dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
-<dd class="field-odd"><ul class="simple">
-<li><p><strong>instruction</strong> (<a class="reference internal" href="flopz.arch.html#flopz.arch.instruction.Instruction" title="flopz.arch.instruction.Instruction"><code class="xref py py-class docutils literal notranslate"><span class="pre">Instruction</span></code></a>) – </p></li>
-<li><p><strong>spec</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code>) – </p></li>
-</ul>
-</dd>
-</dl>
-</dd></dl>
-
-</dd></dl>
-
-<dl class="py class">
-<dt class="sig sig-object py" id="flopz.arch.arm.thumb.instructions.ThumbInstructionFormASI">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">ThumbInstructionFormASI</span></span><a class="headerlink" href="#flopz.arch.arm.thumb.instructions.ThumbInstructionFormASI" title="Permalink to this definition"></a></dt>
-<dd><p>Bases: <a class="reference internal" href="#flopz.arch.arm.thumb.instructions.ThumbInstructionForm" title="flopz.arch.arm.thumb.instructions.ThumbInstructionForm"><code class="xref py py-class docutils literal notranslate"><span class="pre">flopz.arch.arm.thumb.instructions.ThumbInstructionForm</span></code></a></p>
-<dl class="py method">
-<dt class="sig sig-object py" id="flopz.arch.arm.thumb.instructions.ThumbInstructionFormASI.parse">
-<span class="sig-name descname"><span class="pre">parse</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">instruction</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">spec</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#flopz.arch.arm.thumb.instructions.ThumbInstructionFormASI.parse" title="Permalink to this definition"></a></dt>
-<dd><dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
-<dd class="field-odd"><ul class="simple">
-<li><p><strong>instruction</strong> (<a class="reference internal" href="flopz.arch.html#flopz.arch.instruction.Instruction" title="flopz.arch.instruction.Instruction"><code class="xref py py-class docutils literal notranslate"><span class="pre">Instruction</span></code></a>) – </p></li>
-<li><p><strong>spec</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code>) – </p></li>
-</ul>
-</dd>
-</dl>
-</dd></dl>
-
-</dd></dl>
-
-<dl class="py class">
-<dt class="sig sig-object py" id="flopz.arch.arm.thumb.instructions.ThumbInstructionFormASR">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">ThumbInstructionFormASR</span></span><a class="headerlink" href="#flopz.arch.arm.thumb.instructions.ThumbInstructionFormASR" title="Permalink to this definition"></a></dt>
-<dd><p>Bases: <a class="reference internal" href="#flopz.arch.arm.thumb.instructions.ThumbInstructionForm" title="flopz.arch.arm.thumb.instructions.ThumbInstructionForm"><code class="xref py py-class docutils literal notranslate"><span class="pre">flopz.arch.arm.thumb.instructions.ThumbInstructionForm</span></code></a></p>
-<dl class="py method">
-<dt class="sig sig-object py" id="flopz.arch.arm.thumb.instructions.ThumbInstructionFormASR.parse">
-<span class="sig-name descname"><span class="pre">parse</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">instruction</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">spec</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#flopz.arch.arm.thumb.instructions.ThumbInstructionFormASR.parse" title="Permalink to this definition"></a></dt>
-<dd><dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
-<dd class="field-odd"><ul class="simple">
-<li><p><strong>instruction</strong> (<a class="reference internal" href="flopz.arch.html#flopz.arch.instruction.Instruction" title="flopz.arch.instruction.Instruction"><code class="xref py py-class docutils literal notranslate"><span class="pre">Instruction</span></code></a>) – </p></li>
-<li><p><strong>spec</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code>) – </p></li>
-</ul>
-</dd>
-</dl>
-</dd></dl>
-
-</dd></dl>
-
-<dl class="py class">
-<dt class="sig sig-object py" id="flopz.arch.arm.thumb.instructions.ThumbInstructionFormB">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">ThumbInstructionFormB</span></span><a class="headerlink" href="#flopz.arch.arm.thumb.instructions.ThumbInstructionFormB" title="Permalink to this definition"></a></dt>
-<dd><p>Bases: <a class="reference internal" href="#flopz.arch.arm.thumb.instructions.ThumbInstructionForm" title="flopz.arch.arm.thumb.instructions.ThumbInstructionForm"><code class="xref py py-class docutils literal notranslate"><span class="pre">flopz.arch.arm.thumb.instructions.ThumbInstructionForm</span></code></a></p>
-<dl class="py method">
-<dt class="sig sig-object py" id="flopz.arch.arm.thumb.instructions.ThumbInstructionFormB.parse">
-<span class="sig-name descname"><span class="pre">parse</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">instruction</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">spec</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#flopz.arch.arm.thumb.instructions.ThumbInstructionFormB.parse" title="Permalink to this definition"></a></dt>
-<dd><dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
-<dd class="field-odd"><ul class="simple">
-<li><p><strong>instruction</strong> (<a class="reference internal" href="flopz.arch.html#flopz.arch.instruction.Instruction" title="flopz.arch.instruction.Instruction"><code class="xref py py-class docutils literal notranslate"><span class="pre">Instruction</span></code></a>) – </p></li>
-<li><p><strong>spec</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code>) – </p></li>
-</ul>
-</dd>
-</dl>
-</dd></dl>
-
-</dd></dl>
-
-<dl class="py class">
-<dt class="sig sig-object py" id="flopz.arch.arm.thumb.instructions.ThumbInstructionFormB32">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">ThumbInstructionFormB32</span></span><a class="headerlink" href="#flopz.arch.arm.thumb.instructions.ThumbInstructionFormB32" title="Permalink to this definition"></a></dt>
-<dd><p>Bases: <a class="reference internal" href="#flopz.arch.arm.thumb.instructions.ThumbInstructionForm32" title="flopz.arch.arm.thumb.instructions.ThumbInstructionForm32"><code class="xref py py-class docutils literal notranslate"><span class="pre">flopz.arch.arm.thumb.instructions.ThumbInstructionForm32</span></code></a></p>
-<dl class="py method">
-<dt class="sig sig-object py" id="flopz.arch.arm.thumb.instructions.ThumbInstructionFormB32.parse">
-<span class="sig-name descname"><span class="pre">parse</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">instruction</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">spec</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#flopz.arch.arm.thumb.instructions.ThumbInstructionFormB32.parse" title="Permalink to this definition"></a></dt>
-<dd><dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
-<dd class="field-odd"><ul class="simple">
-<li><p><strong>instruction</strong> (<a class="reference internal" href="flopz.arch.html#flopz.arch.instruction.Instruction" title="flopz.arch.instruction.Instruction"><code class="xref py py-class docutils literal notranslate"><span class="pre">Instruction</span></code></a>) – </p></li>
-<li><p><strong>spec</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code>) – </p></li>
-</ul>
-</dd>
-</dl>
-</dd></dl>
-
-</dd></dl>
-
-<dl class="py class">
-<dt class="sig sig-object py" id="flopz.arch.arm.thumb.instructions.ThumbInstructionFormCB">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">ThumbInstructionFormCB</span></span><a class="headerlink" href="#flopz.arch.arm.thumb.instructions.ThumbInstructionFormCB" title="Permalink to this definition"></a></dt>
-<dd><p>Bases: <a class="reference internal" href="#flopz.arch.arm.thumb.instructions.ThumbInstructionForm" title="flopz.arch.arm.thumb.instructions.ThumbInstructionForm"><code class="xref py py-class docutils literal notranslate"><span class="pre">flopz.arch.arm.thumb.instructions.ThumbInstructionForm</span></code></a></p>
-<dl class="py method">
-<dt class="sig sig-object py" id="flopz.arch.arm.thumb.instructions.ThumbInstructionFormCB.parse">
-<span class="sig-name descname"><span class="pre">parse</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">instruction</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">spec</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#flopz.arch.arm.thumb.instructions.ThumbInstructionFormCB.parse" title="Permalink to this definition"></a></dt>
-<dd><dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
-<dd class="field-odd"><ul class="simple">
-<li><p><strong>instruction</strong> (<a class="reference internal" href="flopz.arch.html#flopz.arch.instruction.Instruction" title="flopz.arch.instruction.Instruction"><code class="xref py py-class docutils literal notranslate"><span class="pre">Instruction</span></code></a>) – </p></li>
-<li><p><strong>spec</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code>) – </p></li>
-</ul>
-</dd>
-</dl>
-</dd></dl>
-
-</dd></dl>
-
-<dl class="py class">
-<dt class="sig sig-object py" id="flopz.arch.arm.thumb.instructions.ThumbInstructionFormCB32">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">ThumbInstructionFormCB32</span></span><a class="headerlink" href="#flopz.arch.arm.thumb.instructions.ThumbInstructionFormCB32" title="Permalink to this definition"></a></dt>
-<dd><p>Bases: <a class="reference internal" href="#flopz.arch.arm.thumb.instructions.ThumbInstructionForm32" title="flopz.arch.arm.thumb.instructions.ThumbInstructionForm32"><code class="xref py py-class docutils literal notranslate"><span class="pre">flopz.arch.arm.thumb.instructions.ThumbInstructionForm32</span></code></a></p>
-<dl class="py method">
-<dt class="sig sig-object py" id="flopz.arch.arm.thumb.instructions.ThumbInstructionFormCB32.parse">
-<span class="sig-name descname"><span class="pre">parse</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">instruction</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">spec</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#flopz.arch.arm.thumb.instructions.ThumbInstructionFormCB32.parse" title="Permalink to this definition"></a></dt>
-<dd><dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
-<dd class="field-odd"><ul class="simple">
-<li><p><strong>instruction</strong> (<a class="reference internal" href="flopz.arch.html#flopz.arch.instruction.Instruction" title="flopz.arch.instruction.Instruction"><code class="xref py py-class docutils literal notranslate"><span class="pre">Instruction</span></code></a>) – </p></li>
-<li><p><strong>spec</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code>) – </p></li>
-</ul>
-</dd>
-</dl>
-</dd></dl>
-
-</dd></dl>
-
-<dl class="py class">
-<dt class="sig sig-object py" id="flopz.arch.arm.thumb.instructions.ThumbInstructionFormDPR">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">ThumbInstructionFormDPR</span></span><a class="headerlink" href="#flopz.arch.arm.thumb.instructions.ThumbInstructionFormDPR" title="Permalink to this definition"></a></dt>
-<dd><p>Bases: <a class="reference internal" href="#flopz.arch.arm.thumb.instructions.ThumbInstructionForm" title="flopz.arch.arm.thumb.instructions.ThumbInstructionForm"><code class="xref py py-class docutils literal notranslate"><span class="pre">flopz.arch.arm.thumb.instructions.ThumbInstructionForm</span></code></a></p>
-<dl class="py method">
-<dt class="sig sig-object py" id="flopz.arch.arm.thumb.instructions.ThumbInstructionFormDPR.parse">
-<span class="sig-name descname"><span class="pre">parse</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">instruction</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">spec</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#flopz.arch.arm.thumb.instructions.ThumbInstructionFormDPR.parse" title="Permalink to this definition"></a></dt>
-<dd><dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
-<dd class="field-odd"><ul class="simple">
-<li><p><strong>instruction</strong> (<a class="reference internal" href="flopz.arch.html#flopz.arch.instruction.Instruction" title="flopz.arch.instruction.Instruction"><code class="xref py py-class docutils literal notranslate"><span class="pre">Instruction</span></code></a>) – </p></li>
-<li><p><strong>spec</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code>) – </p></li>
-</ul>
-</dd>
-</dl>
-</dd></dl>
-
-</dd></dl>
-
-<dl class="py class">
-<dt class="sig sig-object py" id="flopz.arch.arm.thumb.instructions.ThumbInstructionFormDPmod12I32">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">ThumbInstructionFormDPmod12I32</span></span><a class="headerlink" href="#flopz.arch.arm.thumb.instructions.ThumbInstructionFormDPmod12I32" title="Permalink to this definition"></a></dt>
-<dd><p>Bases: <a class="reference internal" href="#flopz.arch.arm.thumb.instructions.ThumbInstructionForm32" title="flopz.arch.arm.thumb.instructions.ThumbInstructionForm32"><code class="xref py py-class docutils literal notranslate"><span class="pre">flopz.arch.arm.thumb.instructions.ThumbInstructionForm32</span></code></a></p>
-<dl class="py method">
-<dt class="sig sig-object py" id="flopz.arch.arm.thumb.instructions.ThumbInstructionFormDPmod12I32.parse">
-<span class="sig-name descname"><span class="pre">parse</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">instruction</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">spec</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#flopz.arch.arm.thumb.instructions.ThumbInstructionFormDPmod12I32.parse" title="Permalink to this definition"></a></dt>
-<dd><dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
-<dd class="field-odd"><ul class="simple">
-<li><p><strong>instruction</strong> (<a class="reference internal" href="flopz.arch.html#flopz.arch.instruction.Instruction" title="flopz.arch.instruction.Instruction"><code class="xref py py-class docutils literal notranslate"><span class="pre">Instruction</span></code></a>) – </p></li>
-<li><p><strong>spec</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code>) – </p></li>
-</ul>
-</dd>
-</dl>
-</dd></dl>
-
-</dd></dl>
-
-<dl class="py class">
-<dt class="sig sig-object py" id="flopz.arch.arm.thumb.instructions.ThumbInstructionFormIT">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">ThumbInstructionFormIT</span></span><a class="headerlink" href="#flopz.arch.arm.thumb.instructions.ThumbInstructionFormIT" title="Permalink to this definition"></a></dt>
-<dd><p>Bases: <a class="reference internal" href="#flopz.arch.arm.thumb.instructions.ThumbInstructionFormMISC" title="flopz.arch.arm.thumb.instructions.ThumbInstructionFormMISC"><code class="xref py py-class docutils literal notranslate"><span class="pre">flopz.arch.arm.thumb.instructions.ThumbInstructionFormMISC</span></code></a></p>
-<dl class="py method">
-<dt class="sig sig-object py" id="flopz.arch.arm.thumb.instructions.ThumbInstructionFormIT.parse">
-<span class="sig-name descname"><span class="pre">parse</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">instruction</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">spec</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#flopz.arch.arm.thumb.instructions.ThumbInstructionFormIT.parse" title="Permalink to this definition"></a></dt>
-<dd><dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
-<dd class="field-odd"><ul class="simple">
-<li><p><strong>instruction</strong> (<a class="reference internal" href="flopz.arch.html#flopz.arch.instruction.Instruction" title="flopz.arch.instruction.Instruction"><code class="xref py py-class docutils literal notranslate"><span class="pre">Instruction</span></code></a>) – </p></li>
-<li><p><strong>spec</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code>) – </p></li>
-</ul>
-</dd>
-</dl>
-</dd></dl>
-
-</dd></dl>
-
-<dl class="py class">
-<dt class="sig sig-object py" id="flopz.arch.arm.thumb.instructions.ThumbInstructionFormLdrL32">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">ThumbInstructionFormLdrL32</span></span><a class="headerlink" href="#flopz.arch.arm.thumb.instructions.ThumbInstructionFormLdrL32" title="Permalink to this definition"></a></dt>
-<dd><p>Bases: <a class="reference internal" href="#flopz.arch.arm.thumb.instructions.ThumbInstructionForm32" title="flopz.arch.arm.thumb.instructions.ThumbInstructionForm32"><code class="xref py py-class docutils literal notranslate"><span class="pre">flopz.arch.arm.thumb.instructions.ThumbInstructionForm32</span></code></a></p>
-<dl class="py method">
-<dt class="sig sig-object py" id="flopz.arch.arm.thumb.instructions.ThumbInstructionFormLdrL32.parse">
-<span class="sig-name descname"><span class="pre">parse</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">instruction</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">spec</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#flopz.arch.arm.thumb.instructions.ThumbInstructionFormLdrL32.parse" title="Permalink to this definition"></a></dt>
-<dd><dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
-<dd class="field-odd"><ul class="simple">
-<li><p><strong>instruction</strong> (<a class="reference internal" href="flopz.arch.html#flopz.arch.instruction.Instruction" title="flopz.arch.instruction.Instruction"><code class="xref py py-class docutils literal notranslate"><span class="pre">Instruction</span></code></a>) – </p></li>
-<li><p><strong>spec</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code>) – </p></li>
-</ul>
-</dd>
-</dl>
-</dd></dl>
-
-</dd></dl>
-
-<dl class="py class">
-<dt class="sig sig-object py" id="flopz.arch.arm.thumb.instructions.ThumbInstructionFormMISC">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">ThumbInstructionFormMISC</span></span><a class="headerlink" href="#flopz.arch.arm.thumb.instructions.ThumbInstructionFormMISC" title="Permalink to this definition"></a></dt>
-<dd><p>Bases: <a class="reference internal" href="#flopz.arch.arm.thumb.instructions.ThumbInstructionForm" title="flopz.arch.arm.thumb.instructions.ThumbInstructionForm"><code class="xref py py-class docutils literal notranslate"><span class="pre">flopz.arch.arm.thumb.instructions.ThumbInstructionForm</span></code></a></p>
-<dl class="py method">
-<dt class="sig sig-object py" id="flopz.arch.arm.thumb.instructions.ThumbInstructionFormMISC.parse">
-<span class="sig-name descname"><span class="pre">parse</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">instruction</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">spec</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#flopz.arch.arm.thumb.instructions.ThumbInstructionFormMISC.parse" title="Permalink to this definition"></a></dt>
-<dd><dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
-<dd class="field-odd"><ul class="simple">
-<li><p><strong>instruction</strong> (<a class="reference internal" href="flopz.arch.html#flopz.arch.instruction.Instruction" title="flopz.arch.instruction.Instruction"><code class="xref py py-class docutils literal notranslate"><span class="pre">Instruction</span></code></a>) – </p></li>
-<li><p><strong>spec</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code>) – </p></li>
-</ul>
-</dd>
-</dl>
-</dd></dl>
-
-</dd></dl>
-
-<dl class="py class">
-<dt class="sig sig-object py" id="flopz.arch.arm.thumb.instructions.ThumbInstructionFormPushPop">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">ThumbInstructionFormPushPop</span></span><a class="headerlink" href="#flopz.arch.arm.thumb.instructions.ThumbInstructionFormPushPop" title="Permalink to this definition"></a></dt>
-<dd><p>Bases: <a class="reference internal" href="#flopz.arch.arm.thumb.instructions.ThumbInstructionFormMISC" title="flopz.arch.arm.thumb.instructions.ThumbInstructionFormMISC"><code class="xref py py-class docutils literal notranslate"><span class="pre">flopz.arch.arm.thumb.instructions.ThumbInstructionFormMISC</span></code></a></p>
-<dl class="py method">
-<dt class="sig sig-object py" id="flopz.arch.arm.thumb.instructions.ThumbInstructionFormPushPop.parse">
-<span class="sig-name descname"><span class="pre">parse</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">instruction</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">spec</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#flopz.arch.arm.thumb.instructions.ThumbInstructionFormPushPop.parse" title="Permalink to this definition"></a></dt>
-<dd><dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
-<dd class="field-odd"><ul class="simple">
-<li><p><strong>instruction</strong> (<a class="reference internal" href="flopz.arch.html#flopz.arch.instruction.Instruction" title="flopz.arch.instruction.Instruction"><code class="xref py py-class docutils literal notranslate"><span class="pre">Instruction</span></code></a>) – </p></li>
-<li><p><strong>spec</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code>) – </p></li>
-</ul>
-</dd>
-</dl>
-</dd></dl>
-
-</dd></dl>
-
-<dl class="py class">
-<dt class="sig sig-object py" id="flopz.arch.arm.thumb.instructions.ThumbInstructionFormSDP">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">ThumbInstructionFormSDP</span></span><a class="headerlink" href="#flopz.arch.arm.thumb.instructions.ThumbInstructionFormSDP" title="Permalink to this definition"></a></dt>
-<dd><p>Bases: <a class="reference internal" href="#flopz.arch.arm.thumb.instructions.ThumbInstructionForm" title="flopz.arch.arm.thumb.instructions.ThumbInstructionForm"><code class="xref py py-class docutils literal notranslate"><span class="pre">flopz.arch.arm.thumb.instructions.ThumbInstructionForm</span></code></a></p>
-<dl class="py method">
-<dt class="sig sig-object py" id="flopz.arch.arm.thumb.instructions.ThumbInstructionFormSDP.parse">
-<span class="sig-name descname"><span class="pre">parse</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">instruction</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">spec</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#flopz.arch.arm.thumb.instructions.ThumbInstructionFormSDP.parse" title="Permalink to this definition"></a></dt>
-<dd><dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
-<dd class="field-odd"><ul class="simple">
-<li><p><strong>instruction</strong> (<a class="reference internal" href="flopz.arch.html#flopz.arch.instruction.Instruction" title="flopz.arch.instruction.Instruction"><code class="xref py py-class docutils literal notranslate"><span class="pre">Instruction</span></code></a>) – </p></li>
-<li><p><strong>spec</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code>) – </p></li>
-</ul>
-</dd>
-</dl>
-</dd></dl>
-
-</dd></dl>
-
-<dl class="py class">
-<dt class="sig sig-object py" id="flopz.arch.arm.thumb.instructions.ThumbInstructionFormSLI">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">ThumbInstructionFormSLI</span></span><a class="headerlink" href="#flopz.arch.arm.thumb.instructions.ThumbInstructionFormSLI" title="Permalink to this definition"></a></dt>
-<dd><p>Bases: <a class="reference internal" href="#flopz.arch.arm.thumb.instructions.ThumbInstructionForm" title="flopz.arch.arm.thumb.instructions.ThumbInstructionForm"><code class="xref py py-class docutils literal notranslate"><span class="pre">flopz.arch.arm.thumb.instructions.ThumbInstructionForm</span></code></a></p>
-<dl class="py method">
-<dt class="sig sig-object py" id="flopz.arch.arm.thumb.instructions.ThumbInstructionFormSLI.parse">
-<span class="sig-name descname"><span class="pre">parse</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">instruction</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">spec</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#flopz.arch.arm.thumb.instructions.ThumbInstructionFormSLI.parse" title="Permalink to this definition"></a></dt>
-<dd><dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
-<dd class="field-odd"><ul class="simple">
-<li><p><strong>instruction</strong> (<a class="reference internal" href="flopz.arch.html#flopz.arch.instruction.Instruction" title="flopz.arch.instruction.Instruction"><code class="xref py py-class docutils literal notranslate"><span class="pre">Instruction</span></code></a>) – </p></li>
-<li><p><strong>spec</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code>) – </p></li>
-</ul>
-</dd>
-</dl>
-</dd></dl>
-
-</dd></dl>
-
-<dl class="py class">
-<dt class="sig sig-object py" id="flopz.arch.arm.thumb.instructions.ThumbInstructionFormSZE">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">ThumbInstructionFormSZE</span></span><a class="headerlink" href="#flopz.arch.arm.thumb.instructions.ThumbInstructionFormSZE" title="Permalink to this definition"></a></dt>
-<dd><p>Bases: <a class="reference internal" href="#flopz.arch.arm.thumb.instructions.ThumbInstructionFormMISC" title="flopz.arch.arm.thumb.instructions.ThumbInstructionFormMISC"><code class="xref py py-class docutils literal notranslate"><span class="pre">flopz.arch.arm.thumb.instructions.ThumbInstructionFormMISC</span></code></a></p>
-<dl class="py method">
-<dt class="sig sig-object py" id="flopz.arch.arm.thumb.instructions.ThumbInstructionFormSZE.parse">
-<span class="sig-name descname"><span class="pre">parse</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">instruction</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">spec</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#flopz.arch.arm.thumb.instructions.ThumbInstructionFormSZE.parse" title="Permalink to this definition"></a></dt>
-<dd><dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
-<dd class="field-odd"><ul class="simple">
-<li><p><strong>instruction</strong> (<a class="reference internal" href="flopz.arch.html#flopz.arch.instruction.Instruction" title="flopz.arch.instruction.Instruction"><code class="xref py py-class docutils literal notranslate"><span class="pre">Instruction</span></code></a>) – </p></li>
-<li><p><strong>spec</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code>) – </p></li>
-</ul>
-</dd>
-</dl>
-</dd></dl>
-
-</dd></dl>
-
-<dl class="py class">
-<dt class="sig sig-object py" id="flopz.arch.arm.thumb.instructions.ThumbInstructionFormShiftMove">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">ThumbInstructionFormShiftMove</span></span><a class="headerlink" href="#flopz.arch.arm.thumb.instructions.ThumbInstructionFormShiftMove" title="Permalink to this definition"></a></dt>
-<dd><p>Bases: <a class="reference internal" href="#flopz.arch.arm.thumb.instructions.ThumbInstructionForm" title="flopz.arch.arm.thumb.instructions.ThumbInstructionForm"><code class="xref py py-class docutils literal notranslate"><span class="pre">flopz.arch.arm.thumb.instructions.ThumbInstructionForm</span></code></a></p>
-<dl class="py method">
-<dt class="sig sig-object py" id="flopz.arch.arm.thumb.instructions.ThumbInstructionFormShiftMove.parse">
-<span class="sig-name descname"><span class="pre">parse</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">instruction</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">spec</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#flopz.arch.arm.thumb.instructions.ThumbInstructionFormShiftMove.parse" title="Permalink to this definition"></a></dt>
-<dd><dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
-<dd class="field-odd"><ul class="simple">
-<li><p><strong>instruction</strong> (<a class="reference internal" href="flopz.arch.html#flopz.arch.instruction.Instruction" title="flopz.arch.instruction.Instruction"><code class="xref py py-class docutils literal notranslate"><span class="pre">Instruction</span></code></a>) – </p></li>
-<li><p><strong>spec</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code>) – </p></li>
-</ul>
-</dd>
-</dl>
-</dd></dl>
-
-</dd></dl>
-
-<dl class="py class">
-<dt class="sig sig-object py" id="flopz.arch.arm.thumb.instructions.ThumbInstructionFormStmiaLdmia">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">ThumbInstructionFormStmiaLdmia</span></span><a class="headerlink" href="#flopz.arch.arm.thumb.instructions.ThumbInstructionFormStmiaLdmia" title="Permalink to this definition"></a></dt>
-<dd><p>Bases: <a class="reference internal" href="#flopz.arch.arm.thumb.instructions.ThumbInstructionForm" title="flopz.arch.arm.thumb.instructions.ThumbInstructionForm"><code class="xref py py-class docutils literal notranslate"><span class="pre">flopz.arch.arm.thumb.instructions.ThumbInstructionForm</span></code></a></p>
-<dl class="py method">
-<dt class="sig sig-object py" id="flopz.arch.arm.thumb.instructions.ThumbInstructionFormStmiaLdmia.parse">
-<span class="sig-name descname"><span class="pre">parse</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">instruction</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">spec</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#flopz.arch.arm.thumb.instructions.ThumbInstructionFormStmiaLdmia.parse" title="Permalink to this definition"></a></dt>
-<dd><dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
-<dd class="field-odd"><ul class="simple">
-<li><p><strong>instruction</strong> (<a class="reference internal" href="flopz.arch.html#flopz.arch.instruction.Instruction" title="flopz.arch.instruction.Instruction"><code class="xref py py-class docutils literal notranslate"><span class="pre">Instruction</span></code></a>) – </p></li>
-<li><p><strong>spec</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code>) – </p></li>
-</ul>
-</dd>
-</dl>
-</dd></dl>
-
-</dd></dl>
-
-<dl class="py class">
-<dt class="sig sig-object py" id="flopz.arch.arm.thumb.instructions.ThumbInstructionFormStmiaLdmiaW">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">ThumbInstructionFormStmiaLdmiaW</span></span><a class="headerlink" href="#flopz.arch.arm.thumb.instructions.ThumbInstructionFormStmiaLdmiaW" title="Permalink to this definition"></a></dt>
-<dd><p>Bases: <a class="reference internal" href="#flopz.arch.arm.thumb.instructions.ThumbInstructionForm32" title="flopz.arch.arm.thumb.instructions.ThumbInstructionForm32"><code class="xref py py-class docutils literal notranslate"><span class="pre">flopz.arch.arm.thumb.instructions.ThumbInstructionForm32</span></code></a></p>
-<dl class="py method">
-<dt class="sig sig-object py" id="flopz.arch.arm.thumb.instructions.ThumbInstructionFormStmiaLdmiaW.parse">
-<span class="sig-name descname"><span class="pre">parse</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">instruction</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">spec</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#flopz.arch.arm.thumb.instructions.ThumbInstructionFormStmiaLdmiaW.parse" title="Permalink to this definition"></a></dt>
-<dd><dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
-<dd class="field-odd"><ul class="simple">
-<li><p><strong>instruction</strong> (<a class="reference internal" href="flopz.arch.html#flopz.arch.instruction.Instruction" title="flopz.arch.instruction.Instruction"><code class="xref py py-class docutils literal notranslate"><span class="pre">Instruction</span></code></a>) – </p></li>
-<li><p><strong>spec</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code>) – </p></li>
-</ul>
-</dd>
-</dl>
-</dd></dl>
-
-</dd></dl>
-
-<dl class="py class">
-<dt class="sig sig-object py" id="flopz.arch.arm.thumb.instructions.ThumbInstructionFormStrLdrImmT4">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">ThumbInstructionFormStrLdrImmT4</span></span><a class="headerlink" href="#flopz.arch.arm.thumb.instructions.ThumbInstructionFormStrLdrImmT4" title="Permalink to this definition"></a></dt>
-<dd><p>Bases: <a class="reference internal" href="#flopz.arch.arm.thumb.instructions.ThumbInstructionForm32" title="flopz.arch.arm.thumb.instructions.ThumbInstructionForm32"><code class="xref py py-class docutils literal notranslate"><span class="pre">flopz.arch.arm.thumb.instructions.ThumbInstructionForm32</span></code></a></p>
-<dl class="py method">
-<dt class="sig sig-object py" id="flopz.arch.arm.thumb.instructions.ThumbInstructionFormStrLdrImmT4.parse">
-<span class="sig-name descname"><span class="pre">parse</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">instruction</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">spec</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#flopz.arch.arm.thumb.instructions.ThumbInstructionFormStrLdrImmT4.parse" title="Permalink to this definition"></a></dt>
-<dd><dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
-<dd class="field-odd"><ul class="simple">
-<li><p><strong>instruction</strong> (<a class="reference internal" href="flopz.arch.html#flopz.arch.instruction.Instruction" title="flopz.arch.instruction.Instruction"><code class="xref py py-class docutils literal notranslate"><span class="pre">Instruction</span></code></a>) – </p></li>
-<li><p><strong>spec</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code>) – </p></li>
-</ul>
-</dd>
-</dl>
-</dd></dl>
-
-</dd></dl>
-
-<dl class="py class">
-<dt class="sig sig-object py" id="flopz.arch.arm.thumb.instructions.ThumbInstructionFormStrLdrT3">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">ThumbInstructionFormStrLdrT3</span></span><a class="headerlink" href="#flopz.arch.arm.thumb.instructions.ThumbInstructionFormStrLdrT3" title="Permalink to this definition"></a></dt>
-<dd><p>Bases: <a class="reference internal" href="#flopz.arch.arm.thumb.instructions.ThumbInstructionForm32" title="flopz.arch.arm.thumb.instructions.ThumbInstructionForm32"><code class="xref py py-class docutils literal notranslate"><span class="pre">flopz.arch.arm.thumb.instructions.ThumbInstructionForm32</span></code></a></p>
-<dl class="py method">
-<dt class="sig sig-object py" id="flopz.arch.arm.thumb.instructions.ThumbInstructionFormStrLdrT3.parse">
-<span class="sig-name descname"><span class="pre">parse</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">instruction</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">spec</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#flopz.arch.arm.thumb.instructions.ThumbInstructionFormStrLdrT3.parse" title="Permalink to this definition"></a></dt>
-<dd><dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
-<dd class="field-odd"><ul class="simple">
-<li><p><strong>instruction</strong> (<a class="reference internal" href="flopz.arch.html#flopz.arch.instruction.Instruction" title="flopz.arch.instruction.Instruction"><code class="xref py py-class docutils literal notranslate"><span class="pre">Instruction</span></code></a>) – </p></li>
-<li><p><strong>spec</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code>) – </p></li>
-</ul>
-</dd>
-</dl>
-</dd></dl>
-
-</dd></dl>
-
-<dl class="py class">
-<dt class="sig sig-object py" id="flopz.arch.arm.thumb.instructions.ThumbInstructionFormatDPpl12I32">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">ThumbInstructionFormatDPpl12I32</span></span><a class="headerlink" href="#flopz.arch.arm.thumb.instructions.ThumbInstructionFormatDPpl12I32" title="Permalink to this definition"></a></dt>
-<dd><p>Bases: <a class="reference internal" href="#flopz.arch.arm.thumb.instructions.ThumbInstructionForm32" title="flopz.arch.arm.thumb.instructions.ThumbInstructionForm32"><code class="xref py py-class docutils literal notranslate"><span class="pre">flopz.arch.arm.thumb.instructions.ThumbInstructionForm32</span></code></a></p>
-<dl class="py method">
-<dt class="sig sig-object py" id="flopz.arch.arm.thumb.instructions.ThumbInstructionFormatDPpl12I32.parse">
-<span class="sig-name descname"><span class="pre">parse</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">instruction</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">spec</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#flopz.arch.arm.thumb.instructions.ThumbInstructionFormatDPpl12I32.parse" title="Permalink to this definition"></a></dt>
-<dd><dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
-<dd class="field-odd"><ul class="simple">
-<li><p><strong>instruction</strong> (<a class="reference internal" href="flopz.arch.html#flopz.arch.instruction.Instruction" title="flopz.arch.instruction.Instruction"><code class="xref py py-class docutils literal notranslate"><span class="pre">Instruction</span></code></a>) – </p></li>
-<li><p><strong>spec</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code>) – </p></li>
-</ul>
-</dd>
-</dl>
-</dd></dl>
-
-</dd></dl>
-
-<dl class="py class">
-<dt class="sig sig-object py" id="flopz.arch.arm.thumb.instructions.ThumbinstructionFormSLIHW">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">ThumbinstructionFormSLIHW</span></span><a class="headerlink" href="#flopz.arch.arm.thumb.instructions.ThumbinstructionFormSLIHW" title="Permalink to this definition"></a></dt>
-<dd><p>Bases: <a class="reference internal" href="#flopz.arch.arm.thumb.instructions.ThumbInstructionForm" title="flopz.arch.arm.thumb.instructions.ThumbInstructionForm"><code class="xref py py-class docutils literal notranslate"><span class="pre">flopz.arch.arm.thumb.instructions.ThumbInstructionForm</span></code></a></p>
-<dl class="py method">
-<dt class="sig sig-object py" id="flopz.arch.arm.thumb.instructions.ThumbinstructionFormSLIHW.parse">
-<span class="sig-name descname"><span class="pre">parse</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">instruction</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">spec</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#flopz.arch.arm.thumb.instructions.ThumbinstructionFormSLIHW.parse" title="Permalink to this definition"></a></dt>
-<dd><dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
-<dd class="field-odd"><ul class="simple">
-<li><p><strong>instruction</strong> (<a class="reference internal" href="flopz.arch.html#flopz.arch.instruction.Instruction" title="flopz.arch.instruction.Instruction"><code class="xref py py-class docutils literal notranslate"><span class="pre">Instruction</span></code></a>) – </p></li>
-<li><p><strong>spec</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code>) – </p></li>
-</ul>
-</dd>
-</dl>
-</dd></dl>
-
-</dd></dl>
-
-<dl class="py class">
-<dt class="sig sig-object py" id="flopz.arch.arm.thumb.instructions.ThumbinstructionFormStrLdrRegT2">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">ThumbinstructionFormStrLdrRegT2</span></span><a class="headerlink" href="#flopz.arch.arm.thumb.instructions.ThumbinstructionFormStrLdrRegT2" title="Permalink to this definition"></a></dt>
-<dd><p>Bases: <a class="reference internal" href="#flopz.arch.arm.thumb.instructions.ThumbInstructionForm32" title="flopz.arch.arm.thumb.instructions.ThumbInstructionForm32"><code class="xref py py-class docutils literal notranslate"><span class="pre">flopz.arch.arm.thumb.instructions.ThumbInstructionForm32</span></code></a></p>
-<dl class="py method">
-<dt class="sig sig-object py" id="flopz.arch.arm.thumb.instructions.ThumbinstructionFormStrLdrRegT2.parse">
-<span class="sig-name descname"><span class="pre">parse</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">instruction</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">spec</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#flopz.arch.arm.thumb.instructions.ThumbinstructionFormStrLdrRegT2.parse" title="Permalink to this definition"></a></dt>
-<dd><dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
-<dd class="field-odd"><ul class="simple">
-<li><p><strong>instruction</strong> (<a class="reference internal" href="flopz.arch.html#flopz.arch.instruction.Instruction" title="flopz.arch.instruction.Instruction"><code class="xref py py-class docutils literal notranslate"><span class="pre">Instruction</span></code></a>) – </p></li>
-<li><p><strong>spec</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code>) – </p></li>
-</ul>
-</dd>
-</dl>
-</dd></dl>
-
-</dd></dl>
-
-<dl class="py class">
-<dt class="sig sig-object py" id="flopz.arch.arm.thumb.instructions.UB32OffsetOperand">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">UB32OffsetOperand</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#flopz.arch.arm.thumb.instructions.UB32OffsetOperand" title="Permalink to this definition"></a></dt>
-<dd><p>Bases: <a class="reference internal" href="flopz.arch.html#flopz.arch.operands.CombinedOperand" title="flopz.arch.operands.CombinedOperand"><code class="xref py py-class docutils literal notranslate"><span class="pre">flopz.arch.operands.CombinedOperand</span></code></a></p>
-<p>Special operand to encode the offset of the 32bit branch instruction (unconditional).
-This encoding includes 2 bits that are flipped depending on value sign.</p>
-</dd></dl>
-
-<dl class="py class">
-<dt class="sig sig-object py" id="flopz.arch.arm.thumb.instructions.UXTB">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">UXTB</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">rd</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">rm</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#flopz.arch.arm.thumb.instructions.UXTB" title="Permalink to this definition"></a></dt>
-<dd><p>Bases: <a class="reference internal" href="#flopz.arch.arm.thumb.instructions.ThumbInstruction" title="flopz.arch.arm.thumb.instructions.ThumbInstruction"><code class="xref py py-class docutils literal notranslate"><span class="pre">flopz.arch.arm.thumb.instructions.ThumbInstruction</span></code></a></p>
-<dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
-<dd class="field-odd"><ul class="simple">
-<li><p><strong>rd</strong> (<code class="xref py py-data docutils literal notranslate"><span class="pre">Union</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code>, <a class="reference internal" href="flopz.arch.arm.html#flopz.arch.arm.arm_generic_arch.ArmRegister" title="flopz.arch.arm.arm_generic_arch.ArmRegister"><code class="xref py py-class docutils literal notranslate"><span class="pre">ArmRegister</span></code></a>]) – </p></li>
-<li><p><strong>rm</strong> (<code class="xref py py-data docutils literal notranslate"><span class="pre">Union</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code>, <a class="reference internal" href="flopz.arch.arm.html#flopz.arch.arm.arm_generic_arch.ArmRegister" title="flopz.arch.arm.arm_generic_arch.ArmRegister"><code class="xref py py-class docutils literal notranslate"><span class="pre">ArmRegister</span></code></a>]) – </p></li>
-</ul>
-</dd>
-</dl>
-</dd></dl>
-
-<dl class="py function">
-<dt class="sig sig-object py" id="flopz.arch.arm.thumb.instructions.decode_from_12b_imm">
-<span class="sig-name descname"><span class="pre">decode_from_12b_imm</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">encoded</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#flopz.arch.arm.thumb.instructions.decode_from_12b_imm" title="Permalink to this definition"></a></dt>
-<dd><dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
-<dd class="field-odd"><p><strong>encoded</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code>) – </p>
-</dd>
-<dt class="field-even">Return type</dt>
-<dd class="field-even"><p><code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code></p>
-</dd>
-</dl>
-</dd></dl>
-
-<dl class="py function">
-<dt class="sig sig-object py" id="flopz.arch.arm.thumb.instructions.encode_register_list">
-<span class="sig-name descname"><span class="pre">encode_register_list</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">rlist</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#flopz.arch.arm.thumb.instructions.encode_register_list" title="Permalink to this definition"></a></dt>
-<dd><dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
-<dd class="field-odd"><p><strong>rlist</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">List</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code>]) – </p>
-</dd>
-<dt class="field-even">Return type</dt>
-<dd class="field-even"><p><code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code></p>
-</dd>
-</dl>
-</dd></dl>
-
-<dl class="py function">
-<dt class="sig sig-object py" id="flopz.arch.arm.thumb.instructions.encode_to_12b_imm">
-<span class="sig-name descname"><span class="pre">encode_to_12b_imm</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">value</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#flopz.arch.arm.thumb.instructions.encode_to_12b_imm" title="Permalink to this definition"></a></dt>
-<dd><dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
-<dd class="field-odd"><p><strong>value</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code>) – </p>
-</dd>
-<dt class="field-even">Return type</dt>
-<dd class="field-even"><p><code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code></p>
-</dd>
-</dl>
-</dd></dl>
-
-<dl class="py function">
-<dt class="sig sig-object py" id="flopz.arch.arm.thumb.instructions.get_register_values">
-<span class="sig-name descname"><span class="pre">get_register_values</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">rlist</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#flopz.arch.arm.thumb.instructions.get_register_values" title="Permalink to this definition"></a></dt>
-<dd><dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
-<dd class="field-odd"><p><strong>rlist</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">List</span></code>[<code class="xref py py-data docutils literal notranslate"><span class="pre">Union</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code>, <a class="reference internal" href="flopz.arch.arm.html#flopz.arch.arm.arm_generic_arch.ArmRegister" title="flopz.arch.arm.arm_generic_arch.ArmRegister"><code class="xref py py-class docutils literal notranslate"><span class="pre">ArmRegister</span></code></a>]]) – </p>
-</dd>
-<dt class="field-even">Return type</dt>
-<dd class="field-even"><p><code class="xref py py-class docutils literal notranslate"><span class="pre">List</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code>]</p>
-</dd>
-</dl>
-</dd></dl>
-
-<dl class="py function">
-<dt class="sig sig-object py" id="flopz.arch.arm.thumb.instructions.regs_as_vals">
-<span class="sig-name descname"><span class="pre">regs_as_vals</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">int_dependant_init</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#flopz.arch.arm.thumb.instructions.regs_as_vals" title="Permalink to this definition"></a></dt>
-<dd><p>Decorates a function so arguments of type register are converted to their int values.</p>
-</dd></dl>
-
-</section>
-<section id="module-flopz.arch.arm.thumb.stm32F407">
-<span id="flopz-arch-arm-thumb-stm32f407-module"></span><h2>flopz.arch.arm.thumb.stm32F407 module<a class="headerlink" href="#module-flopz.arch.arm.thumb.stm32F407" title="Permalink to this headline"></a></h2>
-<dl class="py class">
-<dt class="sig sig-object py" id="flopz.arch.arm.thumb.stm32F407.Stm32F407">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">Stm32F407</span></span><a class="headerlink" href="#flopz.arch.arm.thumb.stm32F407.Stm32F407" title="Permalink to this definition"></a></dt>
-<dd><p>Bases: <a class="reference internal" href="flopz.arch.arm.html#flopz.arch.arm.arm_generic_arch.ARMGenericArchitecture" title="flopz.arch.arm.arm_generic_arch.ARMGenericArchitecture"><code class="xref py py-class docutils literal notranslate"><span class="pre">flopz.arch.arm.arm_generic_arch.ARMGenericArchitecture</span></code></a></p>
-</dd></dl>
-
-</section>
-<section id="module-flopz.arch.arm.thumb">
-<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-flopz.arch.arm.thumb" title="Permalink to this headline"></a></h2>
-</section>
-</section>
+  <div class="section" id="flopz-arch-arm-thumb-package">
+<h1>flopz.arch.arm.thumb package<a class="headerlink" href="#flopz-arch-arm-thumb-package" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="flopz-arch-arm-thumb-auto-instructions-module">
+<h2>flopz.arch.arm.thumb.auto_instructions module<a class="headerlink" href="#flopz-arch-arm-thumb-auto-instructions-module" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="flopz-arch-arm-thumb-instructions-module">
+<h2>flopz.arch.arm.thumb.instructions module<a class="headerlink" href="#flopz-arch-arm-thumb-instructions-module" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="flopz-arch-arm-thumb-stm32f407-module">
+<h2>flopz.arch.arm.thumb.stm32F407 module<a class="headerlink" href="#flopz-arch-arm-thumb-stm32f407-module" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="module-flopz.arch.arm.thumb">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-flopz.arch.arm.thumb" title="Permalink to this headline">¶</a></h2>
+</div>
+</div>
 
 
            </div>
