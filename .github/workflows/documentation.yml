@@ -1,0 +1,47 @@
+# workflow to build and publish documentation on push
+
+name: Documentation Update
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@master
+
+    - name: Merge main -> documentation
+      uses: devmasx/merge-branch@master
+      with:
+        type: now
+        target_branch: documentation
+        github_token: ${{ github.token }}
+        message: "Automatic merge from push to main"
+
+    - uses: actions/checkout@master
+      with:
+        ref: documentation
+
+    - name: Regenerate Documentation
+      run: |
+        cd docs/
+        pip install -U sphinx
+        sphinx-apidoc -f -o source/ ../flopz -d 10
+        cd ..
+
+    - uses: ammaraskar/sphinx-action@master
+      with:
+        docs-folder: "docs/"
+
+    - name: Commit doc changes
+      run: |
+        git config user.name github-actions
+        git config user.email github-actions@github.com
+        git add docs
+        git commit -m "adding updated documentation" || true
+        git push
