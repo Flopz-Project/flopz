@@ -16,6 +16,8 @@ Flopz is an assembler toolkit written in pure python. Use it to:
 
 The flopz repository can be found here_.
 
+Check out the full :doc:`introduction <introduction>` or head over to the :doc:`tutorials. <tutorial>`
+
 .. _here: https://github.com/Flopz-Project/flopz
 
 
@@ -23,6 +25,9 @@ The flopz repository can be found here_.
    :caption: Contents:
    :maxdepth: 10
 
+   introduction
+   features
+   tutorial
    modules
 
 Indices and tables

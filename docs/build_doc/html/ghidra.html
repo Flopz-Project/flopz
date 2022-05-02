@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Ghidra Plugin &mdash; flopz 1.0.1 documentation</title>
+      <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="TG TITLE" href="targetgadget.html" />
+    <link rel="prev" title="Overview" href="overview.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="index.html" class="icon icon-home"> flopz
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="introduction.html">Introduction</a><ul class="simple">
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="features.html">Features</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="features.html#implemented-architectures">Implemented Architectures</a><ul class="simple">
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1 current"><a class="reference internal" href="tutorial.html">Tutorials</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="overview.html">Overview</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="overview.html#ghidra-plugin">Ghidra Plugin</a></li>
+<li class="toctree-l3"><a class="reference internal" href="overview.html#targets-and-gadgets">Targets and Gadgets</a></li>
+</ul>
+</li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">The Ghidra Plugin</a></li>
+<li class="toctree-l2"><a class="reference internal" href="targetgadget.html">TG TITLE</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="modules.html">flopz</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="flopz.html">flopz package</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="flopz.html#subpackages">Subpackages</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="flopz.arch.html">flopz.arch package</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="flopz.arch.html#subpackages">Subpackages</a><ul>
+<li class="toctree-l6"><a class="reference internal" href="flopz.arch.arm.html">flopz.arch.arm package</a><ul>
+<li class="toctree-l7"><a class="reference internal" href="flopz.arch.arm.html#subpackages">Subpackages</a><ul>
+<li class="toctree-l8"><a class="reference internal" href="flopz.arch.arm.thumb.html">flopz.arch.arm.thumb package</a><ul>
+<li class="toctree-l9"><a class="reference internal" href="flopz.arch.arm.thumb.html#submodules">Submodules</a></li>
+<li class="toctree-l9"><a class="reference internal" href="flopz.arch.arm.thumb.html#module-flopz.arch.arm.thumb.auto_instructions">flopz.arch.arm.thumb.auto_instructions module</a></li>
+<li class="toctree-l9"><a class="reference internal" href="flopz.arch.arm.thumb.html#module-flopz.arch.arm.thumb.instructions">flopz.arch.arm.thumb.instructions module</a></li>
+<li class="toctree-l9"><a class="reference internal" href="flopz.arch.arm.thumb.html#module-flopz.arch.arm.thumb.stm32F407">flopz.arch.arm.thumb.stm32F407 module</a></li>
+<li class="toctree-l9"><a class="reference internal" href="flopz.arch.arm.thumb.html#module-flopz.arch.arm.thumb">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l7"><a class="reference internal" href="flopz.arch.arm.html#submodules">Submodules</a></li>
+<li class="toctree-l7"><a class="reference internal" href="flopz.arch.arm.html#module-flopz.arch.arm.arm_generic_arch">flopz.arch.arm.arm_generic_arch module</a></li>
+<li class="toctree-l7"><a class="reference internal" href="flopz.arch.arm.html#module-flopz.arch.arm">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l6"><a class="reference internal" href="flopz.arch.ia32.html">flopz.arch.ia32 package</a><ul>
+<li class="toctree-l7"><a class="reference internal" href="flopz.arch.ia32.html#submodules">Submodules</a></li>
+<li class="toctree-l7"><a class="reference internal" href="flopz.arch.ia32.html#module-flopz.arch.ia32.ia32_generic_arch">flopz.arch.ia32.ia32_generic_arch module</a></li>
+<li class="toctree-l7"><a class="reference internal" href="flopz.arch.ia32.html#module-flopz.arch.ia32.instructions">flopz.arch.ia32.instructions module</a></li>
+<li class="toctree-l7"><a class="reference internal" href="flopz.arch.ia32.html#module-flopz.arch.ia32.registers">flopz.arch.ia32.registers module</a></li>
+<li class="toctree-l7"><a class="reference internal" href="flopz.arch.ia32.html#module-flopz.arch.ia32">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l6"><a class="reference internal" href="flopz.arch.ppc.html">flopz.arch.ppc package</a><ul>
+<li class="toctree-l7"><a class="reference internal" href="flopz.arch.ppc.html#subpackages">Subpackages</a><ul>
+<li class="toctree-l8"><a class="reference internal" href="flopz.arch.ppc.vle.html">flopz.arch.ppc.vle package</a><ul>
+<li class="toctree-l9"><a class="reference internal" href="flopz.arch.ppc.vle.html#submodules">Submodules</a></li>
+<li class="toctree-l9"><a class="reference internal" href="flopz.arch.ppc.vle.html#module-flopz.arch.ppc.vle.auto_instructions">flopz.arch.ppc.vle.auto_instructions module</a></li>
+<li class="toctree-l9"><a class="reference internal" href="flopz.arch.ppc.vle.html#module-flopz.arch.ppc.vle.e200z0">flopz.arch.ppc.vle.e200z0 module</a></li>
+<li class="toctree-l9"><a class="reference internal" href="flopz.arch.ppc.vle.html#module-flopz.arch.ppc.vle.instructions">flopz.arch.ppc.vle.instructions module</a></li>
+<li class="toctree-l9"><a class="reference internal" href="flopz.arch.ppc.vle.html#module-flopz.arch.ppc.vle.registers">flopz.arch.ppc.vle.registers module</a></li>
+<li class="toctree-l9"><a class="reference internal" href="flopz.arch.ppc.vle.html#module-flopz.arch.ppc.vle.vle">flopz.arch.ppc.vle.vle module</a></li>
+<li class="toctree-l9"><a class="reference internal" href="flopz.arch.ppc.vle.html#module-flopz.arch.ppc.vle">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l7"><a class="reference internal" href="flopz.arch.ppc.html#submodules">Submodules</a></li>
+<li class="toctree-l7"><a class="reference internal" href="flopz.arch.ppc.html#module-flopz.arch.ppc.ppc_generic_arch">flopz.arch.ppc.ppc_generic_arch module</a></li>
+<li class="toctree-l7"><a class="reference internal" href="flopz.arch.ppc.html#module-flopz.arch.ppc">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l6"><a class="reference internal" href="flopz.arch.riscv.html">flopz.arch.riscv package</a><ul>
+<li class="toctree-l7"><a class="reference internal" href="flopz.arch.riscv.html#subpackages">Subpackages</a><ul>
+<li class="toctree-l8"><a class="reference internal" href="flopz.arch.riscv.rv32c.html">flopz.arch.riscv.rv32c package</a><ul>
+<li class="toctree-l9"><a class="reference internal" href="flopz.arch.riscv.rv32c.html#submodules">Submodules</a></li>
+<li class="toctree-l9"><a class="reference internal" href="flopz.arch.riscv.rv32c.html#module-flopz.arch.riscv.rv32c.instructions">flopz.arch.riscv.rv32c.instructions module</a></li>
+<li class="toctree-l9"><a class="reference internal" href="flopz.arch.riscv.rv32c.html#module-flopz.arch.riscv.rv32c">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l8"><a class="reference internal" href="flopz.arch.riscv.rv32i.html">flopz.arch.riscv.rv32i package</a><ul>
+<li class="toctree-l9"><a class="reference internal" href="flopz.arch.riscv.rv32i.html#submodules">Submodules</a></li>
+<li class="toctree-l9"><a class="reference internal" href="flopz.arch.riscv.rv32i.html#module-flopz.arch.riscv.rv32i.instructions">flopz.arch.riscv.rv32i.instructions module</a></li>
+<li class="toctree-l9"><a class="reference internal" href="flopz.arch.riscv.rv32i.html#module-flopz.arch.riscv.rv32i.rv32i_arch">flopz.arch.riscv.rv32i.rv32i_arch module</a></li>
+<li class="toctree-l9"><a class="reference internal" href="flopz.arch.riscv.rv32i.html#module-flopz.arch.riscv.rv32i">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l7"><a class="reference internal" href="flopz.arch.riscv.html#submodules">Submodules</a></li>
+<li class="toctree-l7"><a class="reference internal" href="flopz.arch.riscv.html#module-flopz.arch.riscv.registers">flopz.arch.riscv.registers module</a></li>
+<li class="toctree-l7"><a class="reference internal" href="flopz.arch.riscv.html#module-flopz.arch.riscv.riscv_generic_arch">flopz.arch.riscv.riscv_generic_arch module</a></li>
+<li class="toctree-l7"><a class="reference internal" href="flopz.arch.riscv.html#module-flopz.arch.riscv">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l5"><a class="reference internal" href="flopz.arch.html#submodules">Submodules</a></li>
+<li class="toctree-l5"><a class="reference internal" href="flopz.arch.html#module-flopz.arch.architecture">flopz.arch.architecture module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="flopz.arch.html#module-flopz.arch.auto_instruction">flopz.arch.auto_instruction module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="flopz.arch.html#module-flopz.arch.exceptions">flopz.arch.exceptions module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="flopz.arch.html#module-flopz.arch.instruction">flopz.arch.instruction module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="flopz.arch.html#module-flopz.arch.operands">flopz.arch.operands module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="flopz.arch.html#module-flopz.arch.register">flopz.arch.register module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="flopz.arch.html#module-flopz.arch">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="flopz.core.html">flopz.core package</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="flopz.core.html#submodules">Submodules</a></li>
+<li class="toctree-l5"><a class="reference internal" href="flopz.core.html#module-flopz.core.addressable_object">flopz.core.addressable_object module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="flopz.core.html#module-flopz.core.assembler">flopz.core.assembler module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="flopz.core.html#module-flopz.core.function">flopz.core.function module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="flopz.core.html#module-flopz.core.label">flopz.core.label module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="flopz.core.html#module-flopz.core.module">flopz.core.module module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="flopz.core.html#module-flopz.core.shellcode">flopz.core.shellcode module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="flopz.core.html#module-flopz.core.target">flopz.core.target module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="flopz.core.html#module-flopz.core">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="flopz.listener.html">flopz.listener package</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="flopz.listener.html#subpackages">Subpackages</a><ul>
+<li class="toctree-l6"><a class="reference internal" href="flopz.listener.events.html">flopz.listener.events package</a><ul>
+<li class="toctree-l7"><a class="reference internal" href="flopz.listener.events.html#submodules">Submodules</a></li>
+<li class="toctree-l7"><a class="reference internal" href="flopz.listener.events.html#module-flopz.listener.events.function_trace_event">flopz.listener.events.function_trace_event module</a></li>
+<li class="toctree-l7"><a class="reference internal" href="flopz.listener.events.html#module-flopz.listener.events">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l6"><a class="reference internal" href="flopz.listener.links.html">flopz.listener.links package</a><ul>
+<li class="toctree-l7"><a class="reference internal" href="flopz.listener.links.html#submodules">Submodules</a></li>
+<li class="toctree-l7"><a class="reference internal" href="flopz.listener.links.html#module-flopz.listener.links.all_links">flopz.listener.links.all_links module</a></li>
+<li class="toctree-l7"><a class="reference internal" href="flopz.listener.links.html#module-flopz.listener.links.socketcan_link">flopz.listener.links.socketcan_link module</a></li>
+<li class="toctree-l7"><a class="reference internal" href="flopz.listener.links.html#module-flopz.listener.links">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l6"><a class="reference internal" href="flopz.listener.loggers.html">flopz.listener.loggers package</a><ul>
+<li class="toctree-l7"><a class="reference internal" href="flopz.listener.loggers.html#submodules">Submodules</a></li>
+<li class="toctree-l7"><a class="reference internal" href="flopz.listener.loggers.html#module-flopz.listener.loggers.all_loggers">flopz.listener.loggers.all_loggers module</a></li>
+<li class="toctree-l7"><a class="reference internal" href="flopz.listener.loggers.html#module-flopz.listener.loggers.chrome_trace_logger">flopz.listener.loggers.chrome_trace_logger module</a></li>
+<li class="toctree-l7"><a class="reference internal" href="flopz.listener.loggers.html#module-flopz.listener.loggers.console_logger">flopz.listener.loggers.console_logger module</a></li>
+<li class="toctree-l7"><a class="reference internal" href="flopz.listener.loggers.html#module-flopz.listener.loggers.json_file_logger">flopz.listener.loggers.json_file_logger module</a></li>
+<li class="toctree-l7"><a class="reference internal" href="flopz.listener.loggers.html#module-flopz.listener.loggers">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l5"><a class="reference internal" href="flopz.listener.html#submodules">Submodules</a></li>
+<li class="toctree-l5"><a class="reference internal" href="flopz.listener.html#module-flopz.listener.event">flopz.listener.event module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="flopz.listener.html#module-flopz.listener.flopz_logger">flopz.listener.flopz_logger module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="flopz.listener.html#module-flopz.listener.link">flopz.listener.link module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="flopz.listener.html#module-flopz.listener.protocol">flopz.listener.protocol module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="flopz.listener.html#module-flopz.listener">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="flopz.target.html">flopz.target package</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="flopz.target.html#subpackages">Subpackages</a><ul>
+<li class="toctree-l6"><a class="reference internal" href="flopz.target.bolero.html">flopz.target.bolero package</a><ul>
+<li class="toctree-l7"><a class="reference internal" href="flopz.target.bolero.html#submodules">Submodules</a></li>
+<li class="toctree-l7"><a class="reference internal" href="flopz.target.bolero.html#module-flopz.target.bolero.bolero_protocol">flopz.target.bolero.bolero_protocol module</a></li>
+<li class="toctree-l7"><a class="reference internal" href="flopz.target.bolero.html#module-flopz.target.bolero.bolero_target">flopz.target.bolero.bolero_target module</a></li>
+<li class="toctree-l7"><a class="reference internal" href="flopz.target.bolero.html#module-flopz.target.bolero">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l5"><a class="reference internal" href="flopz.target.html#submodules">Submodules</a></li>
+<li class="toctree-l5"><a class="reference internal" href="flopz.target.html#module-flopz.target.all_targets">flopz.target.all_targets module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="flopz.target.html#module-flopz.target">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="flopz.util.html">flopz.util package</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="flopz.util.html#submodules">Submodules</a></li>
+<li class="toctree-l5"><a class="reference internal" href="flopz.util.html#module-flopz.util.integer_representation">flopz.util.integer_representation module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="flopz.util.html#module-flopz.util.parsing">flopz.util.parsing module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="flopz.util.html#module-flopz.util">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="flopz.html#module-flopz">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">flopz</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+          <li><a href="tutorial.html">Tutorials</a> &raquo;</li>
+      <li>The Ghidra Plugin</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/ghidra.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="the-ghidra-plugin">
+<h1>The Ghidra Plugin<a class="headerlink" href="#the-ghidra-plugin" title="Permalink to this headline"></a></h1>
+<p>This page will introduce you to the details of the Ghidra plugin that can be used to
+easily provide configuration data for flopz.</p>
+<img alt="_images/arch_ghidra.png" src="_images/arch_ghidra.png" />
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="overview.html" class="btn btn-neutral float-left" title="Overview" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="targetgadget.html" class="btn btn-neutral float-right" title="TG TITLE" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2022, Noelscher Consulting GmbH, H. F. Noelscher, L. Dubies.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
