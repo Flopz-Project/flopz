@@ -29,3 +29,18 @@ but is also responsible for cleaning up registers and executing the original ins
 The patcher will then use the configuration created with the Ghidra Plugin and the target class to insert these gadgets into the firmware.
 
 Read more about targets and gadgets :doc:`here <targetgadget>`.
+
+
+Patching The Firmware
+---------------------
+
+When the configuration and the target class are prepared, the process of patching the firmware just comes down to executing the *flopz_instrument.py* script
+that comes with the flopz installation. The script needs to be fed the configuration and target class (make sure to register your target in *all_targets.py*),
+as well as the original binary and an output filename. The script will then generate the instrumented firmware by placing your shellcode into the designated locations
+in the original binary.
+
+
+Listeners and Protocols
+------------------------
+
+TODO

@@ -1,4 +1,4 @@
-TG TITLE
-========
+Targets & Gadgets
+=================
 
-I dont exist yet
+This article is coming soon.
