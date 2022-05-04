@@ -185,7 +185,7 @@ INTEGER REGISTER-REGISTER INSTRUCTIONS
 
 
 # Add
-class R32iDD(RiscvInstruction):
+class R32iADD(RiscvInstruction):
     def __init__(self, rd, rs1, rs2):
         super().__init__(RiscvRForm(), opcode=0b0110011, funct3=0b000, funct7=0, rd=rd, rs1=rs1, rs2=rs2)
 
