@@ -39,4 +39,5 @@ Indices and tables
 
 
 .. meta::
-   :google-site-verification: _864YeX6Q81rCIuNq2P0KNOdIbxLyIAg026NjC9_0ok
+   :google-site-verification: Co6NaAtu8X0tqn4JHrajWPN-8Pa16rAwDEugfF9J0hk
+
