@@ -10,7 +10,7 @@ Flopz is an assembler toolkit written in pure python. Use it to:
 - ARM: Thumb Mode
 - PPC: VLE, only
 - RISC-V: RV32I, RV32C
-- IA-32 (work in progress)
+- IA-32
 
 If you'd like to see another architecture implemented, feel free to reach out anytime - we enjoy doing this!
 
