@@ -1,18 +1,20 @@
 <!DOCTYPE html>
 <html class="writer-html5" lang="en" >
 <head>
-  <meta charset="utf-8" />
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>flopz.arch.ia32 package &mdash; flopz 1.0.1 documentation</title><link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
-    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  <title>flopz.arch.ia32 package &mdash; flopz 1.0.1 documentation</title>
+      <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
   <!--[if lt IE 9]>
     <script src="_static/js/html5shiv.min.js"></script>
   <![endif]-->
-  <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+  
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
         <script src="_static/jquery.js"></script>
         <script src="_static/underscore.js"></script>
         <script src="_static/doctools.js"></script>
-        <script src="_static/language_data.js"></script>
     <script src="_static/js/theme.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
@@ -35,7 +37,7 @@
   </form>
 </div>
         </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
-              <p class="caption"><span class="caption-text">Contents:</span></p>
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="introduction.html">Introduction</a><ul class="simple">
 </ul>
@@ -70,27 +72,27 @@
 <li class="toctree-l7"><a class="reference internal" href="flopz.arch.arm.html#subpackages">Subpackages</a><ul>
 <li class="toctree-l8"><a class="reference internal" href="flopz.arch.arm.thumb.html">flopz.arch.arm.thumb package</a><ul>
 <li class="toctree-l9"><a class="reference internal" href="flopz.arch.arm.thumb.html#submodules">Submodules</a></li>
-<li class="toctree-l9"><a class="reference internal" href="flopz.arch.arm.thumb.html#flopz-arch-arm-thumb-auto-instructions-module">flopz.arch.arm.thumb.auto_instructions module</a></li>
-<li class="toctree-l9"><a class="reference internal" href="flopz.arch.arm.thumb.html#flopz-arch-arm-thumb-instructions-module">flopz.arch.arm.thumb.instructions module</a></li>
-<li class="toctree-l9"><a class="reference internal" href="flopz.arch.arm.thumb.html#flopz-arch-arm-thumb-stm32f407-module">flopz.arch.arm.thumb.stm32F407 module</a></li>
+<li class="toctree-l9"><a class="reference internal" href="flopz.arch.arm.thumb.html#module-flopz.arch.arm.thumb.auto_instructions">flopz.arch.arm.thumb.auto_instructions module</a></li>
+<li class="toctree-l9"><a class="reference internal" href="flopz.arch.arm.thumb.html#module-flopz.arch.arm.thumb.instructions">flopz.arch.arm.thumb.instructions module</a></li>
+<li class="toctree-l9"><a class="reference internal" href="flopz.arch.arm.thumb.html#module-flopz.arch.arm.thumb.stm32F407">flopz.arch.arm.thumb.stm32F407 module</a></li>
 <li class="toctree-l9"><a class="reference internal" href="flopz.arch.arm.thumb.html#module-flopz.arch.arm.thumb">Module contents</a></li>
 </ul>
 </li>
 </ul>
 </li>
 <li class="toctree-l7"><a class="reference internal" href="flopz.arch.arm.html#submodules">Submodules</a></li>
-<li class="toctree-l7"><a class="reference internal" href="flopz.arch.arm.html#flopz-arch-arm-arm-generic-arch-module">flopz.arch.arm.arm_generic_arch module</a></li>
+<li class="toctree-l7"><a class="reference internal" href="flopz.arch.arm.html#module-flopz.arch.arm.arm_generic_arch">flopz.arch.arm.arm_generic_arch module</a></li>
 <li class="toctree-l7"><a class="reference internal" href="flopz.arch.arm.html#module-flopz.arch.arm">Module contents</a></li>
 </ul>
 </li>
 <li class="toctree-l6 current"><a class="current reference internal" href="#">flopz.arch.ia32 package</a><ul>
 <li class="toctree-l7"><a class="reference internal" href="#submodules">Submodules</a></li>
-<li class="toctree-l7"><a class="reference internal" href="#flopz-arch-ia32-addressing-module">flopz.arch.ia32.addressing module</a></li>
-<li class="toctree-l7"><a class="reference internal" href="#flopz-arch-ia32-auto-instructions-module">flopz.arch.ia32.auto_instructions module</a></li>
+<li class="toctree-l7"><a class="reference internal" href="#module-flopz.arch.ia32.addressing">flopz.arch.ia32.addressing module</a></li>
+<li class="toctree-l7"><a class="reference internal" href="#module-flopz.arch.ia32.auto_instructions">flopz.arch.ia32.auto_instructions module</a></li>
 <li class="toctree-l7"><a class="reference internal" href="#module-flopz.arch.ia32.conditionals">flopz.arch.ia32.conditionals module</a></li>
-<li class="toctree-l7"><a class="reference internal" href="#flopz-arch-ia32-ia32-generic-arch-module">flopz.arch.ia32.ia32_generic_arch module</a></li>
-<li class="toctree-l7"><a class="reference internal" href="#flopz-arch-ia32-instruction-components-module">flopz.arch.ia32.instruction_components module</a></li>
-<li class="toctree-l7"><a class="reference internal" href="#flopz-arch-ia32-instructions-module">flopz.arch.ia32.instructions module</a></li>
+<li class="toctree-l7"><a class="reference internal" href="#module-flopz.arch.ia32.ia32_generic_arch">flopz.arch.ia32.ia32_generic_arch module</a></li>
+<li class="toctree-l7"><a class="reference internal" href="#module-flopz.arch.ia32.instruction_components">flopz.arch.ia32.instruction_components module</a></li>
+<li class="toctree-l7"><a class="reference internal" href="#module-flopz.arch.ia32.instructions">flopz.arch.ia32.instructions module</a></li>
 <li class="toctree-l7"><a class="reference internal" href="#module-flopz.arch.ia32.modes">flopz.arch.ia32.modes module</a></li>
 <li class="toctree-l7"><a class="reference internal" href="#module-flopz.arch.ia32">Module contents</a></li>
 </ul>
@@ -99,18 +101,18 @@
 <li class="toctree-l7"><a class="reference internal" href="flopz.arch.ppc.html#subpackages">Subpackages</a><ul>
 <li class="toctree-l8"><a class="reference internal" href="flopz.arch.ppc.vle.html">flopz.arch.ppc.vle package</a><ul>
 <li class="toctree-l9"><a class="reference internal" href="flopz.arch.ppc.vle.html#submodules">Submodules</a></li>
-<li class="toctree-l9"><a class="reference internal" href="flopz.arch.ppc.vle.html#flopz-arch-ppc-vle-auto-instructions-module">flopz.arch.ppc.vle.auto_instructions module</a></li>
-<li class="toctree-l9"><a class="reference internal" href="flopz.arch.ppc.vle.html#flopz-arch-ppc-vle-e200z0-module">flopz.arch.ppc.vle.e200z0 module</a></li>
-<li class="toctree-l9"><a class="reference internal" href="flopz.arch.ppc.vle.html#flopz-arch-ppc-vle-instructions-module">flopz.arch.ppc.vle.instructions module</a></li>
+<li class="toctree-l9"><a class="reference internal" href="flopz.arch.ppc.vle.html#module-flopz.arch.ppc.vle.auto_instructions">flopz.arch.ppc.vle.auto_instructions module</a></li>
+<li class="toctree-l9"><a class="reference internal" href="flopz.arch.ppc.vle.html#module-flopz.arch.ppc.vle.e200z0">flopz.arch.ppc.vle.e200z0 module</a></li>
+<li class="toctree-l9"><a class="reference internal" href="flopz.arch.ppc.vle.html#module-flopz.arch.ppc.vle.instructions">flopz.arch.ppc.vle.instructions module</a></li>
 <li class="toctree-l9"><a class="reference internal" href="flopz.arch.ppc.vle.html#module-flopz.arch.ppc.vle.registers">flopz.arch.ppc.vle.registers module</a></li>
-<li class="toctree-l9"><a class="reference internal" href="flopz.arch.ppc.vle.html#flopz-arch-ppc-vle-vle-module">flopz.arch.ppc.vle.vle module</a></li>
+<li class="toctree-l9"><a class="reference internal" href="flopz.arch.ppc.vle.html#module-flopz.arch.ppc.vle.vle">flopz.arch.ppc.vle.vle module</a></li>
 <li class="toctree-l9"><a class="reference internal" href="flopz.arch.ppc.vle.html#module-flopz.arch.ppc.vle">Module contents</a></li>
 </ul>
 </li>
 </ul>
 </li>
 <li class="toctree-l7"><a class="reference internal" href="flopz.arch.ppc.html#submodules">Submodules</a></li>
-<li class="toctree-l7"><a class="reference internal" href="flopz.arch.ppc.html#flopz-arch-ppc-ppc-generic-arch-module">flopz.arch.ppc.ppc_generic_arch module</a></li>
+<li class="toctree-l7"><a class="reference internal" href="flopz.arch.ppc.html#module-flopz.arch.ppc.ppc_generic_arch">flopz.arch.ppc.ppc_generic_arch module</a></li>
 <li class="toctree-l7"><a class="reference internal" href="flopz.arch.ppc.html#module-flopz.arch.ppc">Module contents</a></li>
 </ul>
 </li>
@@ -118,46 +120,46 @@
 <li class="toctree-l7"><a class="reference internal" href="flopz.arch.riscv.html#subpackages">Subpackages</a><ul>
 <li class="toctree-l8"><a class="reference internal" href="flopz.arch.riscv.rv32c.html">flopz.arch.riscv.rv32c package</a><ul>
 <li class="toctree-l9"><a class="reference internal" href="flopz.arch.riscv.rv32c.html#submodules">Submodules</a></li>
-<li class="toctree-l9"><a class="reference internal" href="flopz.arch.riscv.rv32c.html#flopz-arch-riscv-rv32c-instructions-module">flopz.arch.riscv.rv32c.instructions module</a></li>
+<li class="toctree-l9"><a class="reference internal" href="flopz.arch.riscv.rv32c.html#module-flopz.arch.riscv.rv32c.instructions">flopz.arch.riscv.rv32c.instructions module</a></li>
 <li class="toctree-l9"><a class="reference internal" href="flopz.arch.riscv.rv32c.html#module-flopz.arch.riscv.rv32c">Module contents</a></li>
 </ul>
 </li>
 <li class="toctree-l8"><a class="reference internal" href="flopz.arch.riscv.rv32i.html">flopz.arch.riscv.rv32i package</a><ul>
 <li class="toctree-l9"><a class="reference internal" href="flopz.arch.riscv.rv32i.html#submodules">Submodules</a></li>
-<li class="toctree-l9"><a class="reference internal" href="flopz.arch.riscv.rv32i.html#flopz-arch-riscv-rv32i-instructions-module">flopz.arch.riscv.rv32i.instructions module</a></li>
-<li class="toctree-l9"><a class="reference internal" href="flopz.arch.riscv.rv32i.html#flopz-arch-riscv-rv32i-rv32i-arch-module">flopz.arch.riscv.rv32i.rv32i_arch module</a></li>
+<li class="toctree-l9"><a class="reference internal" href="flopz.arch.riscv.rv32i.html#module-flopz.arch.riscv.rv32i.instructions">flopz.arch.riscv.rv32i.instructions module</a></li>
+<li class="toctree-l9"><a class="reference internal" href="flopz.arch.riscv.rv32i.html#module-flopz.arch.riscv.rv32i.rv32i_arch">flopz.arch.riscv.rv32i.rv32i_arch module</a></li>
 <li class="toctree-l9"><a class="reference internal" href="flopz.arch.riscv.rv32i.html#module-flopz.arch.riscv.rv32i">Module contents</a></li>
 </ul>
 </li>
 </ul>
 </li>
 <li class="toctree-l7"><a class="reference internal" href="flopz.arch.riscv.html#submodules">Submodules</a></li>
-<li class="toctree-l7"><a class="reference internal" href="flopz.arch.riscv.html#flopz-arch-riscv-registers-module">flopz.arch.riscv.registers module</a></li>
-<li class="toctree-l7"><a class="reference internal" href="flopz.arch.riscv.html#flopz-arch-riscv-riscv-generic-arch-module">flopz.arch.riscv.riscv_generic_arch module</a></li>
+<li class="toctree-l7"><a class="reference internal" href="flopz.arch.riscv.html#module-flopz.arch.riscv.registers">flopz.arch.riscv.registers module</a></li>
+<li class="toctree-l7"><a class="reference internal" href="flopz.arch.riscv.html#module-flopz.arch.riscv.riscv_generic_arch">flopz.arch.riscv.riscv_generic_arch module</a></li>
 <li class="toctree-l7"><a class="reference internal" href="flopz.arch.riscv.html#module-flopz.arch.riscv">Module contents</a></li>
 </ul>
 </li>
 </ul>
 </li>
 <li class="toctree-l5"><a class="reference internal" href="flopz.arch.html#submodules">Submodules</a></li>
-<li class="toctree-l5"><a class="reference internal" href="flopz.arch.html#flopz-arch-architecture-module">flopz.arch.architecture module</a></li>
-<li class="toctree-l5"><a class="reference internal" href="flopz.arch.html#flopz-arch-auto-instruction-module">flopz.arch.auto_instruction module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="flopz.arch.html#module-flopz.arch.architecture">flopz.arch.architecture module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="flopz.arch.html#module-flopz.arch.auto_instruction">flopz.arch.auto_instruction module</a></li>
 <li class="toctree-l5"><a class="reference internal" href="flopz.arch.html#module-flopz.arch.exceptions">flopz.arch.exceptions module</a></li>
-<li class="toctree-l5"><a class="reference internal" href="flopz.arch.html#flopz-arch-instruction-module">flopz.arch.instruction module</a></li>
-<li class="toctree-l5"><a class="reference internal" href="flopz.arch.html#flopz-arch-operands-module">flopz.arch.operands module</a></li>
-<li class="toctree-l5"><a class="reference internal" href="flopz.arch.html#flopz-arch-register-module">flopz.arch.register module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="flopz.arch.html#module-flopz.arch.instruction">flopz.arch.instruction module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="flopz.arch.html#module-flopz.arch.operands">flopz.arch.operands module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="flopz.arch.html#module-flopz.arch.register">flopz.arch.register module</a></li>
 <li class="toctree-l5"><a class="reference internal" href="flopz.arch.html#module-flopz.arch">Module contents</a></li>
 </ul>
 </li>
 <li class="toctree-l4"><a class="reference internal" href="flopz.core.html">flopz.core package</a><ul>
 <li class="toctree-l5"><a class="reference internal" href="flopz.core.html#submodules">Submodules</a></li>
 <li class="toctree-l5"><a class="reference internal" href="flopz.core.html#module-flopz.core.addressable_object">flopz.core.addressable_object module</a></li>
-<li class="toctree-l5"><a class="reference internal" href="flopz.core.html#flopz-core-assembler-module">flopz.core.assembler module</a></li>
-<li class="toctree-l5"><a class="reference internal" href="flopz.core.html#flopz-core-function-module">flopz.core.function module</a></li>
-<li class="toctree-l5"><a class="reference internal" href="flopz.core.html#flopz-core-label-module">flopz.core.label module</a></li>
-<li class="toctree-l5"><a class="reference internal" href="flopz.core.html#flopz-core-module-module">flopz.core.module module</a></li>
-<li class="toctree-l5"><a class="reference internal" href="flopz.core.html#flopz-core-shellcode-module">flopz.core.shellcode module</a></li>
-<li class="toctree-l5"><a class="reference internal" href="flopz.core.html#flopz-core-target-module">flopz.core.target module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="flopz.core.html#module-flopz.core.assembler">flopz.core.assembler module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="flopz.core.html#module-flopz.core.function">flopz.core.function module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="flopz.core.html#module-flopz.core.label">flopz.core.label module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="flopz.core.html#module-flopz.core.module">flopz.core.module module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="flopz.core.html#module-flopz.core.shellcode">flopz.core.shellcode module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="flopz.core.html#module-flopz.core.target">flopz.core.target module</a></li>
 <li class="toctree-l5"><a class="reference internal" href="flopz.core.html#module-flopz.core">Module contents</a></li>
 </ul>
 </li>
@@ -200,26 +202,26 @@
 <li class="toctree-l6"><a class="reference internal" href="flopz.target.bolero.html">flopz.target.bolero package</a><ul>
 <li class="toctree-l7"><a class="reference internal" href="flopz.target.bolero.html#submodules">Submodules</a></li>
 <li class="toctree-l7"><a class="reference internal" href="flopz.target.bolero.html#module-flopz.target.bolero.bolero_protocol">flopz.target.bolero.bolero_protocol module</a></li>
-<li class="toctree-l7"><a class="reference internal" href="flopz.target.bolero.html#flopz-target-bolero-bolero-target-module">flopz.target.bolero.bolero_target module</a></li>
+<li class="toctree-l7"><a class="reference internal" href="flopz.target.bolero.html#module-flopz.target.bolero.bolero_target">flopz.target.bolero.bolero_target module</a></li>
 <li class="toctree-l7"><a class="reference internal" href="flopz.target.bolero.html#module-flopz.target.bolero">Module contents</a></li>
 </ul>
 </li>
 <li class="toctree-l6"><a class="reference internal" href="flopz.target.stm32.html">flopz.target.stm32 package</a><ul>
 <li class="toctree-l7"><a class="reference internal" href="flopz.target.stm32.html#submodules">Submodules</a></li>
-<li class="toctree-l7"><a class="reference internal" href="flopz.target.stm32.html#flopz-target-stm32-stm32f407-target-module">flopz.target.stm32.stm32F407_target module</a></li>
+<li class="toctree-l7"><a class="reference internal" href="flopz.target.stm32.html#module-flopz.target.stm32.stm32F407_target">flopz.target.stm32.stm32F407_target module</a></li>
 <li class="toctree-l7"><a class="reference internal" href="flopz.target.stm32.html#module-flopz.target.stm32">Module contents</a></li>
 </ul>
 </li>
 </ul>
 </li>
 <li class="toctree-l5"><a class="reference internal" href="flopz.target.html#submodules">Submodules</a></li>
-<li class="toctree-l5"><a class="reference internal" href="flopz.target.html#flopz-target-all-targets-module">flopz.target.all_targets module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="flopz.target.html#module-flopz.target.all_targets">flopz.target.all_targets module</a></li>
 <li class="toctree-l5"><a class="reference internal" href="flopz.target.html#module-flopz.target">Module contents</a></li>
 </ul>
 </li>
 <li class="toctree-l4"><a class="reference internal" href="flopz.util.html">flopz.util package</a><ul>
 <li class="toctree-l5"><a class="reference internal" href="flopz.util.html#submodules">Submodules</a></li>
-<li class="toctree-l5"><a class="reference internal" href="flopz.util.html#flopz-util-integer-representation-module">flopz.util.integer_representation module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="flopz.util.html#module-flopz.util.integer_representation">flopz.util.integer_representation module</a></li>
 <li class="toctree-l5"><a class="reference internal" href="flopz.util.html#module-flopz.util.parsing">flopz.util.parsing module</a></li>
 <li class="toctree-l5"><a class="reference internal" href="flopz.util.html#module-flopz.util">Module contents</a></li>
 </ul>
@@ -260,215 +262,1085 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <div class="section" id="flopz-arch-ia32-package">
-<h1>flopz.arch.ia32 package<a class="headerlink" href="#flopz-arch-ia32-package" title="Permalink to this headline">¶</a></h1>
-<div class="section" id="submodules">
-<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this headline">¶</a></h2>
-</div>
-<div class="section" id="flopz-arch-ia32-addressing-module">
-<h2>flopz.arch.ia32.addressing module<a class="headerlink" href="#flopz-arch-ia32-addressing-module" title="Permalink to this headline">¶</a></h2>
-</div>
-<div class="section" id="flopz-arch-ia32-auto-instructions-module">
-<h2>flopz.arch.ia32.auto_instructions module<a class="headerlink" href="#flopz-arch-ia32-auto-instructions-module" title="Permalink to this headline">¶</a></h2>
-</div>
-<div class="section" id="module-flopz.arch.ia32.conditionals">
-<span id="flopz-arch-ia32-conditionals-module"></span><h2>flopz.arch.ia32.conditionals module<a class="headerlink" href="#module-flopz.arch.ia32.conditionals" title="Permalink to this headline">¶</a></h2>
-<dl class="class">
-<dt id="flopz.arch.ia32.conditionals.Cond">
-<em class="property">class </em><code class="sig-name descname">Cond</code><a class="headerlink" href="#flopz.arch.ia32.conditionals.Cond" title="Permalink to this definition">¶</a></dt>
+  <section id="flopz-arch-ia32-package">
+<h1>flopz.arch.ia32 package<a class="headerlink" href="#flopz-arch-ia32-package" title="Permalink to this headline"></a></h1>
+<section id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this headline"></a></h2>
+</section>
+<section id="module-flopz.arch.ia32.addressing">
+<span id="flopz-arch-ia32-addressing-module"></span><h2>flopz.arch.ia32.addressing module<a class="headerlink" href="#module-flopz.arch.ia32.addressing" title="Permalink to this headline"></a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="flopz.arch.ia32.addressing.AddressExpression">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">AddressExpression</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">base</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">index</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">scale</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">displacement</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#flopz.arch.ia32.addressing.AddressExpression" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Class to represent various arithmetic register combinations.</p>
+<p>Combining registers through addition, subtraction or multiplication will result in an AddressExpression.
+Address Expressions are composed of a base register holding the base address,
+an index register and a scale added to the base address (+ scale * index),
+and a displacement value from the resulting address.
+Index and scale without a base or a base without index and scale are both valid, but one has to be set.
+A displacement is optional.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>base</strong> (<code class="xref py py-data docutils literal notranslate"><span class="pre">Optional</span></code>[<a class="reference internal" href="#flopz.arch.ia32.addressing.IA32Register" title="flopz.arch.ia32.addressing.IA32Register"><code class="xref py py-class docutils literal notranslate"><span class="pre">IA32Register</span></code></a>]) – The base register.</p></li>
+<li><p><strong>index</strong> (<code class="xref py py-data docutils literal notranslate"><span class="pre">Optional</span></code>[<a class="reference internal" href="#flopz.arch.ia32.addressing.IA32Register" title="flopz.arch.ia32.addressing.IA32Register"><code class="xref py py-class docutils literal notranslate"><span class="pre">IA32Register</span></code></a>]) – The index register.</p></li>
+<li><p><strong>scale</strong> (<code class="xref py py-data docutils literal notranslate"><span class="pre">Optional</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code>]) – Scaling factor for the index register content. Can be 1, 2, 4 or 8.</p></li>
+<li><p><strong>displacement</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code>) – Signed offset from the address resulting from the other parameters( [base] + scale * [index]).</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="flopz.arch.ia32.addressing.IA32RegType">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">IA32RegType</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">value</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#flopz.arch.ia32.addressing.IA32RegType" title="Permalink to this definition"></a></dt>
 <dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">enum.IntEnum</span></code></p>
-<p>An enumeration.</p>
-<dl class="attribute">
-<dt id="flopz.arch.ia32.conditionals.Cond.A">
-<code class="sig-name descname">A</code><em class="property"> = 7</em><a class="headerlink" href="#flopz.arch.ia32.conditionals.Cond.A" title="Permalink to this definition">¶</a></dt>
+<p>Enumerating the different register types in ia32 architectures.</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="flopz.arch.ia32.addressing.IA32RegType.EFLAGS">
+<span class="sig-name descname"><span class="pre">EFLAGS</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">2</span></em><a class="headerlink" href="#flopz.arch.ia32.addressing.IA32RegType.EFLAGS" title="Permalink to this definition"></a></dt>
 <dd></dd></dl>
 
-<dl class="attribute">
-<dt id="flopz.arch.ia32.conditionals.Cond.AE">
-<code class="sig-name descname">AE</code><em class="property"> = 3</em><a class="headerlink" href="#flopz.arch.ia32.conditionals.Cond.AE" title="Permalink to this definition">¶</a></dt>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="flopz.arch.ia32.addressing.IA32RegType.EIP">
+<span class="sig-name descname"><span class="pre">EIP</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">3</span></em><a class="headerlink" href="#flopz.arch.ia32.addressing.IA32RegType.EIP" title="Permalink to this definition"></a></dt>
 <dd></dd></dl>
 
-<dl class="attribute">
-<dt id="flopz.arch.ia32.conditionals.Cond.B">
-<code class="sig-name descname">B</code><em class="property"> = 2</em><a class="headerlink" href="#flopz.arch.ia32.conditionals.Cond.B" title="Permalink to this definition">¶</a></dt>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="flopz.arch.ia32.addressing.IA32RegType.FPU">
+<span class="sig-name descname"><span class="pre">FPU</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">4</span></em><a class="headerlink" href="#flopz.arch.ia32.addressing.IA32RegType.FPU" title="Permalink to this definition"></a></dt>
 <dd></dd></dl>
 
-<dl class="attribute">
-<dt id="flopz.arch.ia32.conditionals.Cond.BE">
-<code class="sig-name descname">BE</code><em class="property"> = 6</em><a class="headerlink" href="#flopz.arch.ia32.conditionals.Cond.BE" title="Permalink to this definition">¶</a></dt>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="flopz.arch.ia32.addressing.IA32RegType.GENERAL_PURPOSE">
+<span class="sig-name descname"><span class="pre">GENERAL_PURPOSE</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">0</span></em><a class="headerlink" href="#flopz.arch.ia32.addressing.IA32RegType.GENERAL_PURPOSE" title="Permalink to this definition"></a></dt>
 <dd></dd></dl>
 
-<dl class="attribute">
-<dt id="flopz.arch.ia32.conditionals.Cond.C">
-<code class="sig-name descname">C</code><em class="property"> = 2</em><a class="headerlink" href="#flopz.arch.ia32.conditionals.Cond.C" title="Permalink to this definition">¶</a></dt>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="flopz.arch.ia32.addressing.IA32RegType.MMX">
+<span class="sig-name descname"><span class="pre">MMX</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">5</span></em><a class="headerlink" href="#flopz.arch.ia32.addressing.IA32RegType.MMX" title="Permalink to this definition"></a></dt>
 <dd></dd></dl>
 
-<dl class="attribute">
-<dt id="flopz.arch.ia32.conditionals.Cond.E">
-<code class="sig-name descname">E</code><em class="property"> = 4</em><a class="headerlink" href="#flopz.arch.ia32.conditionals.Cond.E" title="Permalink to this definition">¶</a></dt>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="flopz.arch.ia32.addressing.IA32RegType.SEGMENT">
+<span class="sig-name descname"><span class="pre">SEGMENT</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">1</span></em><a class="headerlink" href="#flopz.arch.ia32.addressing.IA32RegType.SEGMENT" title="Permalink to this definition"></a></dt>
 <dd></dd></dl>
 
-<dl class="attribute">
-<dt id="flopz.arch.ia32.conditionals.Cond.G">
-<code class="sig-name descname">G</code><em class="property"> = 15</em><a class="headerlink" href="#flopz.arch.ia32.conditionals.Cond.G" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="attribute">
-<dt id="flopz.arch.ia32.conditionals.Cond.GE">
-<code class="sig-name descname">GE</code><em class="property"> = 13</em><a class="headerlink" href="#flopz.arch.ia32.conditionals.Cond.GE" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="attribute">
-<dt id="flopz.arch.ia32.conditionals.Cond.L">
-<code class="sig-name descname">L</code><em class="property"> = 12</em><a class="headerlink" href="#flopz.arch.ia32.conditionals.Cond.L" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="attribute">
-<dt id="flopz.arch.ia32.conditionals.Cond.LE">
-<code class="sig-name descname">LE</code><em class="property"> = 14</em><a class="headerlink" href="#flopz.arch.ia32.conditionals.Cond.LE" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="attribute">
-<dt id="flopz.arch.ia32.conditionals.Cond.NA">
-<code class="sig-name descname">NA</code><em class="property"> = 6</em><a class="headerlink" href="#flopz.arch.ia32.conditionals.Cond.NA" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="attribute">
-<dt id="flopz.arch.ia32.conditionals.Cond.NAE">
-<code class="sig-name descname">NAE</code><em class="property"> = 2</em><a class="headerlink" href="#flopz.arch.ia32.conditionals.Cond.NAE" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="attribute">
-<dt id="flopz.arch.ia32.conditionals.Cond.NB">
-<code class="sig-name descname">NB</code><em class="property"> = 3</em><a class="headerlink" href="#flopz.arch.ia32.conditionals.Cond.NB" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="attribute">
-<dt id="flopz.arch.ia32.conditionals.Cond.NBE">
-<code class="sig-name descname">NBE</code><em class="property"> = 7</em><a class="headerlink" href="#flopz.arch.ia32.conditionals.Cond.NBE" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="attribute">
-<dt id="flopz.arch.ia32.conditionals.Cond.NC">
-<code class="sig-name descname">NC</code><em class="property"> = 3</em><a class="headerlink" href="#flopz.arch.ia32.conditionals.Cond.NC" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="attribute">
-<dt id="flopz.arch.ia32.conditionals.Cond.NE">
-<code class="sig-name descname">NE</code><em class="property"> = 5</em><a class="headerlink" href="#flopz.arch.ia32.conditionals.Cond.NE" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="attribute">
-<dt id="flopz.arch.ia32.conditionals.Cond.NG">
-<code class="sig-name descname">NG</code><em class="property"> = 14</em><a class="headerlink" href="#flopz.arch.ia32.conditionals.Cond.NG" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="attribute">
-<dt id="flopz.arch.ia32.conditionals.Cond.NGE">
-<code class="sig-name descname">NGE</code><em class="property"> = 12</em><a class="headerlink" href="#flopz.arch.ia32.conditionals.Cond.NGE" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="attribute">
-<dt id="flopz.arch.ia32.conditionals.Cond.NL">
-<code class="sig-name descname">NL</code><em class="property"> = 13</em><a class="headerlink" href="#flopz.arch.ia32.conditionals.Cond.NL" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="attribute">
-<dt id="flopz.arch.ia32.conditionals.Cond.NLE">
-<code class="sig-name descname">NLE</code><em class="property"> = 15</em><a class="headerlink" href="#flopz.arch.ia32.conditionals.Cond.NLE" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="attribute">
-<dt id="flopz.arch.ia32.conditionals.Cond.NO">
-<code class="sig-name descname">NO</code><em class="property"> = 1</em><a class="headerlink" href="#flopz.arch.ia32.conditionals.Cond.NO" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="attribute">
-<dt id="flopz.arch.ia32.conditionals.Cond.NP">
-<code class="sig-name descname">NP</code><em class="property"> = 11</em><a class="headerlink" href="#flopz.arch.ia32.conditionals.Cond.NP" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="attribute">
-<dt id="flopz.arch.ia32.conditionals.Cond.NS">
-<code class="sig-name descname">NS</code><em class="property"> = 9</em><a class="headerlink" href="#flopz.arch.ia32.conditionals.Cond.NS" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="attribute">
-<dt id="flopz.arch.ia32.conditionals.Cond.NZ">
-<code class="sig-name descname">NZ</code><em class="property"> = 5</em><a class="headerlink" href="#flopz.arch.ia32.conditionals.Cond.NZ" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="attribute">
-<dt id="flopz.arch.ia32.conditionals.Cond.O">
-<code class="sig-name descname">O</code><em class="property"> = 0</em><a class="headerlink" href="#flopz.arch.ia32.conditionals.Cond.O" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="attribute">
-<dt id="flopz.arch.ia32.conditionals.Cond.P">
-<code class="sig-name descname">P</code><em class="property"> = 10</em><a class="headerlink" href="#flopz.arch.ia32.conditionals.Cond.P" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="attribute">
-<dt id="flopz.arch.ia32.conditionals.Cond.PE">
-<code class="sig-name descname">PE</code><em class="property"> = 10</em><a class="headerlink" href="#flopz.arch.ia32.conditionals.Cond.PE" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="attribute">
-<dt id="flopz.arch.ia32.conditionals.Cond.PO">
-<code class="sig-name descname">PO</code><em class="property"> = 11</em><a class="headerlink" href="#flopz.arch.ia32.conditionals.Cond.PO" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="attribute">
-<dt id="flopz.arch.ia32.conditionals.Cond.RCXZ">
-<code class="sig-name descname">RCXZ</code><em class="property"> = 115</em><a class="headerlink" href="#flopz.arch.ia32.conditionals.Cond.RCXZ" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="attribute">
-<dt id="flopz.arch.ia32.conditionals.Cond.S">
-<code class="sig-name descname">S</code><em class="property"> = 8</em><a class="headerlink" href="#flopz.arch.ia32.conditionals.Cond.S" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="attribute">
-<dt id="flopz.arch.ia32.conditionals.Cond.Z">
-<code class="sig-name descname">Z</code><em class="property"> = 4</em><a class="headerlink" href="#flopz.arch.ia32.conditionals.Cond.Z" title="Permalink to this definition">¶</a></dt>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="flopz.arch.ia32.addressing.IA32RegType.XMM">
+<span class="sig-name descname"><span class="pre">XMM</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">6</span></em><a class="headerlink" href="#flopz.arch.ia32.addressing.IA32RegType.XMM" title="Permalink to this definition"></a></dt>
 <dd></dd></dl>
 
 </dd></dl>
 
-</div>
-<div class="section" id="flopz-arch-ia32-ia32-generic-arch-module">
-<h2>flopz.arch.ia32.ia32_generic_arch module<a class="headerlink" href="#flopz-arch-ia32-ia32-generic-arch-module" title="Permalink to this headline">¶</a></h2>
-</div>
-<div class="section" id="flopz-arch-ia32-instruction-components-module">
-<h2>flopz.arch.ia32.instruction_components module<a class="headerlink" href="#flopz-arch-ia32-instruction-components-module" title="Permalink to this headline">¶</a></h2>
-</div>
-<div class="section" id="flopz-arch-ia32-instructions-module">
-<h2>flopz.arch.ia32.instructions module<a class="headerlink" href="#flopz-arch-ia32-instructions-module" title="Permalink to this headline">¶</a></h2>
-</div>
-<div class="section" id="module-flopz.arch.ia32.modes">
-<span id="flopz-arch-ia32-modes-module"></span><h2>flopz.arch.ia32.modes module<a class="headerlink" href="#module-flopz.arch.ia32.modes" title="Permalink to this headline">¶</a></h2>
-<dl class="class">
-<dt id="flopz.arch.ia32.modes.ProcessorMode">
-<em class="property">class </em><code class="sig-name descname">ProcessorMode</code><a class="headerlink" href="#flopz.arch.ia32.modes.ProcessorMode" title="Permalink to this definition">¶</a></dt>
-<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">enum.IntEnum</span></code></p>
-<p>An enumeration.</p>
-<dl class="attribute">
-<dt id="flopz.arch.ia32.modes.ProcessorMode.LONG">
-<code class="sig-name descname">LONG</code><em class="property"> = 0</em><a class="headerlink" href="#flopz.arch.ia32.modes.ProcessorMode.LONG" title="Permalink to this definition">¶</a></dt>
+<dl class="py class">
+<dt class="sig sig-object py" id="flopz.arch.ia32.addressing.IA32Register">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">IA32Register</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">val</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">reg_type</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">bit_size</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">is_high</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#flopz.arch.ia32.addressing.IA32Register" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <a class="reference internal" href="flopz.arch.html#flopz.arch.register.Register" title="flopz.arch.register.Register"><code class="xref py py-class docutils literal notranslate"><span class="pre">flopz.arch.register.Register</span></code></a></p>
+<p>Class to represent IA32 registers.</p>
+<p>A little more differentiation options are needed for these registers as some can influence the presence
+of the REX byte. Additionally, a Descriptor is added to access the value.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>name</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code>) – </p></li>
+<li><p><strong>val</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code>) – </p></li>
+<li><p><strong>reg_type</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">IntEnum</span></code>) – </p></li>
+<li><p><strong>bit_size</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code>) – </p></li>
+</ul>
+</dd>
+</dl>
+<dl class="py method">
+<dt class="sig sig-object py" id="flopz.arch.ia32.addressing.IA32Register.get_val">
+<span class="sig-name descname"><span class="pre">get_val</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#flopz.arch.ia32.addressing.IA32Register.get_val" title="Permalink to this definition"></a></dt>
 <dd></dd></dl>
 
-<dl class="attribute">
-<dt id="flopz.arch.ia32.modes.ProcessorMode.PROTECTED">
-<code class="sig-name descname">PROTECTED</code><em class="property"> = 1</em><a class="headerlink" href="#flopz.arch.ia32.modes.ProcessorMode.PROTECTED" title="Permalink to this definition">¶</a></dt>
+<dl class="py method">
+<dt class="sig sig-object py" id="flopz.arch.ia32.addressing.IA32Register.is_high">
+<span class="sig-name descname"><span class="pre">is_high</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#flopz.arch.ia32.addressing.IA32Register.is_high" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="flopz.arch.ia32.addressing.IA32Register.requires_rex">
+<span class="sig-name descname"><span class="pre">requires_rex</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#flopz.arch.ia32.addressing.IA32Register.requires_rex" title="Permalink to this definition"></a></dt>
+<dd><p>Checks if the register requires a REX byte to be encodeable.</p>
+<p>Some registers require a REX byte to be present in the instruction, even if no flags in the REX byte are set.
+This is needed because they share their encoded value with the high halves of the a, c, d &amp; b registers and the
+presence of the REX byte is used to distinguish between the two cases.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="flopz.arch.ia32.addressing.IA32Register.val">
+<span class="sig-name descname"><span class="pre">val</span></span><a class="headerlink" href="#flopz.arch.ia32.addressing.IA32Register.val" title="Permalink to this definition"></a></dt>
+<dd><p>Descriptor class to access IA32Register values.</p>
+<p>For the IA32 architecture the high halves of the first four registers is possible for 8bit operand instructions.
+These are encoded as the encoding for the lower register value +4.
+This Descriptor handles the increase of the value if the targeted register is high.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="flopz.arch.ia32.addressing.MemoryAddress">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">MemoryAddress</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">size</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">addr_expr</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#flopz.arch.ia32.addressing.MemoryAddress" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <a class="reference internal" href="#flopz.arch.ia32.addressing.AddressExpression" title="flopz.arch.ia32.addressing.AddressExpression"><code class="xref py py-class docutils literal notranslate"><span class="pre">flopz.arch.ia32.addressing.AddressExpression</span></code></a></p>
+<p>Combines a AddressExpression with an operand size.</p>
+<p>To be able to correctly address memory in IA32, not only is an address resulting from an
+AddressExpression necessary. As the instructions need to encode the operand size,
+this information is also required to fully create valid instructions.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>size</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code>) – </p></li>
+<li><p><strong>addr_expr</strong> (<a class="reference internal" href="#flopz.arch.ia32.addressing.AddressExpression" title="flopz.arch.ia32.addressing.AddressExpression"><code class="xref py py-class docutils literal notranslate"><span class="pre">AddressExpression</span></code></a>) – </p></li>
+</ul>
+</dd>
+</dl>
+<dl class="py method">
+<dt class="sig sig-object py" id="flopz.arch.ia32.addressing.MemoryAddress.get_encoding">
+<span class="sig-name descname"><span class="pre">get_encoding</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">opcode</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#flopz.arch.ia32.addressing.MemoryAddress.get_encoding" title="Permalink to this definition"></a></dt>
+<dd><p>Returns the bytes that encode the MemoryAddress.</p>
+<p>Returns the ModRM byte and optionally SIB and displacement bytes to encode the MemoryAddress.
+Also sets the necessary bits in the REX byte belonging to the opcode object if the ModRM or SIB encoding
+requires it.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>opcode</strong> (<code class="xref py py-data docutils literal notranslate"><span class="pre">Optional</span></code>[<a class="reference internal" href="#flopz.arch.ia32.instruction_components.IA32Opcode" title="flopz.arch.ia32.instruction_components.IA32Opcode"><code class="xref py py-class docutils literal notranslate"><span class="pre">IA32Opcode</span></code></a>]) – </p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p><code class="xref py py-data docutils literal notranslate"><span class="pre">Tuple</span></code>[<a class="reference internal" href="#flopz.arch.ia32.instruction_components.ModRM" title="flopz.arch.ia32.instruction_components.ModRM"><code class="xref py py-class docutils literal notranslate"><span class="pre">ModRM</span></code></a>, <code class="xref py py-data docutils literal notranslate"><span class="pre">Optional</span></code>[<a class="reference internal" href="#flopz.arch.ia32.instruction_components.SIB" title="flopz.arch.ia32.instruction_components.SIB"><code class="xref py py-class docutils literal notranslate"><span class="pre">SIB</span></code></a>], <code class="xref py py-data docutils literal notranslate"><span class="pre">Optional</span></code>[<a class="reference internal" href="#flopz.arch.ia32.instruction_components.Displacement" title="flopz.arch.ia32.instruction_components.Displacement"><code class="xref py py-class docutils literal notranslate"><span class="pre">Displacement</span></code></a>]]</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="flopz.arch.ia32.addressing.MemoryAddressFactory">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">MemoryAddressFactory</span></span><a class="headerlink" href="#flopz.arch.ia32.addressing.MemoryAddressFactory" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Combines a bitsize and an AddressExpression to form a MemoryAddress.</p>
+<p>Used to add operand sizes to AddressExpressions with nice syntax.
+This class is added to the architecture as an attribute. This will allow to write instructions targeting
+memory addresses with a similar syntax like writing instructions that target the registers themselves.</p>
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="flopz.arch.ia32.addressing.ValueDescriptor">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">ValueDescriptor</span></span><a class="headerlink" href="#flopz.arch.ia32.addressing.ValueDescriptor" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Descriptor class to access IA32Register values.</p>
+<p>For the IA32 architecture the high halves of the first four registers is possible for 8bit operand instructions.
+These are encoded as the encoding for the lower register value +4.
+This Descriptor handles the increase of the value if the targeted register is high.</p>
+</dd></dl>
+
+</section>
+<section id="module-flopz.arch.ia32.auto_instructions">
+<span id="flopz-arch-ia32-auto-instructions-module"></span><h2>flopz.arch.ia32.auto_instructions module<a class="headerlink" href="#module-flopz.arch.ia32.auto_instructions" title="Permalink to this headline"></a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="flopz.arch.ia32.auto_instructions.AND">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">AND</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">dst</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">src</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#flopz.arch.ia32.auto_instructions.AND" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <a class="reference internal" href="#flopz.arch.ia32.auto_instructions.IA32AutoInstruction" title="flopz.arch.ia32.auto_instructions.IA32AutoInstruction"><code class="xref py py-class docutils literal notranslate"><span class="pre">flopz.arch.ia32.auto_instructions.IA32AutoInstruction</span></code></a></p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>dst</strong> (<code class="xref py py-data docutils literal notranslate"><span class="pre">Union</span></code>[<a class="reference internal" href="#flopz.arch.ia32.addressing.IA32Register" title="flopz.arch.ia32.addressing.IA32Register"><code class="xref py py-class docutils literal notranslate"><span class="pre">IA32Register</span></code></a>, <a class="reference internal" href="#flopz.arch.ia32.addressing.MemoryAddress" title="flopz.arch.ia32.addressing.MemoryAddress"><code class="xref py py-class docutils literal notranslate"><span class="pre">MemoryAddress</span></code></a>]) – </p></li>
+<li><p><strong>src</strong> (<code class="xref py py-data docutils literal notranslate"><span class="pre">Union</span></code>[<a class="reference internal" href="#flopz.arch.ia32.addressing.IA32Register" title="flopz.arch.ia32.addressing.IA32Register"><code class="xref py py-class docutils literal notranslate"><span class="pre">IA32Register</span></code></a>, <a class="reference internal" href="#flopz.arch.ia32.addressing.MemoryAddress" title="flopz.arch.ia32.addressing.MemoryAddress"><code class="xref py py-class docutils literal notranslate"><span class="pre">MemoryAddress</span></code></a>, <code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code>]) – </p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="flopz.arch.ia32.auto_instructions.Add">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">Add</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">dst</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">src</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#flopz.arch.ia32.auto_instructions.Add" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <a class="reference internal" href="#flopz.arch.ia32.auto_instructions.IA32AutoInstruction" title="flopz.arch.ia32.auto_instructions.IA32AutoInstruction"><code class="xref py py-class docutils literal notranslate"><span class="pre">flopz.arch.ia32.auto_instructions.IA32AutoInstruction</span></code></a></p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>dst</strong> (<code class="xref py py-data docutils literal notranslate"><span class="pre">Union</span></code>[<a class="reference internal" href="#flopz.arch.ia32.addressing.IA32Register" title="flopz.arch.ia32.addressing.IA32Register"><code class="xref py py-class docutils literal notranslate"><span class="pre">IA32Register</span></code></a>, <a class="reference internal" href="#flopz.arch.ia32.addressing.MemoryAddress" title="flopz.arch.ia32.addressing.MemoryAddress"><code class="xref py py-class docutils literal notranslate"><span class="pre">MemoryAddress</span></code></a>]) – </p></li>
+<li><p><strong>src</strong> (<code class="xref py py-data docutils literal notranslate"><span class="pre">Union</span></code>[<a class="reference internal" href="#flopz.arch.ia32.addressing.IA32Register" title="flopz.arch.ia32.addressing.IA32Register"><code class="xref py py-class docutils literal notranslate"><span class="pre">IA32Register</span></code></a>, <a class="reference internal" href="#flopz.arch.ia32.addressing.MemoryAddress" title="flopz.arch.ia32.addressing.MemoryAddress"><code class="xref py py-class docutils literal notranslate"><span class="pre">MemoryAddress</span></code></a>, <code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code>]) – </p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="flopz.arch.ia32.auto_instructions.IA32AutoInstruction">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">IA32AutoInstruction</span></span><a class="headerlink" href="#flopz.arch.ia32.auto_instructions.IA32AutoInstruction" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <a class="reference internal" href="flopz.arch.html#flopz.arch.auto_instruction.AutoInstruction" title="flopz.arch.auto_instruction.AutoInstruction"><code class="xref py py-class docutils literal notranslate"><span class="pre">flopz.arch.auto_instruction.AutoInstruction</span></code></a></p>
+<dl class="py method">
+<dt class="sig sig-object py" id="flopz.arch.ia32.auto_instructions.IA32AutoInstruction.expand">
+<span class="sig-name descname"><span class="pre">expand</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#flopz.arch.ia32.auto_instructions.IA32AutoInstruction.expand" title="Permalink to this definition"></a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><code class="xref py py-class docutils literal notranslate"><span class="pre">List</span></code>[<a class="reference internal" href="#flopz.arch.ia32.instructions.IA32Instruction" title="flopz.arch.ia32.instructions.IA32Instruction"><code class="xref py py-class docutils literal notranslate"><span class="pre">IA32Instruction</span></code></a>]</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>Regular instructions.</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="flopz.arch.ia32.auto_instructions.Jcc">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">Jcc</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">cond</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">rel</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#flopz.arch.ia32.auto_instructions.Jcc" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <a class="reference internal" href="#flopz.arch.ia32.auto_instructions.IA32AutoInstruction" title="flopz.arch.ia32.auto_instructions.IA32AutoInstruction"><code class="xref py py-class docutils literal notranslate"><span class="pre">flopz.arch.ia32.auto_instructions.IA32AutoInstruction</span></code></a></p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>cond</strong> (<a class="reference internal" href="#flopz.arch.ia32.conditionals.Cond" title="flopz.arch.ia32.conditionals.Cond"><code class="xref py py-class docutils literal notranslate"><span class="pre">Cond</span></code></a>) – </p></li>
+<li><p><strong>rel</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code>) – </p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="flopz.arch.ia32.auto_instructions.Jmp">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">Jmp</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">addr</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#flopz.arch.ia32.auto_instructions.Jmp" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <a class="reference internal" href="#flopz.arch.ia32.auto_instructions.IA32AutoInstruction" title="flopz.arch.ia32.auto_instructions.IA32AutoInstruction"><code class="xref py py-class docutils literal notranslate"><span class="pre">flopz.arch.ia32.auto_instructions.IA32AutoInstruction</span></code></a></p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>addr</strong> (<code class="xref py py-data docutils literal notranslate"><span class="pre">Union</span></code>[<a class="reference internal" href="#flopz.arch.ia32.addressing.IA32Register" title="flopz.arch.ia32.addressing.IA32Register"><code class="xref py py-class docutils literal notranslate"><span class="pre">IA32Register</span></code></a>, <a class="reference internal" href="#flopz.arch.ia32.addressing.MemoryAddress" title="flopz.arch.ia32.addressing.MemoryAddress"><code class="xref py py-class docutils literal notranslate"><span class="pre">MemoryAddress</span></code></a>]) – </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="flopz.arch.ia32.auto_instructions.Mov">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">Mov</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">dst</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">src</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#flopz.arch.ia32.auto_instructions.Mov" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <a class="reference internal" href="#flopz.arch.ia32.auto_instructions.IA32AutoInstruction" title="flopz.arch.ia32.auto_instructions.IA32AutoInstruction"><code class="xref py py-class docutils literal notranslate"><span class="pre">flopz.arch.ia32.auto_instructions.IA32AutoInstruction</span></code></a></p>
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="flopz.arch.ia32.auto_instructions.OR">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">OR</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">dst</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">src</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#flopz.arch.ia32.auto_instructions.OR" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <a class="reference internal" href="#flopz.arch.ia32.auto_instructions.IA32AutoInstruction" title="flopz.arch.ia32.auto_instructions.IA32AutoInstruction"><code class="xref py py-class docutils literal notranslate"><span class="pre">flopz.arch.ia32.auto_instructions.IA32AutoInstruction</span></code></a></p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>dst</strong> (<code class="xref py py-data docutils literal notranslate"><span class="pre">Union</span></code>[<a class="reference internal" href="#flopz.arch.ia32.addressing.IA32Register" title="flopz.arch.ia32.addressing.IA32Register"><code class="xref py py-class docutils literal notranslate"><span class="pre">IA32Register</span></code></a>, <a class="reference internal" href="#flopz.arch.ia32.addressing.MemoryAddress" title="flopz.arch.ia32.addressing.MemoryAddress"><code class="xref py py-class docutils literal notranslate"><span class="pre">MemoryAddress</span></code></a>]) – </p></li>
+<li><p><strong>src</strong> (<code class="xref py py-data docutils literal notranslate"><span class="pre">Union</span></code>[<a class="reference internal" href="#flopz.arch.ia32.addressing.IA32Register" title="flopz.arch.ia32.addressing.IA32Register"><code class="xref py py-class docutils literal notranslate"><span class="pre">IA32Register</span></code></a>, <a class="reference internal" href="#flopz.arch.ia32.addressing.MemoryAddress" title="flopz.arch.ia32.addressing.MemoryAddress"><code class="xref py py-class docutils literal notranslate"><span class="pre">MemoryAddress</span></code></a>, <code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code>]) – </p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="flopz.arch.ia32.auto_instructions.SAL">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">SAL</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">target</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">shift</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#flopz.arch.ia32.auto_instructions.SAL" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <a class="reference internal" href="#flopz.arch.ia32.auto_instructions.IA32AutoInstruction" title="flopz.arch.ia32.auto_instructions.IA32AutoInstruction"><code class="xref py py-class docutils literal notranslate"><span class="pre">flopz.arch.ia32.auto_instructions.IA32AutoInstruction</span></code></a></p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>target</strong> (<code class="xref py py-data docutils literal notranslate"><span class="pre">Union</span></code>[<a class="reference internal" href="#flopz.arch.ia32.addressing.IA32Register" title="flopz.arch.ia32.addressing.IA32Register"><code class="xref py py-class docutils literal notranslate"><span class="pre">IA32Register</span></code></a>, <a class="reference internal" href="#flopz.arch.ia32.addressing.MemoryAddress" title="flopz.arch.ia32.addressing.MemoryAddress"><code class="xref py py-class docutils literal notranslate"><span class="pre">MemoryAddress</span></code></a>]) – </p></li>
+<li><p><strong>shift</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code>) – </p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="flopz.arch.ia32.auto_instructions.SAR">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">SAR</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">target</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">shift</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#flopz.arch.ia32.auto_instructions.SAR" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <a class="reference internal" href="#flopz.arch.ia32.auto_instructions.IA32AutoInstruction" title="flopz.arch.ia32.auto_instructions.IA32AutoInstruction"><code class="xref py py-class docutils literal notranslate"><span class="pre">flopz.arch.ia32.auto_instructions.IA32AutoInstruction</span></code></a></p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>target</strong> (<code class="xref py py-data docutils literal notranslate"><span class="pre">Union</span></code>[<a class="reference internal" href="#flopz.arch.ia32.addressing.IA32Register" title="flopz.arch.ia32.addressing.IA32Register"><code class="xref py py-class docutils literal notranslate"><span class="pre">IA32Register</span></code></a>, <a class="reference internal" href="#flopz.arch.ia32.addressing.MemoryAddress" title="flopz.arch.ia32.addressing.MemoryAddress"><code class="xref py py-class docutils literal notranslate"><span class="pre">MemoryAddress</span></code></a>]) – </p></li>
+<li><p><strong>shift</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code>) – </p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="flopz.arch.ia32.auto_instructions.SHL">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">SHL</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">target</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">shift</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#flopz.arch.ia32.auto_instructions.SHL" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <a class="reference internal" href="#flopz.arch.ia32.auto_instructions.IA32AutoInstruction" title="flopz.arch.ia32.auto_instructions.IA32AutoInstruction"><code class="xref py py-class docutils literal notranslate"><span class="pre">flopz.arch.ia32.auto_instructions.IA32AutoInstruction</span></code></a></p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>target</strong> (<code class="xref py py-data docutils literal notranslate"><span class="pre">Union</span></code>[<a class="reference internal" href="#flopz.arch.ia32.addressing.IA32Register" title="flopz.arch.ia32.addressing.IA32Register"><code class="xref py py-class docutils literal notranslate"><span class="pre">IA32Register</span></code></a>, <a class="reference internal" href="#flopz.arch.ia32.addressing.MemoryAddress" title="flopz.arch.ia32.addressing.MemoryAddress"><code class="xref py py-class docutils literal notranslate"><span class="pre">MemoryAddress</span></code></a>]) – </p></li>
+<li><p><strong>shift</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code>) – </p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="flopz.arch.ia32.auto_instructions.SHR">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">SHR</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">target</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">shift</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#flopz.arch.ia32.auto_instructions.SHR" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <a class="reference internal" href="#flopz.arch.ia32.auto_instructions.IA32AutoInstruction" title="flopz.arch.ia32.auto_instructions.IA32AutoInstruction"><code class="xref py py-class docutils literal notranslate"><span class="pre">flopz.arch.ia32.auto_instructions.IA32AutoInstruction</span></code></a></p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>target</strong> (<code class="xref py py-data docutils literal notranslate"><span class="pre">Union</span></code>[<a class="reference internal" href="#flopz.arch.ia32.addressing.IA32Register" title="flopz.arch.ia32.addressing.IA32Register"><code class="xref py py-class docutils literal notranslate"><span class="pre">IA32Register</span></code></a>, <a class="reference internal" href="#flopz.arch.ia32.addressing.MemoryAddress" title="flopz.arch.ia32.addressing.MemoryAddress"><code class="xref py py-class docutils literal notranslate"><span class="pre">MemoryAddress</span></code></a>]) – </p></li>
+<li><p><strong>shift</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code>) – </p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="flopz.arch.ia32.auto_instructions.XOR">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">XOR</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">dst</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">src</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#flopz.arch.ia32.auto_instructions.XOR" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <a class="reference internal" href="#flopz.arch.ia32.auto_instructions.IA32AutoInstruction" title="flopz.arch.ia32.auto_instructions.IA32AutoInstruction"><code class="xref py py-class docutils literal notranslate"><span class="pre">flopz.arch.ia32.auto_instructions.IA32AutoInstruction</span></code></a></p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>dst</strong> (<code class="xref py py-data docutils literal notranslate"><span class="pre">Union</span></code>[<a class="reference internal" href="#flopz.arch.ia32.addressing.IA32Register" title="flopz.arch.ia32.addressing.IA32Register"><code class="xref py py-class docutils literal notranslate"><span class="pre">IA32Register</span></code></a>, <a class="reference internal" href="#flopz.arch.ia32.addressing.MemoryAddress" title="flopz.arch.ia32.addressing.MemoryAddress"><code class="xref py py-class docutils literal notranslate"><span class="pre">MemoryAddress</span></code></a>]) – </p></li>
+<li><p><strong>src</strong> (<code class="xref py py-data docutils literal notranslate"><span class="pre">Union</span></code>[<a class="reference internal" href="#flopz.arch.ia32.addressing.IA32Register" title="flopz.arch.ia32.addressing.IA32Register"><code class="xref py py-class docutils literal notranslate"><span class="pre">IA32Register</span></code></a>, <a class="reference internal" href="#flopz.arch.ia32.addressing.MemoryAddress" title="flopz.arch.ia32.addressing.MemoryAddress"><code class="xref py py-class docutils literal notranslate"><span class="pre">MemoryAddress</span></code></a>, <code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code>]) – </p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+<section id="module-flopz.arch.ia32.conditionals">
+<span id="flopz-arch-ia32-conditionals-module"></span><h2>flopz.arch.ia32.conditionals module<a class="headerlink" href="#module-flopz.arch.ia32.conditionals" title="Permalink to this headline"></a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="flopz.arch.ia32.conditionals.Cond">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">Cond</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">value</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#flopz.arch.ia32.conditionals.Cond" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">enum.IntEnum</span></code></p>
+<p>An enumeration.</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="flopz.arch.ia32.conditionals.Cond.A">
+<span class="sig-name descname"><span class="pre">A</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">7</span></em><a class="headerlink" href="#flopz.arch.ia32.conditionals.Cond.A" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="flopz.arch.ia32.conditionals.Cond.AE">
+<span class="sig-name descname"><span class="pre">AE</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">3</span></em><a class="headerlink" href="#flopz.arch.ia32.conditionals.Cond.AE" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="flopz.arch.ia32.conditionals.Cond.B">
+<span class="sig-name descname"><span class="pre">B</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">2</span></em><a class="headerlink" href="#flopz.arch.ia32.conditionals.Cond.B" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="flopz.arch.ia32.conditionals.Cond.BE">
+<span class="sig-name descname"><span class="pre">BE</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">6</span></em><a class="headerlink" href="#flopz.arch.ia32.conditionals.Cond.BE" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="flopz.arch.ia32.conditionals.Cond.C">
+<span class="sig-name descname"><span class="pre">C</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">2</span></em><a class="headerlink" href="#flopz.arch.ia32.conditionals.Cond.C" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="flopz.arch.ia32.conditionals.Cond.E">
+<span class="sig-name descname"><span class="pre">E</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">4</span></em><a class="headerlink" href="#flopz.arch.ia32.conditionals.Cond.E" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="flopz.arch.ia32.conditionals.Cond.G">
+<span class="sig-name descname"><span class="pre">G</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">15</span></em><a class="headerlink" href="#flopz.arch.ia32.conditionals.Cond.G" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="flopz.arch.ia32.conditionals.Cond.GE">
+<span class="sig-name descname"><span class="pre">GE</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">13</span></em><a class="headerlink" href="#flopz.arch.ia32.conditionals.Cond.GE" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="flopz.arch.ia32.conditionals.Cond.L">
+<span class="sig-name descname"><span class="pre">L</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">12</span></em><a class="headerlink" href="#flopz.arch.ia32.conditionals.Cond.L" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="flopz.arch.ia32.conditionals.Cond.LE">
+<span class="sig-name descname"><span class="pre">LE</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">14</span></em><a class="headerlink" href="#flopz.arch.ia32.conditionals.Cond.LE" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="flopz.arch.ia32.conditionals.Cond.NA">
+<span class="sig-name descname"><span class="pre">NA</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">6</span></em><a class="headerlink" href="#flopz.arch.ia32.conditionals.Cond.NA" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="flopz.arch.ia32.conditionals.Cond.NAE">
+<span class="sig-name descname"><span class="pre">NAE</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">2</span></em><a class="headerlink" href="#flopz.arch.ia32.conditionals.Cond.NAE" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="flopz.arch.ia32.conditionals.Cond.NB">
+<span class="sig-name descname"><span class="pre">NB</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">3</span></em><a class="headerlink" href="#flopz.arch.ia32.conditionals.Cond.NB" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="flopz.arch.ia32.conditionals.Cond.NBE">
+<span class="sig-name descname"><span class="pre">NBE</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">7</span></em><a class="headerlink" href="#flopz.arch.ia32.conditionals.Cond.NBE" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="flopz.arch.ia32.conditionals.Cond.NC">
+<span class="sig-name descname"><span class="pre">NC</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">3</span></em><a class="headerlink" href="#flopz.arch.ia32.conditionals.Cond.NC" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="flopz.arch.ia32.conditionals.Cond.NE">
+<span class="sig-name descname"><span class="pre">NE</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">5</span></em><a class="headerlink" href="#flopz.arch.ia32.conditionals.Cond.NE" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="flopz.arch.ia32.conditionals.Cond.NG">
+<span class="sig-name descname"><span class="pre">NG</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">14</span></em><a class="headerlink" href="#flopz.arch.ia32.conditionals.Cond.NG" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="flopz.arch.ia32.conditionals.Cond.NGE">
+<span class="sig-name descname"><span class="pre">NGE</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">12</span></em><a class="headerlink" href="#flopz.arch.ia32.conditionals.Cond.NGE" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="flopz.arch.ia32.conditionals.Cond.NL">
+<span class="sig-name descname"><span class="pre">NL</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">13</span></em><a class="headerlink" href="#flopz.arch.ia32.conditionals.Cond.NL" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="flopz.arch.ia32.conditionals.Cond.NLE">
+<span class="sig-name descname"><span class="pre">NLE</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">15</span></em><a class="headerlink" href="#flopz.arch.ia32.conditionals.Cond.NLE" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="flopz.arch.ia32.conditionals.Cond.NO">
+<span class="sig-name descname"><span class="pre">NO</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">1</span></em><a class="headerlink" href="#flopz.arch.ia32.conditionals.Cond.NO" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="flopz.arch.ia32.conditionals.Cond.NP">
+<span class="sig-name descname"><span class="pre">NP</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">11</span></em><a class="headerlink" href="#flopz.arch.ia32.conditionals.Cond.NP" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="flopz.arch.ia32.conditionals.Cond.NS">
+<span class="sig-name descname"><span class="pre">NS</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">9</span></em><a class="headerlink" href="#flopz.arch.ia32.conditionals.Cond.NS" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="flopz.arch.ia32.conditionals.Cond.NZ">
+<span class="sig-name descname"><span class="pre">NZ</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">5</span></em><a class="headerlink" href="#flopz.arch.ia32.conditionals.Cond.NZ" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="flopz.arch.ia32.conditionals.Cond.O">
+<span class="sig-name descname"><span class="pre">O</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">0</span></em><a class="headerlink" href="#flopz.arch.ia32.conditionals.Cond.O" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="flopz.arch.ia32.conditionals.Cond.P">
+<span class="sig-name descname"><span class="pre">P</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">10</span></em><a class="headerlink" href="#flopz.arch.ia32.conditionals.Cond.P" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="flopz.arch.ia32.conditionals.Cond.PE">
+<span class="sig-name descname"><span class="pre">PE</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">10</span></em><a class="headerlink" href="#flopz.arch.ia32.conditionals.Cond.PE" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="flopz.arch.ia32.conditionals.Cond.PO">
+<span class="sig-name descname"><span class="pre">PO</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">11</span></em><a class="headerlink" href="#flopz.arch.ia32.conditionals.Cond.PO" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="flopz.arch.ia32.conditionals.Cond.RCXZ">
+<span class="sig-name descname"><span class="pre">RCXZ</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">115</span></em><a class="headerlink" href="#flopz.arch.ia32.conditionals.Cond.RCXZ" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="flopz.arch.ia32.conditionals.Cond.S">
+<span class="sig-name descname"><span class="pre">S</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">8</span></em><a class="headerlink" href="#flopz.arch.ia32.conditionals.Cond.S" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="flopz.arch.ia32.conditionals.Cond.Z">
+<span class="sig-name descname"><span class="pre">Z</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">4</span></em><a class="headerlink" href="#flopz.arch.ia32.conditionals.Cond.Z" title="Permalink to this definition"></a></dt>
 <dd></dd></dl>
 
 </dd></dl>
 
-</div>
-<div class="section" id="module-flopz.arch.ia32">
-<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-flopz.arch.ia32" title="Permalink to this headline">¶</a></h2>
-</div>
-</div>
+</section>
+<section id="module-flopz.arch.ia32.ia32_generic_arch">
+<span id="flopz-arch-ia32-ia32-generic-arch-module"></span><h2>flopz.arch.ia32.ia32_generic_arch module<a class="headerlink" href="#module-flopz.arch.ia32.ia32_generic_arch" title="Permalink to this headline"></a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="flopz.arch.ia32.ia32_generic_arch.IA32GenericArchitecture">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">IA32GenericArchitecture</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">register_class=&lt;class</span> <span class="pre">'flopz.arch.ia32.addressing.IA32Register'&gt;</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">mode=ProcessorMode.LONG</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#flopz.arch.ia32.ia32_generic_arch.IA32GenericArchitecture" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <a class="reference internal" href="flopz.arch.html#flopz.arch.architecture.Architecture" title="flopz.arch.architecture.Architecture"><code class="xref py py-class docutils literal notranslate"><span class="pre">flopz.arch.architecture.Architecture</span></code></a></p>
+<p>Higher-level architecture for IA-32 processors.</p>
+<p>Includes the general purpose (as 8, 16, 32 and 64 bit) and the segment registers as attributes.</p>
+</dd></dl>
+
+</section>
+<section id="module-flopz.arch.ia32.instruction_components">
+<span id="flopz-arch-ia32-instruction-components-module"></span><h2>flopz.arch.ia32.instruction_components module<a class="headerlink" href="#module-flopz.arch.ia32.instruction_components" title="Permalink to this headline"></a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="flopz.arch.ia32.instruction_components.Displacement">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">Displacement</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">displacement</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">byte_size</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#flopz.arch.ia32.instruction_components.Displacement" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Represents the Displacement of an IA32 instruction.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>displacement</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code>) – </p></li>
+<li><p><strong>byte_size</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code>) – </p></li>
+</ul>
+</dd>
+</dl>
+<dl class="py method">
+<dt class="sig sig-object py" id="flopz.arch.ia32.instruction_components.Displacement.encode">
+<span class="sig-name descname"><span class="pre">encode</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#flopz.arch.ia32.instruction_components.Displacement.encode" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="flopz.arch.ia32.instruction_components.ExtendableBitfieldDescriptor">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">ExtendableBitfieldDescriptor</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">flag</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#flopz.arch.ia32.instruction_components.ExtendableBitfieldDescriptor" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Descriptor to handle access to the different fields of the ModRM or SIB byte.</p>
+<p>As the fields can not be set or read without considering the flags in the REX bits, this descriptor
+will consider its given REX flag (r, x or b) when returning its value and will set the necessary flags
+in the flaglist when setting the value. Flags from the flaglist will then be applied by calls to
+ModRM or SIB’s set_needed_rexflags().</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>flag</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code>) – </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="flopz.arch.ia32.instruction_components.IA32Opcode">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">IA32Opcode</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">opcode</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">opc_encoding</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">mandatory</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">op_size</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">64</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">mode</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">ProcessorMode.LONG</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">force_rex</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#flopz.arch.ia32.instruction_components.IA32Opcode" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>The opcode byte and optional prefixes and optional REX byte.</p>
+<p>This class holds the effective opcode of the instruction. Sometimes instructions encode additional
+information in the 3 lsb of the opcode, which can be added as opc_encoding.
+Additionally, some instructions require a mandatory prefix or the instructions operand size requires
+prefixes that change the effective operand size, which this class will handle and encode correctly.
+Also handles access to the REX byte of the instruction. Therefore the opcode object can be given to
+ModRM or SIB inits so they can set required bits.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>opcode</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code>) – </p></li>
+<li><p><strong>opc_encoding</strong> (<code class="xref py py-data docutils literal notranslate"><span class="pre">Optional</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code>]) – </p></li>
+<li><p><strong>mandatory</strong> (<code class="xref py py-data docutils literal notranslate"><span class="pre">Optional</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">BitArray</span></code>]) – </p></li>
+<li><p><strong>op_size</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code>) – </p></li>
+<li><p><strong>mode</strong> (<a class="reference internal" href="#flopz.arch.ia32.modes.ProcessorMode" title="flopz.arch.ia32.modes.ProcessorMode"><code class="xref py py-class docutils literal notranslate"><span class="pre">ProcessorMode</span></code></a>) – </p></li>
+</ul>
+</dd>
+</dl>
+<dl class="py method">
+<dt class="sig sig-object py" id="flopz.arch.ia32.instruction_components.IA32Opcode.encode">
+<span class="sig-name descname"><span class="pre">encode</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#flopz.arch.ia32.instruction_components.IA32Opcode.encode" title="Permalink to this definition"></a></dt>
+<dd><p>Returns the BitArray that holding the opcode information
+can be combined with the other encodings to form the full instruction.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="flopz.arch.ia32.instruction_components.IA32Opcode.get_encoded">
+<span class="sig-name descname"><span class="pre">get_encoded</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#flopz.arch.ia32.instruction_components.IA32Opcode.get_encoded" title="Permalink to this definition"></a></dt>
+<dd><p>Get the additional information encoded in the opcode.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="flopz.arch.ia32.instruction_components.IA32Opcode.set_rex_bit">
+<span class="sig-name descname"><span class="pre">set_rex_bit</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">bit</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">val</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#flopz.arch.ia32.instruction_components.IA32Opcode.set_rex_bit" title="Permalink to this definition"></a></dt>
+<dd><p>Set or unset REX bits/flags.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>bit</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code>) – </p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="flopz.arch.ia32.instruction_components.Immediate">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">Immediate</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">value</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">byte_size</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#flopz.arch.ia32.instruction_components.Immediate" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Represents the Immediate value of an IA32 instruction.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>value</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code>) – </p></li>
+<li><p><strong>byte_size</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code>) – </p></li>
+</ul>
+</dd>
+</dl>
+<dl class="py method">
+<dt class="sig sig-object py" id="flopz.arch.ia32.instruction_components.Immediate.encode">
+<span class="sig-name descname"><span class="pre">encode</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#flopz.arch.ia32.instruction_components.Immediate.encode" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="flopz.arch.ia32.instruction_components.ModRM">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">ModRM</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">mod</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">3</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">reg</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">rm</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">opcode</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#flopz.arch.ia32.instruction_components.ModRM" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Represents the ModRM byte of an IA32 instruction.</p>
+<p>This byte includes the reg and rm fields and the 2 bit mode.
+The reg and rm fields hold the registers used for addressing (when no SIB is used).
+The mode is used to determine the addressing mode (3 for register-direct addressing, 0-2 for indirect addressing
+with different displacements).
+A rm of 4 with indirect addressing indicates a SIB byte is used to encode the addressing.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>mod</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code>) – </p></li>
+<li><p><strong>reg</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code>) – </p></li>
+<li><p><strong>rm</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code>) – </p></li>
+<li><p><strong>opcode</strong> (<code class="xref py py-data docutils literal notranslate"><span class="pre">Optional</span></code>[<a class="reference internal" href="#flopz.arch.ia32.instruction_components.IA32Opcode" title="flopz.arch.ia32.instruction_components.IA32Opcode"><code class="xref py py-class docutils literal notranslate"><span class="pre">IA32Opcode</span></code></a>]) – </p></li>
+</ul>
+</dd>
+</dl>
+<dl class="py method">
+<dt class="sig sig-object py" id="flopz.arch.ia32.instruction_components.ModRM.encode">
+<span class="sig-name descname"><span class="pre">encode</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#flopz.arch.ia32.instruction_components.ModRM.encode" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="flopz.arch.ia32.instruction_components.ModRM.reg">
+<span class="sig-name descname"><span class="pre">reg</span></span><a class="headerlink" href="#flopz.arch.ia32.instruction_components.ModRM.reg" title="Permalink to this definition"></a></dt>
+<dd><p>Descriptor to handle access to the different fields of the ModRM or SIB byte.</p>
+<p>As the fields can not be set or read without considering the flags in the REX bits, this descriptor
+will consider its given REX flag (r, x or b) when returning its value and will set the necessary flags
+in the flaglist when setting the value. Flags from the flaglist will then be applied by calls to
+ModRM or SIB’s set_needed_rexflags().</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="flopz.arch.ia32.instruction_components.ModRM.rm">
+<span class="sig-name descname"><span class="pre">rm</span></span><a class="headerlink" href="#flopz.arch.ia32.instruction_components.ModRM.rm" title="Permalink to this definition"></a></dt>
+<dd><p>Descriptor to handle access to the different fields of the ModRM or SIB byte.</p>
+<p>As the fields can not be set or read without considering the flags in the REX bits, this descriptor
+will consider its given REX flag (r, x or b) when returning its value and will set the necessary flags
+in the flaglist when setting the value. Flags from the flaglist will then be applied by calls to
+ModRM or SIB’s set_needed_rexflags().</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="flopz.arch.ia32.instruction_components.ModRM.set_needed_rexflags">
+<span class="sig-name descname"><span class="pre">set_needed_rexflags</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#flopz.arch.ia32.instruction_components.ModRM.set_needed_rexflags" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="flopz.arch.ia32.instruction_components.ModRM.set_opcode">
+<span class="sig-name descname"><span class="pre">set_opcode</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">opcode</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#flopz.arch.ia32.instruction_components.ModRM.set_opcode" title="Permalink to this definition"></a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>opcode</strong> (<a class="reference internal" href="#flopz.arch.ia32.instruction_components.IA32Opcode" title="flopz.arch.ia32.instruction_components.IA32Opcode"><code class="xref py py-class docutils literal notranslate"><span class="pre">IA32Opcode</span></code></a>) – </p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="flopz.arch.ia32.instruction_components.REX">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">REX</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">w</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">r</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">x</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">b</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#flopz.arch.ia32.instruction_components.REX" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>The REX byte that optionally precedes the opcode byte.</p>
+<p>The REX byte holds flag to extend the operand size of the instruction (w)
+and the values of the encoded registers (r register, x index, b base).
+Additionally the presence of the REX byte also switches from addressing the upper half of the first 4 registers to
+addressing spl-dil.</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="flopz.arch.ia32.instruction_components.REX.encode">
+<span class="sig-name descname"><span class="pre">encode</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#flopz.arch.ia32.instruction_components.REX.encode" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="flopz.arch.ia32.instruction_components.SIB">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">SIB</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">scale</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">index</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">base</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">opcode</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#flopz.arch.ia32.instruction_components.SIB" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Represents the SIB byte of an IA32 instruction.</p>
+<p>This byte includes the 2 bit scale field and the base and index registers used for addressing.
+The base field holds the register that holds the base address, while the index field holds the index register.
+The actual scale is encoded as log2(scale), so the scale can be 1, 2, 4 or 8.
+If a displacement is present is dependant on the ModRM mod field.
+If the index is the stack pointer register this means no index is used.
+If the base is the base pointer register in mod 0, this means no base is used.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>scale</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code>) – </p></li>
+<li><p><strong>index</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code>) – </p></li>
+<li><p><strong>base</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code>) – </p></li>
+<li><p><strong>opcode</strong> (<code class="xref py py-data docutils literal notranslate"><span class="pre">Optional</span></code>[<a class="reference internal" href="#flopz.arch.ia32.instruction_components.IA32Opcode" title="flopz.arch.ia32.instruction_components.IA32Opcode"><code class="xref py py-class docutils literal notranslate"><span class="pre">IA32Opcode</span></code></a>]) – </p></li>
+</ul>
+</dd>
+</dl>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="flopz.arch.ia32.instruction_components.SIB.base">
+<span class="sig-name descname"><span class="pre">base</span></span><a class="headerlink" href="#flopz.arch.ia32.instruction_components.SIB.base" title="Permalink to this definition"></a></dt>
+<dd><p>Descriptor to handle access to the different fields of the ModRM or SIB byte.</p>
+<p>As the fields can not be set or read without considering the flags in the REX bits, this descriptor
+will consider its given REX flag (r, x or b) when returning its value and will set the necessary flags
+in the flaglist when setting the value. Flags from the flaglist will then be applied by calls to
+ModRM or SIB’s set_needed_rexflags().</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="flopz.arch.ia32.instruction_components.SIB.encode">
+<span class="sig-name descname"><span class="pre">encode</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#flopz.arch.ia32.instruction_components.SIB.encode" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="flopz.arch.ia32.instruction_components.SIB.index">
+<span class="sig-name descname"><span class="pre">index</span></span><a class="headerlink" href="#flopz.arch.ia32.instruction_components.SIB.index" title="Permalink to this definition"></a></dt>
+<dd><p>Descriptor to handle access to the different fields of the ModRM or SIB byte.</p>
+<p>As the fields can not be set or read without considering the flags in the REX bits, this descriptor
+will consider its given REX flag (r, x or b) when returning its value and will set the necessary flags
+in the flaglist when setting the value. Flags from the flaglist will then be applied by calls to
+ModRM or SIB’s set_needed_rexflags().</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="flopz.arch.ia32.instruction_components.SIB.set_needed_rexflags">
+<span class="sig-name descname"><span class="pre">set_needed_rexflags</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#flopz.arch.ia32.instruction_components.SIB.set_needed_rexflags" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="flopz.arch.ia32.instruction_components.SIB.set_opcode">
+<span class="sig-name descname"><span class="pre">set_opcode</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">opcode</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#flopz.arch.ia32.instruction_components.SIB.set_opcode" title="Permalink to this definition"></a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>opcode</strong> (<a class="reference internal" href="#flopz.arch.ia32.instruction_components.IA32Opcode" title="flopz.arch.ia32.instruction_components.IA32Opcode"><code class="xref py py-class docutils literal notranslate"><span class="pre">IA32Opcode</span></code></a>) – </p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="module-flopz.arch.ia32.instructions">
+<span id="flopz-arch-ia32-instructions-module"></span><h2>flopz.arch.ia32.instructions module<a class="headerlink" href="#module-flopz.arch.ia32.instructions" title="Permalink to this headline"></a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="flopz.arch.ia32.instructions.AddImmToMem">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">AddImmToMem</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">dst</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">src</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#flopz.arch.ia32.instructions.AddImmToMem" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <a class="reference internal" href="#flopz.arch.ia32.instructions.IA32Instruction" title="flopz.arch.ia32.instructions.IA32Instruction"><code class="xref py py-class docutils literal notranslate"><span class="pre">flopz.arch.ia32.instructions.IA32Instruction</span></code></a></p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>dst</strong> (<a class="reference internal" href="#flopz.arch.ia32.addressing.MemoryAddress" title="flopz.arch.ia32.addressing.MemoryAddress"><code class="xref py py-class docutils literal notranslate"><span class="pre">MemoryAddress</span></code></a>) – </p></li>
+<li><p><strong>src</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code>) – </p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="flopz.arch.ia32.instructions.AddImmToReg">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">AddImmToReg</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">dst</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">src</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#flopz.arch.ia32.instructions.AddImmToReg" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <a class="reference internal" href="#flopz.arch.ia32.instructions.IA32Instruction" title="flopz.arch.ia32.instructions.IA32Instruction"><code class="xref py py-class docutils literal notranslate"><span class="pre">flopz.arch.ia32.instructions.IA32Instruction</span></code></a></p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>dst</strong> (<a class="reference internal" href="#flopz.arch.ia32.addressing.IA32Register" title="flopz.arch.ia32.addressing.IA32Register"><code class="xref py py-class docutils literal notranslate"><span class="pre">IA32Register</span></code></a>) – </p></li>
+<li><p><strong>src</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code>) – </p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="flopz.arch.ia32.instructions.AddMemToReg">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">AddMemToReg</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">dst</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">src</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#flopz.arch.ia32.instructions.AddMemToReg" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <a class="reference internal" href="#flopz.arch.ia32.instructions.IA32Instruction" title="flopz.arch.ia32.instructions.IA32Instruction"><code class="xref py py-class docutils literal notranslate"><span class="pre">flopz.arch.ia32.instructions.IA32Instruction</span></code></a></p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>dst</strong> (<a class="reference internal" href="#flopz.arch.ia32.addressing.IA32Register" title="flopz.arch.ia32.addressing.IA32Register"><code class="xref py py-class docutils literal notranslate"><span class="pre">IA32Register</span></code></a>) – </p></li>
+<li><p><strong>src</strong> (<a class="reference internal" href="#flopz.arch.ia32.addressing.MemoryAddress" title="flopz.arch.ia32.addressing.MemoryAddress"><code class="xref py py-class docutils literal notranslate"><span class="pre">MemoryAddress</span></code></a>) – </p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="flopz.arch.ia32.instructions.AddRegToMem">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">AddRegToMem</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">dst</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">src</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#flopz.arch.ia32.instructions.AddRegToMem" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <a class="reference internal" href="#flopz.arch.ia32.instructions.IA32Instruction" title="flopz.arch.ia32.instructions.IA32Instruction"><code class="xref py py-class docutils literal notranslate"><span class="pre">flopz.arch.ia32.instructions.IA32Instruction</span></code></a></p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>dst</strong> (<a class="reference internal" href="#flopz.arch.ia32.addressing.MemoryAddress" title="flopz.arch.ia32.addressing.MemoryAddress"><code class="xref py py-class docutils literal notranslate"><span class="pre">MemoryAddress</span></code></a>) – </p></li>
+<li><p><strong>src</strong> (<a class="reference internal" href="#flopz.arch.ia32.addressing.IA32Register" title="flopz.arch.ia32.addressing.IA32Register"><code class="xref py py-class docutils literal notranslate"><span class="pre">IA32Register</span></code></a>) – </p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="flopz.arch.ia32.instructions.AddRegToReg">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">AddRegToReg</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">dst</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">src</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#flopz.arch.ia32.instructions.AddRegToReg" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <a class="reference internal" href="#flopz.arch.ia32.instructions.IA32Instruction" title="flopz.arch.ia32.instructions.IA32Instruction"><code class="xref py py-class docutils literal notranslate"><span class="pre">flopz.arch.ia32.instructions.IA32Instruction</span></code></a></p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>dst</strong> (<a class="reference internal" href="#flopz.arch.ia32.addressing.IA32Register" title="flopz.arch.ia32.addressing.IA32Register"><code class="xref py py-class docutils literal notranslate"><span class="pre">IA32Register</span></code></a>) – </p></li>
+<li><p><strong>src</strong> (<a class="reference internal" href="#flopz.arch.ia32.addressing.IA32Register" title="flopz.arch.ia32.addressing.IA32Register"><code class="xref py py-class docutils literal notranslate"><span class="pre">IA32Register</span></code></a>) – </p></li>
+</ul>
+</dd>
+</dl>
+<dl class="py method">
+<dt class="sig sig-object py" id="flopz.arch.ia32.instructions.AddRegToReg.check_arg_compatibility">
+<span class="sig-name descname"><span class="pre">check_arg_compatibility</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">dst</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">src</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#flopz.arch.ia32.instructions.AddRegToReg.check_arg_compatibility" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="flopz.arch.ia32.instructions.IA32Instruction">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">IA32Instruction</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">opcode</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">modrm</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sib</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">displacement</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">immediate</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">addr</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#flopz.arch.ia32.instructions.IA32Instruction" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <a class="reference internal" href="flopz.arch.html#flopz.arch.instruction.Instruction" title="flopz.arch.instruction.Instruction"><code class="xref py py-class docutils literal notranslate"><span class="pre">flopz.arch.instruction.Instruction</span></code></a></p>
+<p>Base class for all IA32 instructions.</p>
+<p>The class holds all the instruction components (opcode, ModRM, SIB, displacement, immediate) and builds
+the full encoding from the components.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>opcode</strong> (<a class="reference internal" href="#flopz.arch.ia32.instruction_components.IA32Opcode" title="flopz.arch.ia32.instruction_components.IA32Opcode"><code class="xref py py-class docutils literal notranslate"><span class="pre">IA32Opcode</span></code></a>) – </p>
+</dd>
+</dl>
+<dl class="py method">
+<dt class="sig sig-object py" id="flopz.arch.ia32.instructions.IA32Instruction.bytes">
+<span class="sig-name descname"><span class="pre">bytes</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#flopz.arch.ia32.instructions.IA32Instruction.bytes" title="Permalink to this definition"></a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><a class="reference internal" href="#flopz.arch.ia32.instructions.IA32Instruction.bytes" title="flopz.arch.ia32.instructions.IA32Instruction.bytes"><code class="xref py py-class docutils literal notranslate"><span class="pre">bytes</span></code></a></p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>the encoded instruction as bytes</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="flopz.arch.ia32.instructions.IA32Instruction.check_arg_compatibility">
+<span class="sig-name descname"><span class="pre">check_arg_compatibility</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">dst</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">src</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#flopz.arch.ia32.instructions.IA32Instruction.check_arg_compatibility" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="flopz.arch.ia32.instructions.JmpCond">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">JmpCond</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">cond</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">rel</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#flopz.arch.ia32.instructions.JmpCond" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <a class="reference internal" href="#flopz.arch.ia32.instructions.IA32Instruction" title="flopz.arch.ia32.instructions.IA32Instruction"><code class="xref py py-class docutils literal notranslate"><span class="pre">flopz.arch.ia32.instructions.IA32Instruction</span></code></a></p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>cond</strong> (<a class="reference internal" href="#flopz.arch.ia32.conditionals.Cond" title="flopz.arch.ia32.conditionals.Cond"><code class="xref py py-class docutils literal notranslate"><span class="pre">Cond</span></code></a>) – </p></li>
+<li><p><strong>rel</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code>) – </p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="flopz.arch.ia32.instructions.JmpToMem">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">JmpToMem</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">addr</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#flopz.arch.ia32.instructions.JmpToMem" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <a class="reference internal" href="#flopz.arch.ia32.instructions.IA32Instruction" title="flopz.arch.ia32.instructions.IA32Instruction"><code class="xref py py-class docutils literal notranslate"><span class="pre">flopz.arch.ia32.instructions.IA32Instruction</span></code></a></p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>addr</strong> (<a class="reference internal" href="#flopz.arch.ia32.addressing.MemoryAddress" title="flopz.arch.ia32.addressing.MemoryAddress"><code class="xref py py-class docutils literal notranslate"><span class="pre">MemoryAddress</span></code></a>) – </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="flopz.arch.ia32.instructions.JmpToReg">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">JmpToReg</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">addr</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#flopz.arch.ia32.instructions.JmpToReg" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <a class="reference internal" href="#flopz.arch.ia32.instructions.IA32Instruction" title="flopz.arch.ia32.instructions.IA32Instruction"><code class="xref py py-class docutils literal notranslate"><span class="pre">flopz.arch.ia32.instructions.IA32Instruction</span></code></a></p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>addr</strong> (<a class="reference internal" href="#flopz.arch.ia32.addressing.IA32Register" title="flopz.arch.ia32.addressing.IA32Register"><code class="xref py py-class docutils literal notranslate"><span class="pre">IA32Register</span></code></a>) – </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="flopz.arch.ia32.instructions.LogicImm">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">LogicImm</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">dst</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">imm</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">reg_code</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#flopz.arch.ia32.instructions.LogicImm" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <a class="reference internal" href="#flopz.arch.ia32.instructions.IA32Instruction" title="flopz.arch.ia32.instructions.IA32Instruction"><code class="xref py py-class docutils literal notranslate"><span class="pre">flopz.arch.ia32.instructions.IA32Instruction</span></code></a></p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>dst</strong> (<code class="xref py py-data docutils literal notranslate"><span class="pre">Union</span></code>[<a class="reference internal" href="#flopz.arch.ia32.addressing.IA32Register" title="flopz.arch.ia32.addressing.IA32Register"><code class="xref py py-class docutils literal notranslate"><span class="pre">IA32Register</span></code></a>, <a class="reference internal" href="#flopz.arch.ia32.addressing.MemoryAddress" title="flopz.arch.ia32.addressing.MemoryAddress"><code class="xref py py-class docutils literal notranslate"><span class="pre">MemoryAddress</span></code></a>]) – </p></li>
+<li><p><strong>imm</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code>) – </p></li>
+<li><p><strong>reg_code</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code>) – </p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="flopz.arch.ia32.instructions.LogicMemToReg">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">LogicMemToReg</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">dst</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">src</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">reg_code</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#flopz.arch.ia32.instructions.LogicMemToReg" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <a class="reference internal" href="#flopz.arch.ia32.instructions.IA32Instruction" title="flopz.arch.ia32.instructions.IA32Instruction"><code class="xref py py-class docutils literal notranslate"><span class="pre">flopz.arch.ia32.instructions.IA32Instruction</span></code></a></p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>dst</strong> (<a class="reference internal" href="#flopz.arch.ia32.addressing.IA32Register" title="flopz.arch.ia32.addressing.IA32Register"><code class="xref py py-class docutils literal notranslate"><span class="pre">IA32Register</span></code></a>) – </p></li>
+<li><p><strong>src</strong> (<code class="xref py py-data docutils literal notranslate"><span class="pre">Union</span></code>[<a class="reference internal" href="#flopz.arch.ia32.addressing.IA32Register" title="flopz.arch.ia32.addressing.IA32Register"><code class="xref py py-class docutils literal notranslate"><span class="pre">IA32Register</span></code></a>, <a class="reference internal" href="#flopz.arch.ia32.addressing.MemoryAddress" title="flopz.arch.ia32.addressing.MemoryAddress"><code class="xref py py-class docutils literal notranslate"><span class="pre">MemoryAddress</span></code></a>]) – </p></li>
+<li><p><strong>reg_code</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code>) – </p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="flopz.arch.ia32.instructions.LogicRegToMem">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">LogicRegToMem</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">dst</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">src</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">reg_code</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#flopz.arch.ia32.instructions.LogicRegToMem" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <a class="reference internal" href="#flopz.arch.ia32.instructions.IA32Instruction" title="flopz.arch.ia32.instructions.IA32Instruction"><code class="xref py py-class docutils literal notranslate"><span class="pre">flopz.arch.ia32.instructions.IA32Instruction</span></code></a></p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>dst</strong> (<code class="xref py py-data docutils literal notranslate"><span class="pre">Union</span></code>[<a class="reference internal" href="#flopz.arch.ia32.addressing.IA32Register" title="flopz.arch.ia32.addressing.IA32Register"><code class="xref py py-class docutils literal notranslate"><span class="pre">IA32Register</span></code></a>, <a class="reference internal" href="#flopz.arch.ia32.addressing.MemoryAddress" title="flopz.arch.ia32.addressing.MemoryAddress"><code class="xref py py-class docutils literal notranslate"><span class="pre">MemoryAddress</span></code></a>]) – </p></li>
+<li><p><strong>src</strong> (<a class="reference internal" href="#flopz.arch.ia32.addressing.IA32Register" title="flopz.arch.ia32.addressing.IA32Register"><code class="xref py py-class docutils literal notranslate"><span class="pre">IA32Register</span></code></a>) – </p></li>
+<li><p><strong>reg_code</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code>) – </p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="flopz.arch.ia32.instructions.MovImmToMem">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">MovImmToMem</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">dst</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">src</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#flopz.arch.ia32.instructions.MovImmToMem" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <a class="reference internal" href="#flopz.arch.ia32.instructions.IA32Instruction" title="flopz.arch.ia32.instructions.IA32Instruction"><code class="xref py py-class docutils literal notranslate"><span class="pre">flopz.arch.ia32.instructions.IA32Instruction</span></code></a></p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>dst</strong> (<a class="reference internal" href="#flopz.arch.ia32.addressing.MemoryAddress" title="flopz.arch.ia32.addressing.MemoryAddress"><code class="xref py py-class docutils literal notranslate"><span class="pre">MemoryAddress</span></code></a>) – </p></li>
+<li><p><strong>src</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code>) – </p></li>
+</ul>
+</dd>
+</dl>
+<dl class="py method">
+<dt class="sig sig-object py" id="flopz.arch.ia32.instructions.MovImmToMem.check_arg_compatibility">
+<span class="sig-name descname"><span class="pre">check_arg_compatibility</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">dst</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">src</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#flopz.arch.ia32.instructions.MovImmToMem.check_arg_compatibility" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="flopz.arch.ia32.instructions.MovImmToReg">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">MovImmToReg</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">dst</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">src</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#flopz.arch.ia32.instructions.MovImmToReg" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <a class="reference internal" href="#flopz.arch.ia32.instructions.IA32Instruction" title="flopz.arch.ia32.instructions.IA32Instruction"><code class="xref py py-class docutils literal notranslate"><span class="pre">flopz.arch.ia32.instructions.IA32Instruction</span></code></a></p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>dst</strong> (<a class="reference internal" href="#flopz.arch.ia32.addressing.IA32Register" title="flopz.arch.ia32.addressing.IA32Register"><code class="xref py py-class docutils literal notranslate"><span class="pre">IA32Register</span></code></a>) – </p></li>
+<li><p><strong>src</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code>) – </p></li>
+</ul>
+</dd>
+</dl>
+<dl class="py method">
+<dt class="sig sig-object py" id="flopz.arch.ia32.instructions.MovImmToReg.check_arg_compatibility">
+<span class="sig-name descname"><span class="pre">check_arg_compatibility</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">dst</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">src</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#flopz.arch.ia32.instructions.MovImmToReg.check_arg_compatibility" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="flopz.arch.ia32.instructions.MovMemToReg">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">MovMemToReg</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">dst</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">src</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#flopz.arch.ia32.instructions.MovMemToReg" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <a class="reference internal" href="#flopz.arch.ia32.instructions.IA32Instruction" title="flopz.arch.ia32.instructions.IA32Instruction"><code class="xref py py-class docutils literal notranslate"><span class="pre">flopz.arch.ia32.instructions.IA32Instruction</span></code></a></p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>dst</strong> (<a class="reference internal" href="#flopz.arch.ia32.addressing.IA32Register" title="flopz.arch.ia32.addressing.IA32Register"><code class="xref py py-class docutils literal notranslate"><span class="pre">IA32Register</span></code></a>) – </p></li>
+<li><p><strong>src</strong> (<a class="reference internal" href="#flopz.arch.ia32.addressing.MemoryAddress" title="flopz.arch.ia32.addressing.MemoryAddress"><code class="xref py py-class docutils literal notranslate"><span class="pre">MemoryAddress</span></code></a>) – </p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="flopz.arch.ia32.instructions.MovRegToMem">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">MovRegToMem</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">dst</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">src</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#flopz.arch.ia32.instructions.MovRegToMem" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <a class="reference internal" href="#flopz.arch.ia32.instructions.IA32Instruction" title="flopz.arch.ia32.instructions.IA32Instruction"><code class="xref py py-class docutils literal notranslate"><span class="pre">flopz.arch.ia32.instructions.IA32Instruction</span></code></a></p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>dst</strong> (<a class="reference internal" href="#flopz.arch.ia32.addressing.MemoryAddress" title="flopz.arch.ia32.addressing.MemoryAddress"><code class="xref py py-class docutils literal notranslate"><span class="pre">MemoryAddress</span></code></a>) – </p></li>
+<li><p><strong>src</strong> (<a class="reference internal" href="#flopz.arch.ia32.addressing.IA32Register" title="flopz.arch.ia32.addressing.IA32Register"><code class="xref py py-class docutils literal notranslate"><span class="pre">IA32Register</span></code></a>) – </p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="flopz.arch.ia32.instructions.MovRegToReg">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">MovRegToReg</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">dst</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">src</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#flopz.arch.ia32.instructions.MovRegToReg" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <a class="reference internal" href="#flopz.arch.ia32.instructions.IA32Instruction" title="flopz.arch.ia32.instructions.IA32Instruction"><code class="xref py py-class docutils literal notranslate"><span class="pre">flopz.arch.ia32.instructions.IA32Instruction</span></code></a></p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>dst</strong> (<a class="reference internal" href="#flopz.arch.ia32.addressing.IA32Register" title="flopz.arch.ia32.addressing.IA32Register"><code class="xref py py-class docutils literal notranslate"><span class="pre">IA32Register</span></code></a>) – </p></li>
+<li><p><strong>src</strong> (<a class="reference internal" href="#flopz.arch.ia32.addressing.IA32Register" title="flopz.arch.ia32.addressing.IA32Register"><code class="xref py py-class docutils literal notranslate"><span class="pre">IA32Register</span></code></a>) – </p></li>
+</ul>
+</dd>
+</dl>
+<dl class="py method">
+<dt class="sig sig-object py" id="flopz.arch.ia32.instructions.MovRegToReg.check_arg_compatibility">
+<span class="sig-name descname"><span class="pre">check_arg_compatibility</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">dst</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">src</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#flopz.arch.ia32.instructions.MovRegToReg.check_arg_compatibility" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="flopz.arch.ia32.instructions.Shift">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">Shift</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">target</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">shift</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">shift_type</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#flopz.arch.ia32.instructions.Shift" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <a class="reference internal" href="#flopz.arch.ia32.instructions.IA32Instruction" title="flopz.arch.ia32.instructions.IA32Instruction"><code class="xref py py-class docutils literal notranslate"><span class="pre">flopz.arch.ia32.instructions.IA32Instruction</span></code></a></p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>target</strong> (<code class="xref py py-data docutils literal notranslate"><span class="pre">Union</span></code>[<a class="reference internal" href="#flopz.arch.ia32.addressing.IA32Register" title="flopz.arch.ia32.addressing.IA32Register"><code class="xref py py-class docutils literal notranslate"><span class="pre">IA32Register</span></code></a>, <a class="reference internal" href="#flopz.arch.ia32.addressing.MemoryAddress" title="flopz.arch.ia32.addressing.MemoryAddress"><code class="xref py py-class docutils literal notranslate"><span class="pre">MemoryAddress</span></code></a>]) – </p></li>
+<li><p><strong>shift</strong> (<code class="xref py py-data docutils literal notranslate"><span class="pre">Union</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code>, <a class="reference internal" href="#flopz.arch.ia32.addressing.IA32Register" title="flopz.arch.ia32.addressing.IA32Register"><code class="xref py py-class docutils literal notranslate"><span class="pre">IA32Register</span></code></a>]) – </p></li>
+<li><p><strong>shift_type</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code>) – </p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+<section id="module-flopz.arch.ia32.modes">
+<span id="flopz-arch-ia32-modes-module"></span><h2>flopz.arch.ia32.modes module<a class="headerlink" href="#module-flopz.arch.ia32.modes" title="Permalink to this headline"></a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="flopz.arch.ia32.modes.ProcessorMode">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">ProcessorMode</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">value</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#flopz.arch.ia32.modes.ProcessorMode" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">enum.IntEnum</span></code></p>
+<p>An enumeration.</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="flopz.arch.ia32.modes.ProcessorMode.LONG">
+<span class="sig-name descname"><span class="pre">LONG</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">0</span></em><a class="headerlink" href="#flopz.arch.ia32.modes.ProcessorMode.LONG" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="flopz.arch.ia32.modes.ProcessorMode.PROTECTED">
+<span class="sig-name descname"><span class="pre">PROTECTED</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">1</span></em><a class="headerlink" href="#flopz.arch.ia32.modes.ProcessorMode.PROTECTED" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="module-flopz.arch.ia32">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-flopz.arch.ia32" title="Permalink to this headline"></a></h2>
+</section>
+</section>
 
 
            </div>
