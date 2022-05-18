@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>flopz.target package &mdash; flopz 1.0.1 documentation</title><link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <title>flopz.target.stm32 package &mdash; flopz 1.0.1 documentation</title><link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
   <!--[if lt IE 9]>
     <script src="_static/js/html5shiv.min.js"></script>
@@ -16,8 +16,8 @@
     <script src="_static/js/theme.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="flopz.target.bolero package" href="flopz.target.bolero.html" />
-    <link rel="prev" title="flopz.listener.loggers package" href="flopz.listener.loggers.html" /> 
+    <link rel="next" title="flopz.util package" href="flopz.util.html" />
+    <link rel="prev" title="flopz.target.bolero package" href="flopz.target.bolero.html" /> 
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -195,8 +195,8 @@
 <li class="toctree-l5"><a class="reference internal" href="flopz.listener.html#module-flopz.listener">Module contents</a></li>
 </ul>
 </li>
-<li class="toctree-l4 current"><a class="current reference internal" href="#">flopz.target package</a><ul>
-<li class="toctree-l5"><a class="reference internal" href="#subpackages">Subpackages</a><ul>
+<li class="toctree-l4 current"><a class="reference internal" href="flopz.target.html">flopz.target package</a><ul class="current">
+<li class="toctree-l5 current"><a class="reference internal" href="flopz.target.html#subpackages">Subpackages</a><ul class="current">
 <li class="toctree-l6"><a class="reference internal" href="flopz.target.bolero.html">flopz.target.bolero package</a><ul>
 <li class="toctree-l7"><a class="reference internal" href="flopz.target.bolero.html#submodules">Submodules</a></li>
 <li class="toctree-l7"><a class="reference internal" href="flopz.target.bolero.html#module-flopz.target.bolero.bolero_protocol">flopz.target.bolero.bolero_protocol module</a></li>
@@ -204,17 +204,17 @@
 <li class="toctree-l7"><a class="reference internal" href="flopz.target.bolero.html#module-flopz.target.bolero">Module contents</a></li>
 </ul>
 </li>
-<li class="toctree-l6"><a class="reference internal" href="flopz.target.stm32.html">flopz.target.stm32 package</a><ul>
-<li class="toctree-l7"><a class="reference internal" href="flopz.target.stm32.html#submodules">Submodules</a></li>
-<li class="toctree-l7"><a class="reference internal" href="flopz.target.stm32.html#flopz-target-stm32-stm32f407-target-module">flopz.target.stm32.stm32F407_target module</a></li>
-<li class="toctree-l7"><a class="reference internal" href="flopz.target.stm32.html#module-flopz.target.stm32">Module contents</a></li>
+<li class="toctree-l6 current"><a class="current reference internal" href="#">flopz.target.stm32 package</a><ul>
+<li class="toctree-l7"><a class="reference internal" href="#submodules">Submodules</a></li>
+<li class="toctree-l7"><a class="reference internal" href="#flopz-target-stm32-stm32f407-target-module">flopz.target.stm32.stm32F407_target module</a></li>
+<li class="toctree-l7"><a class="reference internal" href="#module-flopz.target.stm32">Module contents</a></li>
 </ul>
 </li>
 </ul>
 </li>
-<li class="toctree-l5"><a class="reference internal" href="#submodules">Submodules</a></li>
-<li class="toctree-l5"><a class="reference internal" href="#flopz-target-all-targets-module">flopz.target.all_targets module</a></li>
-<li class="toctree-l5"><a class="reference internal" href="#module-flopz.target">Module contents</a></li>
+<li class="toctree-l5"><a class="reference internal" href="flopz.target.html#submodules">Submodules</a></li>
+<li class="toctree-l5"><a class="reference internal" href="flopz.target.html#flopz-target-all-targets-module">flopz.target.all_targets module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="flopz.target.html#module-flopz.target">Module contents</a></li>
 </ul>
 </li>
 <li class="toctree-l4"><a class="reference internal" href="flopz.util.html">flopz.util package</a><ul>
@@ -249,9 +249,10 @@
       <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
           <li><a href="modules.html">flopz</a> &raquo;</li>
           <li><a href="flopz.html">flopz package</a> &raquo;</li>
-      <li>flopz.target package</li>
+          <li><a href="flopz.target.html">flopz.target package</a> &raquo;</li>
+      <li>flopz.target.stm32 package</li>
       <li class="wy-breadcrumbs-aside">
-            <a href="_sources/flopz.target.rst.txt" rel="nofollow"> View page source</a>
+            <a href="_sources/flopz.target.stm32.rst.txt" rel="nofollow"> View page source</a>
       </li>
   </ul>
   <hr/>
@@ -259,36 +260,16 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <div class="section" id="flopz-target-package">
-<h1>flopz.target package<a class="headerlink" href="#flopz-target-package" title="Permalink to this headline">¶</a></h1>
-<div class="section" id="subpackages">
-<h2>Subpackages<a class="headerlink" href="#subpackages" title="Permalink to this headline">¶</a></h2>
-<div class="toctree-wrapper compound">
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="flopz.target.bolero.html">flopz.target.bolero package</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="flopz.target.bolero.html#submodules">Submodules</a></li>
-<li class="toctree-l2"><a class="reference internal" href="flopz.target.bolero.html#module-flopz.target.bolero.bolero_protocol">flopz.target.bolero.bolero_protocol module</a></li>
-<li class="toctree-l2"><a class="reference internal" href="flopz.target.bolero.html#flopz-target-bolero-bolero-target-module">flopz.target.bolero.bolero_target module</a></li>
-<li class="toctree-l2"><a class="reference internal" href="flopz.target.bolero.html#module-flopz.target.bolero">Module contents</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="flopz.target.stm32.html">flopz.target.stm32 package</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="flopz.target.stm32.html#submodules">Submodules</a></li>
-<li class="toctree-l2"><a class="reference internal" href="flopz.target.stm32.html#flopz-target-stm32-stm32f407-target-module">flopz.target.stm32.stm32F407_target module</a></li>
-<li class="toctree-l2"><a class="reference internal" href="flopz.target.stm32.html#module-flopz.target.stm32">Module contents</a></li>
-</ul>
-</li>
-</ul>
-</div>
-</div>
+  <div class="section" id="flopz-target-stm32-package">
+<h1>flopz.target.stm32 package<a class="headerlink" href="#flopz-target-stm32-package" title="Permalink to this headline">¶</a></h1>
 <div class="section" id="submodules">
 <h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this headline">¶</a></h2>
 </div>
-<div class="section" id="flopz-target-all-targets-module">
-<h2>flopz.target.all_targets module<a class="headerlink" href="#flopz-target-all-targets-module" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="flopz-target-stm32-stm32f407-target-module">
+<h2>flopz.target.stm32.stm32F407_target module<a class="headerlink" href="#flopz-target-stm32-stm32f407-target-module" title="Permalink to this headline">¶</a></h2>
 </div>
-<div class="section" id="module-flopz.target">
-<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-flopz.target" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="module-flopz.target.stm32">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-flopz.target.stm32" title="Permalink to this headline">¶</a></h2>
 </div>
 </div>
 
@@ -296,8 +277,8 @@
            </div>
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="flopz.listener.loggers.html" class="btn btn-neutral float-left" title="flopz.listener.loggers package" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="flopz.target.bolero.html" class="btn btn-neutral float-right" title="flopz.target.bolero package" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="flopz.target.bolero.html" class="btn btn-neutral float-left" title="flopz.target.bolero package" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="flopz.util.html" class="btn btn-neutral float-right" title="flopz.util package" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>

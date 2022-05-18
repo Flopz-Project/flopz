@@ -8,6 +8,7 @@ Subpackages
    :maxdepth: 10
 
    flopz.target.bolero
+   flopz.target.stm32
 
 Submodules
 ----------
