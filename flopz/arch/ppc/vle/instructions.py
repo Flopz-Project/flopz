@@ -631,7 +631,7 @@ class VleInstructionFormIM7(VleInstructionForm):
         super(VleInstructionFormIM7, self).parse(instruction, spec)
         # parse opcode
         instruction.opcode = Bits('0b' + spec[0:5])
-        instruction.bits[0:6] = instruction.opcode
+        instruction.bits[0:5] = instruction.opcode
 
         instruction.UI = UI7Operand(instruction, 5, 12)
         instruction.RX = RxyaOperand(instruction, 12, 16)
@@ -641,7 +641,7 @@ class VleInstructionFormSD4(VleInstructionForm):
         super(VleInstructionFormSD4, self).parse(instruction, spec)
         # parse opcode
         instruction.opcode = Bits('0b' + spec[0:4])
-        instruction.bits[0:6] = instruction.opcode
+        instruction.bits[0:4] = instruction.opcode
 
         instruction.SD4 = SD4Operand(instruction, 4, 8)
         instruction.RZ = RxyaOperand(instruction, 8, 12)
