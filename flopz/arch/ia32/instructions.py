@@ -147,7 +147,7 @@ class MovImmToReg(IA32Instruction):
         super().__init__(opcode=opcode, immediate=imm)
 
     def check_arg_compatibility(self, dst, src):
-        if not representable(src, min(dst.bit_size, 32), signed=True):
+        if not representable(src, min(dst.bit_size, 64), signed=True):
             raise Exception("Immediate not fit for register")
 
 

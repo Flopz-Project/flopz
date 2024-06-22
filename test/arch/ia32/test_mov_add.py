@@ -38,6 +38,20 @@ def test_mov():
     movi2 = Mov(arch.rcx, 28500)
     assert (movi2.bytes() == b'\x48\xB9\x54\x6f\x00\x00\x00\x00\x00\x00')
 
+    # it should correctly check the operand size
+    with pytest.raises(Exception) as ex:
+        Mov(arch.eax, 0xbdb4c444)
+    assert("Immediate not fit for register" in ex.value.args)
+    with pytest.raises(Exception) as ex:
+        Mov(arch.ax, 0xfffff)
+    assert("Immediate not fit for register" in ex.value.args)
+
+    # this should work though:
+    mov = Mov(arch.rbx, 0xbdb4c444)
+    assert(mov.bytes() == b'\x48\xBB\x44\xC4\xB4\xBD\x00\x00\x00\x00')
+    mov = Mov(arch.rax, -0xffffffff)
+    assert(mov.bytes() == b'\x48\xB8\x01\x00\x00\x00\xFF\xFF\xFF\xFF')
+
     """ Imm to Mem """
     movi = Mov(arch.ma(32, arch.r13 + arch.rcx * 8 - 75), 0x10000000)
     assert(movi.bytes() == b'\x41\xc7\x44\xcd\xb5\x00\x00\x00\x10')

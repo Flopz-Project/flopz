@@ -12,6 +12,9 @@ def test_unconditional_jumps():
     jmp = Jmp(arch.ma(64, arch.rbx + 32))
     assert(jmp.bytes() == b'\xff\x63\x20')
 
+    jmp = Jmp(arch.ma(64, arch.rbx - 0xf0))
+    assert (jmp.bytes() == b'\xff\xa3\x10\xff\xff\xff')
+
     jmp = Jcc(Cond.NZ, 0x200)
     assert(jmp.bytes() == b'\x0f\x85\x00\x02\x00\x00')
 
